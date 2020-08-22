@@ -33,22 +33,22 @@
                 </button>
             </div>            
             <!-- collapse menu -->
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
                 <div class="navbar-nav text-center">
-                    <div class="nav-item nav-link " href="">
+                    <div class="nav-item nav-link unneeded-text-option" href="">
                         <button class="text">Inicio</button>
                     </div>
-                    <div class="nav-item nav-link" >
+                    <div class="nav-item nav-link unneeded-text-option" >
                         <a href="/html/ns.html">
                             <button class="text">Nuestros servicios</button>
                         </a>
                     </div>
-                    <div class="nav-item nav-link" href="#">
+                    <div class="nav-item nav-link unneeded-text-option" href="#">
                         <a href="/html/cot.html">
                             <button class="text">Cotizaciones</button>
                         </a>
                     </div>
-                    <div class="nav-item nav-link" href="#">
+                    <div class="nav-item nav-link unneeded-text-option" href="#">
                         <a href="/html/cont.html">
                             <button class="text">Contactanos</button>
                         </a>
@@ -79,7 +79,7 @@
         <main>
             <section id="initialScreen" >
                 <section>
-                    <img src="../assets/sm Logo Figueroas clean.png" class="rounded mx-auto d-block">
+                    <img src="../assets/sm Logo Figueroas clean.png" class="rounded mx-auto d-block" style="">
                 </section>
                 <section >
                     <img src="../assets/Slogan.png" class="rounded mx-auto d-block">
@@ -119,12 +119,12 @@
                     para mandar o estar en la pagina antes de enviar un mensaje a figueroas clean.
                 -->
                 <section id="nosotros-somos-section">
-                    <figure>
-                        <button>
+                    <figure class="col-lg-6" id="nosotros-somos-img">
+                        <button onclick="nosotrosSomosImgExpand()">
                             <img src="../assets/ns image.png">
                         </button>
                     </figure>
-                    <div>
+                    <div class="col-lg-6" id="nosotros-somos-text">
                         <h1 class="text text-center">Nosotros somos</h1>
                         <p class="text text-justify">
                             Una empresa  seria y responsable dedicada abrindar los mejores servicios 
@@ -133,7 +133,7 @@
                     </div>
                 </section>
                 <section id="mision-vision-section">
-                    <div class="mision"></div>
+                    <div class="mision col-lg-6">
                         <h1 class="text text-center">Mision</h1>
                         <p class="text text-justify">
                             Cuidar la salud de las personas es nuestra misión y compromiso, 
@@ -141,7 +141,7 @@
                             de respeto, honestidad y tolerancia con cada miembro de nuestro equipo y nuestros clientes.
                         </p>
                     </div>
-                    <div class="vision">
+                    <div class="vision col-lg-6">
                         <h1 class="text text-center">Vision</h1>
                         <p class="text text-justify">
                             Ser una empresa sustentable reconocida a nivel estatal por la 
@@ -153,85 +153,88 @@
                     </div>
                 </section>
                 <section id="servicios-section">
-                    <div class="card">
-                        <img src="../assets/cs img residencial.JPG" class="card-img-top" alt="..." loading="lazy">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Servicios residenciales</h5>
-                            <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button trigger -->
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#serviciosResidencialesModal" id="servicios-residenciales-btn">
-                                Ver los servicios
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="serviciosResidencialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosResidencialesModalTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="serviciosResidencialesModallTitle">Servicios residenciales</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>
-                                            <figure>
-                                                
-                                            </figure>
-                                            <figcaption>
-                                                1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                            </figcaption>
+                    <div id="servicios-section-top">
+                        <div class="card col-lg-6 col-xl-6" id="servicios-section-top-servicios-residenciales">
+                            <img src="../assets/cs img residencial.JPG" class="card-img-top" alt="..." loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Servicios residenciales</h5>
+                                <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <!-- Button trigger -->
+                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#serviciosResidencialesModal" id="servicios-residenciales-btn">
+                                    Ver los servicios
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="serviciosResidencialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosResidencialesModalTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="serviciosResidencialesModallTitle">Servicios residenciales</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                         </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <div class="modal-body">
+                                            <div>
+                                                <figure>
+                                                    
+                                                </figure>
+                                                <figcaption>
+                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+    
+                            </div>
                         </div>
-
-                        </div>
-                      </div>
-                      <div class="card">
-                        <img src="../assets/cs img comercial.jpg" class="card-img-top" alt="..." loading="lazy">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Servicios comerciales</h5>
-                            <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button trigger -->
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#serviciosComercialesModal" id="servicios-comerciales-btn">
-                                Ver los servicios
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="serviciosComercialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosComercialesModalTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="serviciosComercialesModalTitle">Servicios comerciales</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>
-                                            <figure>
-                                                
-                                            </figure>
-                                            <figcaption>
-                                                1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                            </figcaption>
+                        <div class="card col-lg-6 col-xl-6" id="servicios-section-top-servicios-comerciales">
+                            <img src="../assets/cs img comercial.jpg" class="card-img-top" alt="..." loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Servicios comerciales</h5>
+                                <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <!-- Button trigger -->
+                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#serviciosComercialesModal" id="servicios-comerciales-btn">
+                                    Ver los servicios
+                                </button>
+        
+                                <!-- Modal -->
+                                <div class="modal fade" id="serviciosComercialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosComercialesModalTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="serviciosComercialesModalTitle">Servicios comerciales</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                <figure>
+                                                    
+                                                </figure>
+                                                <figcaption>
+                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
-                                </div>
+        
                             </div>
-
                         </div>
-                      </div>
-                      <div class="card">
+                    </div>
+                    
+                    <div class="card col-lg-6 col-xl-4 mx-auto" id="servicios-section-bottom">
                         <img src="../assets/cs img industrial.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title text-center">Servicios industriales</h5>
@@ -244,49 +247,48 @@
                             <!-- Modal -->
                             <div class="modal fade" id="serviciosIndustrialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosIndustrialesModalTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="serviciosIndustrialesModalTitle">Servicios industriales</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>
-                                            <figure>
-                                                <img src="../assets/img lavado de piso.jpg" loading="lazy">
-                                            </figure>
-                                            <figcaption>
-                                                1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                            </figcaption>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="serviciosIndustrialesModalTitle">Servicios industriales</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                <figure>
+                                                    <img src="../assets/img lavado de piso.jpg" loading="lazy">
+                                                </figure>
+                                                <figcaption>
+                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
                                 </div>
-                                </div>
-                            </div>
-                          
+                            </div>       
                         </div>
-                      </div>
+                    </div>
                 </section>
             </section>
             
         </main>
 
         <footer>
-            <div class="col-12">
-                <div>
+            <div class="col-12" id="footer-container">
+                <div class="col-md-4">
                     <h6 class="text text-center">Horario de Servicio</h6>
                     <p class="text text-center">Lunes a sabado: 8:00a.m. - 4:00p.m.</p>
                     <p class="text text-center">Domingo: Cerrado</p>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <p class="text text-center">Ciudad Juarez, Chihuahua, Mexico</p>
                     <p class="text text-center">C.P. 32667</p>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <p class="text text-center">Celular: +52 - 656 - 603 - 6947</p>
                     <p class="text text-center">Oficina: 693 - 2537</p>
                     <p class="text text-center">figueroasclean@outlook.com</p>

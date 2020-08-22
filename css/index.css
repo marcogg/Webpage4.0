@@ -30,7 +30,7 @@ nav{
     /* Falta agregar sticky */
 }
 
-button, .col-6, p{
+button, .col-6, p, figure{
     background-color: transparent;
     padding: 0px;
     margin: 0px;
@@ -52,6 +52,10 @@ nav{
 .navbar-toggler{
     padding: 0px;
     border: none;
+}
+
+.unneeded-text-option{
+    visibility: visible;
 }
 
 input{
@@ -110,7 +114,27 @@ main{
 
     /* end of mision-vision-section */
     /* ------------------------------------------------------------*/
+    /* servicios-section */
+    .col-lg-6{
+        padding: 0px;
+    }
 
+    .card{
+        background-color: transparent;
+        border: none;
+        border-radius: none;
+    }
+
+    .card-body{
+        background-color: #ffffff;
+    }
+
+
+    /* end of servicios-section */
+    /* ------------------------------------------------------------*/
+    /* footer */
+
+    /* end of footer*/
 
 /* end of mainScreen */
 
@@ -120,6 +144,15 @@ main{
         visibility: visible; /* Visible after intro transition 
     }*/
 
+    img{
+        widtH:100%
+    }
+
+    #video-player-section, #nosotros-somos-section, #mision-vision-section, #servicios-section{
+        margin-bottom: 26px;
+    }
+
+    /* nav */
     #navbarNavAltMarkup{
         position: absolute;
         width: auto;
@@ -127,10 +160,13 @@ main{
         top: 96px;
         left: 0px;
         right: 0px;
-        background-color: rgba(64, 159, 239, 1);
         z-index: 2;
     }
 
+    #navbarNavAltMarkup {
+        background-color: rgba(64, 159, 239, 1);
+    }    
+    
     .nav-item input{
         height: 28px;
     }
@@ -139,14 +175,7 @@ main{
         height: 28px;
         width: 28px;
     }
-
-    img{
-        widtH:100%
-    }
-
-    #video-player-section, #nosotros-somos-section, #mision-vision-section, #servicios-section{
-        margin-bottom: 26px;
-    }
+    /* end of nav */
 
     /* video-player-section */
     .video-player{
@@ -226,15 +255,36 @@ main{
         margin-bottom: 26px;
     }
 
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+    }
+    /* end of nav */
+
     /* video-player-section */
+        #video-player-section{
+            padding-left: 50px;
+        }
+
         .video-player{
             max-height: 450px;
             background-color: #000000;
         }
 
         .video-social-media-container{
-            position: absolute;
-            right: 26px;
+            position: relative;
+            right: 0px;
+            z-index: 1;
         }
 
         .video-player-images{
@@ -279,21 +329,452 @@ main{
     /* end of servicios-section */
 
     /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
 
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
     /* end of footer */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .initialScreen section img{
+        max-height: 500px; 
+        width: 100%;
+    }
 
+    .nav-options div .text{
+        padding-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    img{
+        widtH:100%
+    }
+
+    #video-player-section, #nosotros-somos-section, #mision-vision-section, #servicios-section{
+        margin-bottom: 26px;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+
+    /* video-player-section */
+        #video-player-section{
+            padding-left: 50px;
+        }
+
+        .video-player{
+            max-height: 450px;
+            background-color: #000000;
+        }
+
+        .video-social-media-container{
+            position: relative;
+            right: 0px;
+            z-index: 1;
+        }
+
+        .video-player-images{
+            width: auto;
+            height: 50px;
+            max-height: 50px;    
+        }
+    /* end of video-player-section */
+
+    /* nosotros-somos-section */
+        #nosotros-somos-section figure{
+            max-width: 100%;
+        }
+
+        #nosotros-somos-section figure button{
+            max-width: 100%;
+        }
+
+        #nosotros-somos-section figure, 
+        #nosotros-somos-section figure button, 
+        #nosotros-somos-section figure button img{
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+        }
+    /* end of nosotros-somos-section */
+
+    /* mision-vision-section */
+        .card{
+            width: 100%;
+            margin-bottom: 26px;
+        }
+        #servicios-residenciales-btn,
+        #servicios-comerciales-btn,
+        #servicios-industriales-btn{
+            float: right;
+        }
+    /* end of mision-vision-section */
+
+    /* servicios-section */
+
+    /* end of servicios-section */
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+    .initialScreen section img{
+        max-height: 500px; 
+        width: auto;
+    }
+
+    .nav-options div .text{
+        padding-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    img{
+        widtH:100%
+    }
+
+    #video-player-section, #nosotros-somos-section, #mision-vision-section, #servicios-section{
+        margin-bottom: 26px;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+
+    /* video-player-section */
+    #video-player-section{
+        padding-left: 50px;
+    }
+
+    .video-player{
+        max-height: 450px;
+        background-color: #000000;
+    }
+
+    .video-social-media-container{
+        position: relative;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .video-player-images{
+        width: auto;
+        height: 50px;
+        max-height: 50px;    
+    }
+    /* end of video-player-section */
+
+    /* nosotros-somos-section */
+    #nosotros-somos-section{
+        display: inline-flex;
+    }
+
+    #nosotros-somos-img{
+        padding: 0px;
+    }
+
+    #nosotros-somos-text{
+        padding-top: 26px;
+        padding-bottom: 26px;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+    #nosotros-somos-section figure{
+        max-width: 100%;
+    }
+
+    #nosotros-somos-section figure button{
+        max-width: 100%;
+    }
+
+    #nosotros-somos-section figure, 
+    #nosotros-somos-section figure button, 
+    #nosotros-somos-section figure button img{
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+    }
+    /* end of nosotros-somos-section */
+
+    /* mision-vision-section */
+    #mision-vision-section{
+        display: inline-flex;
+    }
+
+    #mision{
+        padding: 35px 0px;
+    }
+
+    .vision{
+        padding-left: 30px !important;
+    }
+
+
+
+    /* end of mision-vision-section */
+
+    /* servicios-section */
+    .card{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .card-img-top{
+        height: 225px;
+    }
+
+    #servicios-section-top{
+        display: inline-flex;
+    }
+
+    #servicios-section-top-servicios-comerciales{
+        padding-left: 30px;
+    }
+
+    .modal-body div figure img{
+        width: 100%;
+    }
+
+    #servicios-residenciales-btn,
+    #servicios-comerciales-btn,
+    #servicios-industriales-btn{
+        float: right;
+    }
+    /* end of servicios-section */
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */ 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .initialScreen section img{
+        max-height: 500px; 
+        width: auto;
+    }
 
+    .nav-options div .text{
+        padding-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    img{
+        widtH:100%
+    }
+
+    #video-player-section, #nosotros-somos-section, #mision-vision-section, #servicios-section{
+        margin-bottom: 26px;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+
+    /* video-player-section */
+    #video-player-section{
+        padding-left: 50px;
+    }
+
+    .video-player{
+        max-height: 600px;
+        background-color: #000000;
+    }
+
+    .video-social-media-container{
+        position: relative;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .video-player-images{
+        width: auto;
+        height: 50px;
+        max-height: 50px;    
+    }
+    /* end of video-player-section */
+
+    /* nosotros-somos-section */
+    #nosotros-somos-section{
+        display: inline-flex;
+    }
+
+    #nosotros-somos-img{
+        padding: 0px;
+    }
+
+    #nosotros-somos-text{
+        padding: 50px 0px 50px 30px;
+    }
+
+    #nosotros-somos-section figure{
+        max-width: 100%;
+    }
+
+    #nosotros-somos-section figure button{
+        max-width: 100%;
+    }
+
+    #nosotros-somos-section figure, 
+    #nosotros-somos-section figure button, 
+    #nosotros-somos-section figure button img{
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+    }
+    /* end of nosotros-somos-section */
+
+    /* mision-vision-section */
+    #mision-vision-section{
+        display: inline-flex;
+    }
+
+    #mision{
+        padding: 35px 0px;
+    }
+
+    .vision{
+        padding-left: 30px !important;
+    }
+
+    /* end of mision-vision-section */
+
+    /* servicios-section */
+    .card{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .card-img-top{
+        height: 225px;
+    }
+
+    #servicios-section-top{
+        display: inline-flex;
+    }
+
+    #servicios-section-top-servicios-comerciales{
+        padding-left: 30px;
+    }
+
+    .modal-body div figure img{
+        width: 100%;
+    }
+
+    #servicios-residenciales-btn,
+    #servicios-comerciales-btn,
+    #servicios-industriales-btn{
+        float: right;
+    }
+    /* end of servicios-section */
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */ 
 }
