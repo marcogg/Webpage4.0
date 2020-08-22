@@ -25,6 +25,7 @@ header{
 }
 
 nav{
+    border-bottom: transparent solid 10px; /* Change transparent to #ffffff */
     width: 100%;
     height: 70px;
     /* Falta agregar sticky */
@@ -35,10 +36,6 @@ button, .col-6, p, figure{
     padding: 0px;
     margin: 0px;
     border: none;
-}
-
-nav{
-    border-bottom: transparent solid 10px; /* Change transparent to #ffffff */
 }
 
 .nav-options{
@@ -385,44 +382,48 @@ main{
 
 
     /* video-player-section */
-        #video-player-section{
-            padding-left: 50px;
-        }
+    #video-player-section{
+        padding-left: 50px;
+    }
 
-        .video-player{
-            max-height: 450px;
-            background-color: #000000;
-        }
+    .video-player{
+        max-height: 450px;
+        background-color: #000000;
+    }
 
-        .video-social-media-container{
-            position: relative;
-            right: 0px;
-            z-index: 1;
-        }
+    .video-social-media-container{
+        position: relative;
+        right: 0px;
+        z-index: 1;
+    }
 
-        .video-player-images{
-            width: auto;
-            height: 50px;
-            max-height: 50px;    
-        }
+    .video-player-images{
+        width: auto;
+        height: 50px;
+        max-height: 50px;    
+    }
     /* end of video-player-section */
 
     /* nosotros-somos-section */
-        #nosotros-somos-section figure{
-            max-width: 100%;
-        }
+    #nosotros-somos-section figure{
+        max-width: 100%;
+    }
 
-        #nosotros-somos-section figure button{
-            max-width: 100%;
-        }
+    #nosotros-somos-text{
+        padding: 0px;
+    }
 
-        #nosotros-somos-section figure, 
-        #nosotros-somos-section figure button, 
-        #nosotros-somos-section figure button img{
-            width: 100%;
-            height: auto;
-            max-height: 450px;
-        }
+    #nosotros-somos-section figure button{
+        max-width: 100%;
+    }
+
+    #nosotros-somos-section figure, 
+    #nosotros-somos-section figure button, 
+    #nosotros-somos-section figure button img{
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+    }
     /* end of nosotros-somos-section */
 
     /* mision-vision-section */
@@ -534,10 +535,7 @@ main{
     }
 
     #nosotros-somos-text{
-        padding-top: 26px;
-        padding-bottom: 26px;
-        padding-left: 30px;
-        padding-right: 0px;
+        padding: 26px 30px;
     }
 
     #nosotros-somos-section figure{
@@ -589,7 +587,7 @@ main{
     }
 
     #servicios-section-top-servicios-comerciales{
-        padding-left: 30px;
+        padding-left: 30px !important;
     }
 
     .modal-body div figure img{
@@ -696,7 +694,7 @@ main{
     }
 
     #nosotros-somos-text{
-        padding: 50px 0px 50px 30px;
+        padding: 50px 30px 50px 30px;
     }
 
     #nosotros-somos-section figure{
@@ -712,7 +710,7 @@ main{
     #nosotros-somos-section figure button img{
         width: 100%;
         height: auto;
-        max-height: 450px;
+        max-height: 550px;
     }
     /* end of nosotros-somos-section */
 
@@ -741,12 +739,16 @@ main{
         height: 225px;
     }
 
+    #servicios-section{
+        display: inline-flex;
+    }
+
     #servicios-section-top{
         display: inline-flex;
     }
 
     #servicios-section-top-servicios-comerciales{
-        padding-left: 30px;
+        padding: 0px 15px;
     }
 
     .modal-body div figure img{

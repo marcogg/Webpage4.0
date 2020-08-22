@@ -31,19 +31,41 @@ function show(idOfObject){
 
 function nosotrosSomosImgExpand(){
     /* console.log($(`#nosotros-somos-section`).prop('clientHeight')); */
-    if($(`#nosotros-somos-section`).prop('clientHeight') == 229){
-        $(`#nosotros-somos-section`).css("display", "block");
-        $(`.col-lg-6`).css("padding", "0px");
-        document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-6');
-        document.getElementById(`nosotros-somos-img`).classList.add('col-lg-12');
-        document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-6');
-        document.getElementById(`nosotros-somos-text`).classList.add('col-lg-12');
-    } else{
-        $(`#nosotros-somos-section`).css("display", "inline-flex");
-        $(`#nosotros-somos-text`).css("padding-left", "30px");
-        document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-12');
-        document.getElementById(`nosotros-somos-img`).classList.add('col-lg-6');
-        document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-12');
-        document.getElementById(`nosotros-somos-text`).classList.add('col-lg-6');
+    if((window.matchMedia("(min-width: 991.98px)").matches && (window.matchMedia("(max-width: 1199.98px)").matches))){
+        if($(`#nosotros-somos-section`).prop('clientHeight') == 229 || $(`#nosotros-somos-section`).prop('clientHeight') == 274){
+            $(`#nosotros-somos-section`).css("display", "block");
+            $(`.col-lg-6`).css("padding", "0px");
+            $(`#nosotros-somos-text`).css("padding", "50px 100px");
+            document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-6');
+            document.getElementById(`nosotros-somos-img`).classList.add('col-lg-12');
+            document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-6');
+            document.getElementById(`nosotros-somos-text`).classList.add('col-lg-12');
+        }  else{
+            $(`#nosotros-somos-section`).css("display", "inline-flex");
+            document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-12');
+            document.getElementById(`nosotros-somos-img`).classList.add('col-lg-6');
+            document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-12');
+            document.getElementById(`nosotros-somos-text`).classList.add('col-lg-6');
+            $(`#nosotros-somos-text`).css("padding", "26px 30px");
+
+        }
+    } else {
+        if($(`#nosotros-somos-section`).prop('clientHeight') == 229 || $(`#nosotros-somos-section`).prop('clientHeight') == 274){
+            $(`#nosotros-somos-section`).css("display", "block");
+            $(`.col-lg-6`).css("padding", "0px");
+            $(`#nosotros-somos-text`).css("padding", "50px 100px");
+            document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-6');
+            document.getElementById(`nosotros-somos-img`).classList.add('col-lg-12');
+            document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-6');
+            document.getElementById(`nosotros-somos-text`).classList.add('col-lg-12');
+        }  else{
+            $(`#nosotros-somos-section`).css("display", "inline-flex");
+            document.getElementById(`nosotros-somos-img`).classList.remove('col-lg-12');
+            document.getElementById(`nosotros-somos-img`).classList.add('col-lg-6');
+            document.getElementById(`nosotros-somos-text`).classList.remove('col-lg-12');
+            document.getElementById(`nosotros-somos-text`).classList.add('col-lg-6');
+            $(`#nosotros-somos-text`).css("padding", "50px 30px");
+
+        }
     }
 }
