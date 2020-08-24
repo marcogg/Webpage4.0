@@ -1,0 +1,356 @@
+/* Tag adjustments*/ 
+html{
+    width: auto;
+    height: 100%; /*Change for size change in height*/
+    min-height: 650px;
+    box-sizing: border-box;    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    background-color: rgba(26, 100, 209, 1);
+}
+
+.container{
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+header{
+    width: 100%;
+    height: 0px;
+}
+
+nav{
+    border-bottom: #ffffff solid 1px; /* Change transparent to #ffffff */
+    width: 100%;
+    height: 70px;
+    /* Falta agregar sticky */
+}
+
+img{
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+button, .col-6, p{
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.nav-options{
+    visibility: hidden; /* Visible after intro transition */
+}
+
+#nav-btn-menu-icon, #nav-img-menu-icon{
+    width: 26px;
+}
+
+.navbar-toggler{
+    padding: 0px;
+    border: none;
+}
+
+.unneeded-text-option{
+    visibility: visible;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 1px 11px;
+}
+
+main{
+    width: 100%;
+    height: auto;  
+}
+
+.text{
+    color: #ffffff !important;
+}
+
+/* mainScreen */
+    /* ------------------------------------------------------------*/
+
+
+
+
+    /* ------------------------------------------------------------*/
+/* end of mainScreen */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: 0px 26px;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup {
+        background-color: rgba(64, 159, 239, 1);
+    }    
+    
+    .nav-item input{
+        height: 28px;
+    }
+
+    .nav-img{
+        height: 28px;
+        width: 28px;
+    }
+    /* end of nav */
+
+    /* -----------------------------------------------------------------*/
+    #androidDeviceImg{
+        width: 156px;
+        height: 290px;
+    }
+
+    #iphoneDeviceImg{
+        position: absolute;
+        width: 156px;
+        height: 290px;
+        top: 190px;
+        left: 120px;
+    }
+
+
+
+
+    /* -----------------------------------------------------------------*/
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+    }
+    /* end of nav */
+
+    /* -----------------------------------------------------------------*/
+
+
+    /* -----------------------------------------------------------------*/
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .initialScreen section img{
+        max-height: 500px; 
+        width: 100%;
+    }
+
+    .nav-options div .text{
+        margin-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+    /* -----------------------------------------------------------------*/
+
+
+
+    /* -----------------------------------------------------------------*/
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .initialScreen section img{
+        max-height: 500px; 
+        width: auto;
+    }
+
+    .nav-options div .text{
+        margin-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+    /* -----------------------------------------------------------------*/
+
+
+    /* -----------------------------------------------------------------*/
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */ 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .initialScreen section img{
+        max-height: 500px; 
+        width: auto;
+    }
+
+    .nav-options div .text{
+        margin-left: 26px;
+    }
+
+    .unneeded-text-option{
+        visibility: collapse;
+    }
+
+    /* nav */
+    #navbarNavAltMarkup{
+        position: absolute;
+        width: auto;
+        margin: auto;
+        top: 96px;
+        left: 0px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    #navbarNavAltMarkup div{
+        background-color: rgba(64, 159, 239, 1);
+        height: 150px;
+    }
+    /* end of nav */
+
+    /* -----------------------------------------------------------------*/
+
+
+    /* -----------------------------------------------------------------*/
+
+    /* footer */
+    footer{
+        height: auto;
+        background-color: rgba(64, 159, 239, 1);
+        outline: #ffffff solid 1px;
+        padding: 15px 15px;
+        margin-bottom: 26px;
+    }
+
+    #footer-container{
+        display: inline-flex;
+    }
+
+    footer .col-12 div{
+        margin-bottom: 16px;
+    }
+    /* end of footer */ 
+}

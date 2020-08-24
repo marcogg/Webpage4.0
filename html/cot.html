@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" class="initialScreen">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Personalized CSS-->
+    <link rel="stylesheet" href="../css/cot.css">
+
+    <title>Figueroas clean</title>
+    <link rel="Figueroas Clean icon" href="../assets/mini Logo Figueroas clean.png" type="image"> <!-- Fix -->
+  </head>
+  <body class="container " >
+    <header></header>
+    <nav class="d-flex">
+        <div class="flex-grow-1 align-self-center nav-options" id="nav-options">
+            <div>
+                <button clss="nav-options-img">
+                    <img src="../assets/mini Logo Figueroas clean.png">
+                </button>    
+                <a href="../html/index.html">
+                    <button class="text">Inicio</button>
+                </a>
+                <a href="../html/ns.html">
+                    <button class="text">Nuestros servicios</button>
+                </a>
+                <a href="../html/cot.html">
+                    <button class="text">Cotizaciones</button>
+                </a>
+                <a href="../html/cont.html">
+                    <button class="text">Contactanos</button>
+                </a>
+            </div>
+        </div>   
+            <div class="align-self-center">
+                <button class="navbar-toggler flex-shrink-0" id="nav-btn-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation" onclick="hide('nav-img-menu-icon')">
+                    <img src="../assets/nav menu icon.svg" id="nav-img-menu-icon">
+                </button>
+            </div>            
+            <!-- collapse menu -->
+            <div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center">
+                    <div class="nav-item nav-link unneeded-text-option" href="">
+                        <a href="../html/index.html">
+                            <button class="text">Inicio</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" >
+                        <a href="../html/ns.html">
+                            <button class="text">Nuestros servicios</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" href="#">
+                        <a href="../html/cot.html">
+                            <button class="text">Cotizaciones</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" href="#">
+                        <a href="../html/cont.html">
+                            <button class="text">Contactanos</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link" href="#">
+                        <input type="text" style="margin-top: 10px">
+                        <button class="">
+                            <img src='../assets/nav search icon.png' class="nav-img">
+                        </button>
+                    </div>
+                    <div class="nav-item nav-link" href="#">
+                        <button class="">
+                            <img src="../assets/nav notifiaction icon.png" class="nav-img">
+                        </button>
+                    </div>
+                    <div class="nav-item nav-link" href="#">
+                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="show('nav-img-menu-icon')">
+                            <img src="../assets/nav cancel icon.png" class="nav-img">
+                        </button>
+                    </div>
+                    <!-- Disabled link -->
+                    <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Datos del cliente-->
+            <section style="outline: #ffffff solid 1px; padding: 20px" class="my-4">
+                <form style="padding-top: 26px">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="text text-center">Nombre completo</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Juan Alberto Castillo Santana">
+                            
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="text text-center">Telefono</label>
+                            <input type="text" class="form-control" id="inputTel" placeholder="656-000-0011">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="text text-center">Celular</label>
+                            <input type="text" class="form-control" id="inputCel" placeholder="656-000-0012">
+                          </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4" class="text text-center">Correo</label>
+                            <input type="email" class="form-control" id="inputEmail4 " placeholder="mi_correo@dominio.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class="text text-center">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Teofilo Borunda #5487 *(Int. Piso 2) Colonia/Frac./Info./etc. ">
+                        <small id="" class="form-text text-muted text">
+                            (*) Dejar en blanco si no se tiene la informacion correcta.
+                        </small>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="text text-center">Ciudad</label>
+                        <select id="inputCity" class="form-control">
+                            <option selected>Ciudad Juarez</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState" class="text text-center">Estado</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Chihuahua</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip" class="text text-center">Codigo postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    
+                    </div>
+                  </form>
+            </section>
+            
+            <!-- Calendario -->
+            <section id="calendario">
+
+            </section>
+
+            <!-- Servicios -->
+            <section style="outline: #ffffff solid 1px; padding: 20px" class="my-4">
+                <div class="row mb-3">
+                    <div class="col-6 text-center text"> Servicio </div>
+                    <div class="col-6 text-center text"> Cantidad </div>
+                </div>
+                <!-- Servicio 1 -->
+                <div class="form-group" id="servicio1">
+                    <div class="d-flex">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Lavado de alfombra</option>
+                          <option>Lavado de sillones</option>
+                          <option>Lavado de sillas</option>
+                          <option>Lavado de ...</option>
+                          <option>5</option>
+                        </select>
+
+                        <select class="form-control ml-4" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="form-group" id="servicio2">
+                    <div class="d-flex">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Lavado de alfombra</option>
+                          <option>Lavado de sillones</option>
+                          <option>Lavado de sillas</option>
+                          <option>Lavado de ...</option>
+                          <option>5</option>
+                        </select>
+    
+                        <select class="form-control ml-4" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="form-group" id="servicio3">
+                    <div class="d-flex">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Lavado de alfombra</option>
+                          <option>Lavado de sillones</option>
+                          <option>Lavado de sillas</option>
+                          <option>Lavado de ...</option>
+                          <option>5</option>
+                        </select>
+    
+                        <select class="form-control ml-4" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="form-group" id="servicio4">
+                    <div class="d-flex">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Lavado de alfombra</option>
+                            <option>Lavado de sillones</option>
+                            <option>Lavado de sillas</option>
+                            <option>Lavado de ...</option>
+                            <option>5</option>
+                        </select>
+    
+                        <select class="form-control ml-4" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="form-group" id="servicio5">
+                    <div class="d-flex">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Lavado de alfombra</option>
+                            <option>Lavado de sillones</option>
+                            <option>Lavado de sillas</option>
+                            <option>Lavado de ...</option>
+                            <option>5</option>
+                        </select>
+    
+                        <select class="form-control ml-4" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>           
+                
+                <button type="submit" class="btn btn-primary my-4" id="btnAgregarServicios">Agregar servicios</button> <!-- Once you add Eliminar servicios cambiar my-4 -> mt-4 -->
+                <button type="submit" class="btn btn-primary my-3" id="btnEliminarServicios">Eliminar servicios</button>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="text">Algun dato adicional que falto?, o algun dato importante que se requiera para realizar le el servicio? (+Covid-19, Germafobico/a, etc.) </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>  
+                <button type="submit" class="btn btn-primary mt-4" id="btnEnviarCotizacion">Enviar</button>
+            </section>
+        </main>
+
+        <footer>
+            <div class="col-12" id="footer-container">
+                <div class="col-md-4">
+                    <h6 class="text text-center">Horario de Servicio</h6>
+                    <p class="text text-center">Lunes a sabado: 8:00a.m. - 4:00p.m.</p>
+                    <p class="text text-center">Domingo: Cerrado</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text text-center">Ciudad Juarez, Chihuahua, Mexico</p>
+                    <p class="text text-center">C.P. 32667</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="text text-center">Celular: +52 - 656 - 603 - 6947</p>
+                    <p class="text text-center">Oficina: 693 - 2537</p>
+                    <p class="text text-center">figueroasclean@outlook.com</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!--Popper.js -->
+        <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+        <!--Bootstrap.js -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!--Ajax,.js
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+        <!--Personalized.js -->
+        <script src="../js/cot.js"></script>
+  </body>
+</html>
