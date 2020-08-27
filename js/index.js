@@ -13,6 +13,7 @@ setTimeout(function (){
         $('.nav-options').css('visibility', 'visible');
         $('.nav-options div .text').css('display', 'none');
     }
+    $("nav").css("background-color", "rgba(26, 100, 209, 1)")
     $("#main-screen-section").show();
     $("#main-screen-section").css("padding-top", "26px");
     $("footer").show();
@@ -35,12 +36,12 @@ function navBarListener(){
 }
 
 
-function hide(idOfObject){
-    $(`#` + `${idOfObject}`).hide();
+function hideObj(id){
+    $(`#` + `${id}`).hide();
 }
 
-function show(idOfObject){
-    $(`#` + `${idOfObject}`).show();
+function showMenu(){
+    $(`#nav-btn-menu-icon`).show();
 }
 
 function nosotrosSomosImgExpand(){

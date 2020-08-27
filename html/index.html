@@ -36,7 +36,7 @@
                 </div>
             </div>    
             <div class="align-self-center">
-                <button class="navbar-toggler flex-shrink-0" id="nav-btn-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation" onclick="hide('nav-img-menu-icon')">
+                <button class="navbar-toggler flex-shrink-0" id="nav-btn-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation" onclick="hideObj('nav-btn-menu-icon')">
                     <img src="../assets/nav menu icon.svg" id="nav-img-menu-icon">
                 </button>
             </div>            
@@ -75,7 +75,7 @@
                         </button>
                     </div>
                     <div class="nav-item nav-link" href="#">
-                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="show('nav-img-menu-icon')">
+                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="showMenu()"> 
                             <img src="../assets/nav cancel icon.png" class="nav-img">
                         </button>
                     </div>
@@ -178,20 +178,122 @@
                                 <div class="modal fade" id="serviciosResidencialesModal" tabindex="-1" role="dialog" aria-labelledby="serviciosResidencialesModalTitle" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-scrollable" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h5 class="modal-title" id="serviciosResidencialesModallTitle">Servicios residenciales</h5>
+                                        <div class="modal-header d-flex">
+                                        <h5 class="modal-title text-center flex-grow-1" id="serviciosResidencialesModallTitle">Servicios residenciales</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div>
-                                                <figure>
-                                                    
-                                                </figure>
-                                                <figcaption>
-                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                                </figcaption>
+                                            <div id="servicioResidencialModal-carousel" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="1"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="2"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="3"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="4"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="5"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="6"></li>
+                                                    <li data-target="#servicioResidencialModal-carousel" data-slide-to="7"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" data-interval="6000">
+                                                        <img src="../assets/cs img a-alfombra.jpeg" class="d-block w-100" alt="1" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img alfombra.jpeg" class="d-block w-100" alt="2" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-sillones.jpg" class="d-block w-100" alt="3" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img sillones.jpg" class="d-block w-100" alt="4" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-sillas2.jpg" class="d-block w-100" alt="5" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img sillas2.jpg" class="d-block w-100" alt="6" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-pulido.jpg" class="d-block w-100" alt="7" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img pulido.jpg" class="d-block w-100" alt="8" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#servicioResidencialModal-carousel" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#servicioResidencialModal-carousel" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <h4 class="text-center my-3">Servicios que ofrecemos</h4> 
+                                            <div class="d-flex">
+                                                <div class="d-inline-flex mx-auto">
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Lavado de alfombra</li>
+                                                            <li>
+                                                                Extraccion de agua<br>
+                                                                (alfombras inundadas)
+                                                            </li>
+                                                            <li>Lavado de sillones</li>
+                                                            <li>Lavado de sillas</li>
+                                                            <li>Lavado de tapetes</li>
+                                                            <li>Lavado de carros</li>
+                                                            <li>Lavado de pasto sintetico</li>
+                                                            <li>Limpieza de casa</li>
+                                                            <li>Lavado de accesorios</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Limpieza general</li>
+                                                            <li>Limpieza profunda</li>
+                                                            <li>Limpieza de vidrios</li>
+                                                            <li>Limpieza de ductos</li>
+                                                            <li>Lavado de pisos</li>
+                                                            <li>Pulido de pisos</li>
+                                                            <li>Aplicacion de sellador</li>
+                                                            <li>Pintado de pisos</li>
+                                                            <li>Sanitizacion</li>
+                                                            <li>Entre otros</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-4">
+                                                <div>Duracion minima: Desde 30 minutos</div>
+                                                <div>Duracion: Varia por cada servicio</div>
+                                                <div>Aroma: Fresa, Cereza, Canela, Lavanda</div>                                                
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -224,13 +326,115 @@
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div>
-                                                <figure>
-                                                    
-                                                </figure>
-                                                <figcaption>
-                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                                </figcaption>
+                                            <div id="serviciosIndustrialesModal-carousel" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="1"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="2"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="3"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="4"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="5"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="6"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="7"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" data-interval="6000">
+                                                        <img src="../assets/cs img mamparas.jpg" class="d-block w-100" alt="1" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5></h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img a-profunda  (1).jpg" class="d-block w-100" alt="2" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-profunda  (2).jpg" class="d-block w-100" alt="3" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img profunda (1).jpg" class="d-block w-100" alt="4" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img profunda (2).jpg" class="d-block w-100" alt="5" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img mats.jpg" class="d-block w-100" alt="6" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5></h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-graseras (1).jpg" class="d-block w-100" alt="7" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img graseras (1).jpg" class="d-block w-100" alt="8" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#serviciosIndustrialesModal-carousel" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#serviciosIndustrialesModal-carousel" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <h4 class="text-center my-3">Servicios que ofrecemos</h4> 
+                                            <div class="d-flex">
+                                                <div class="d-inline-flex mx-auto">
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Limpieza general</li>
+                                                            <li>Limpieza profunda</li>
+                                                            <li>Limpieza de cocinas</li>
+                                                            <li>Limpieza de graseras</li>
+                                                            <li>Limpieza de vidrios</li>
+                                                            <li>Limpieza de ductos</li>
+                                                            <li>Lavado de pisos</li>
+                                                            <li>Pulido de pisos</li>
+                                                            <li>Pintado de pisos</li>
+                                                            <li>Aplicacion de sellador</li>
+                                                            
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Limpieza de oficinas</li>
+                                                            <li>Limpieza de mamparas</li>
+                                                            <li>Lavado de alfombra</li>
+                                                            <li>Lavado de mats</li>
+                                                            <li>Lavado de sillones</li>
+                                                            <li>Lavado de sillas</li>
+                                                            <li>Lavado de tapetes</li>
+                                                            <li>Lavado de carros</li>
+                                                            <li>Lavado de pasto sintetico</li>
+                                                            <li>Sanitizacion</li>
+                                                            <li>Entre otros</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-4">
+                                                <div>Duracion minima: Desde 30 minutos</div>
+                                                <div>Duracion: Varia por cada servicio</div>                                              
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -265,13 +469,108 @@
                                         </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div>
-                                                <figure>
-                                                    <img src="../assets/img lavado de piso.jpg" loading="lazy">
-                                                </figure>
-                                                <figcaption>
-                                                    1. Lavado de piso: El lavado de piso es para areas en donde se requeire de higene para poder estar con las actividades comunes de operacion
-                                                </figcaption>
+                                            <div id="serviciosIndustrialesModal-carousel" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="1"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="2"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="3"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="4"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="5"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="6"></li>
+                                                    <li data-target="#serviciosIndustrialesModal-carousel" data-slide-to="7"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active" data-interval="6000">
+                                                        <img src="../assets/cs img a-alfombra2.jpg" class="d-block w-100" alt="1" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img alfombra2.jpg" class="d-block w-100" alt="2" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-auto2 (1).jpg" class="d-block w-100" alt="3" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img auto2 (1).jpg" class="d-block w-100" alt="4" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img a-lavado-p (1).jpg" class="d-block w-100" alt="5" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img a-lavado-p (2).jpg" class="d-block w-100" alt="6" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Antes</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item" data-interval="6000">
+                                                        <img src="../assets/cs img lavado-p (1).jpg" class="d-block w-100" alt="7" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item"  data-interval="6000">
+                                                        <img src="../assets/cs img lavado-p (2).jpg" class="d-block w-100" alt="8" loading="lazy">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Despues</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#serviciosIndustrialesModal-carousel" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#serviciosIndustrialesModal-carousel" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <h4 class="text-center my-3">Servicios que ofrecemos</h4> 
+                                            <div class="d-flex">
+                                                <div class="d-inline-flex mx-auto">
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Limpieza general</li>
+                                                            <li>Limpieza profunda</li>
+                                                            <li>Limpieza de vidrios</li>
+                                                            <li>Limpieza de ductos</li>
+                                                            <li>Lavado de pisos</li>
+                                                            <li>Pulido de pisos</li>
+                                                            <li>Pintado de pisos</li>
+                                                            <li>Aplicacion de sellador</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <ul class="mx-auto">
+                                                            <li>Limpieza de oficinas</li>
+                                                            <li>Limpieza de mamparas</li>
+                                                            <li>Lavado de alfombra</li>
+                                                            <li>Lavado de mats</li>
+                                                            <li>Lavado de sillones</li>
+                                                            <li>Lavado de sillas</li>
+                                                            <li>Lavado de carros</li>
+                                                            <li>Entre otros</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-4">
+                                                <div>Duracion minima: Desde 30 minutos</div>
+                                                <div>Duracion: Varia por cada servicio</div>                                              
                                             </div>
                                         </div>
                                         <div class="modal-footer">
