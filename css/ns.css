@@ -105,6 +105,18 @@ main{
         height: 225px;
     }
 
+    .modal-body{
+        position: relative;
+    }
+
+    ul{
+        padding: 0px 20px;
+    }
+    
+    ul li{
+        list-style-type: none;
+    }
+
     /* ------------------------------------------------------------*/
 /* end of mainScreen */
 
@@ -136,9 +148,11 @@ main{
     /* end of nav */
 
     /* -----------------------------------------------------------------*/
+    .card-text{
+        height: 170px;
+    }
 
-
-
+    
 
 
     /* -----------------------------------------------------------------*/
@@ -177,7 +191,9 @@ main{
     /* end of nav */
 
     /* -----------------------------------------------------------------*/
-
+    .card-text{
+        height: 150px;
+    }
 
 
 
@@ -233,6 +249,10 @@ main{
     /* end of nav */
 
     /* -----------------------------------------------------------------*/
+    .card-text{
+        height: 210px;
+    }
+
     #servicio1, #servicio3, #servicio5, #servicio7, #servicio9, #servicio11 {
         padding-right: 5px !important;
     }    
@@ -298,6 +318,10 @@ main{
     /* -----------------------------------------------------------------*/
     .card-img-top{
         height: 225px;
+    }
+
+    .card-text{
+        height: 170px;
     }
 
     .modal-body div figure img{
@@ -373,6 +397,10 @@ main{
 
     .modal-body div figure img{
         width: 100%;
+    }
+
+    .card-text{
+        height: 190px;
     }
 
     #servicio2, #servicio5, #servicio8, #servicio11{
