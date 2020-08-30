@@ -29,4 +29,53 @@ function navBarListener(){
 
 window.addEventListener('resize', navBarListener);
 
+function cambioHorarioDeServicio(){
+    //Value
+    //var e = document.getElementById("ddlViewBy");
+    //var strUser = e.options[e.selectedIndex].value;
+    //Text
+    var e = document.getElementById("calendarioHorario");
+    var horarioServicio = e.options[e.selectedIndex].text;
+    console.log(horarioServicio);
+}
+
+window.addEventListener('change', cambioHorarioDeServicio);
+
+$("#form-selector").on("change", function() {
+    $("#" + $(this).val()).show();//.siblings().hide();
+    
+})
+
+function mainService(){
+    $("#form-selector").on("change", function() {
+        $("#" + $(this).val()).show();//.siblings().hide();
+        
+    })
+}
+
+window.addEventListener('change', mainService);
+
+$("#sLavadoDeAlfombra").on("change", function() {
+    $("#" + $(this).val()).show().siblings().hide();
+})
+
+function cantService(){
+    $("#sLavadoDeAlfombra").on("change", function() {
+        $("#" + $(this).val()).show().siblings().hide();
+    })
+}
+
+window.addEventListener('change', cantService);
+
+$("#alfombra1").on("change", function() {
+    $("#" + $(this).val()).show()//.siblings().hide();
+})
+
+function defCantService(){
+    $("#alfombra1").on("change", function() {
+        $("#" + $(this).val()).show()//.siblings().hide();
+    })
+}
+
+window.addEventListener('change', defCantService);
 

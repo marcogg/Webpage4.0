@@ -13,6 +13,7 @@ body{
     padding-top: 26px;
     padding-bottom: 26px;
     background-color: rgba(26, 100, 209, 1);
+    color: #ffffff;
 }
 
 .container{
@@ -88,7 +89,7 @@ main{
     /* ------------------------------------------------------------*/
     #calendario{
         width: 100%;
-        height: 500px;
+        height: auto;
         background-color: transparent;
     }
 
@@ -105,6 +106,11 @@ main{
     #btnEliminarServicios{
         display: none;
     }
+
+    .col-12{
+        padding: 0px;
+    }
+
 
     /* ------------------------------------------------------------*/
 /* end of mainScreen */

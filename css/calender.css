@@ -1,4 +1,4 @@
-.calendar-section {
+  .calendar-section {
     margin-bottom: 20px;
   }
   .calendar, .calendar_weekdays,
@@ -60,6 +60,8 @@
   .calendar_content div.past-date {
       cursor: initial;
       color: #000000;
+      user-select: none;
+
   }
   .calendar_content div.today{
     font-weight: bold;
