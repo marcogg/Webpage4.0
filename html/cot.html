@@ -204,286 +204,124 @@
 
             <!-- Servicios -->
             <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 ">
-                <!-- Servicio 1 -->
-                <div class="form-group" id="servicio1">
-                    <div class="d-flex flex-wrap">
-                        <!-- Form selector -->
-                        <form id="form-shower" class="col-12">
-                            <div class="text-center text pb-2"> Servicio </div>
-                            <select class="form-control col-12" id="form-selector" style="visibility: visible;" autocomplete="off">
-                                <option value="" selected="selected"></option>
-                                <option value="Lavado_de_alfombra">Lavado de alfombra</option>
-                                <option value="Lavado_de_sillones">Lavado de sillones</option>
-                                <option value="Lavado_de_sillas">Lavado de sillas</option>
-                                <option value="Lavado_de_colchones">Lavado de colchones</option>
-                                <option value="Lavado_de_int_de_autos">Lavado de int. de autos</option>
-                                <option value="Lavado_de_pisos">Lavado de pisos</option>
-                                <option value="Pulido_de_pisos">Pulido de pisos</option>
-                                <option value="Sanitizacion">Sanitizacion</option>
-                                <option value="Limpieza_de_vidrios">Limpieza de vidrios</option>
-                                <option value="Limpieza_profunda">Limpieza profunda</option>
-                                <option value="Limpieza_general">Limpieza general</option>
-                                <option value="Limpieza_de_ductos">Limpieza de ductos</option>
-                            </select>
-                        </form>
+                <!-- Form selector -->
+                <form id="form-shower" class="col-12">
+                    <div class="text-center text pb-2"> Servicio </div>
+                    <select class="form-control " id="service-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
+                        <option value="Lavado_de_sillones">Lavado de sillones</option>
+                        <option value="Lavado_de_sillas">Lavado de sillas</option>
+                        <option value="Lavado_de_colchones">Lavado de colchones</option>
+                        <option value="Lavado_de_int_de_autos">Lavado de int. de autos</option>
+                        <option value="Lavado_de_pisos">Lavado de pisos</option>
+                        <option value="Pulido_de_pisos">Pulido de pisos</option>
+                        <option value="Sanitizacion">Sanitizacion</option>
+                        <option value="Limpieza_de_vidrios">Limpieza de vidrios</option>
+                        <option value="Limpieza_profunda">Limpieza profunda</option>
+                        <option value="Limpieza_general">Limpieza general</option>
+                        <option value="Limpieza_de_ductos">Limpieza de ductos</option>
+                    </select>
+                </form>
 
-                        <!-- Lavado de alfombra-->
-                        <form class="col-12" id="Lavado_de_alfombra" style="display: none;">
-                            <div>
-                                <div class="text-center text py-2"> Cantidad </div>
-                                <select class="form-control" id="sLavadoDeAlfombra" autocomplete="off">
-                                    <option value="" selected="selected"></option>
-                                    <option value="1_alfombra">1 alfombra</option>
-                                    <option value="2_alfombras">2 alfombras</option>
-                                    <option value="3_alfombras">3 alfombras</option>
-                                    <option value="4_alfombras">4 alfombras</option>
-                                    <option value="5_alfombras">5 alfombras</option>
-                                </select>
+                <!-- Lavado de alfombra-->
+                <form class="col-12" id="Lavado_de_alfombra">
+                    <div class="text-center text py-2"> Cantidad </div>
+                    <select class="form-control" id="alfombra-cant-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="alfombra1">1 alfombra</option>
+                        <option value="alfombras2">2 alfombras</option>
+                        <option value="alfombras3">3 alfombras</option>
+                        <option value="alfombras4">4 alfombras</option>
+                        <option value="alfombras5">5 alfombras</option>
+                        <option value="cantOtra">Mas de 5 alfombras</option>
+                    </select>
+                    
+                    <!-- alfombra1 -->
+                    <div class="col-12" id="alfombra1" style="display: none !important;">
+                        <div class="text-center text py-2"> Tamaño </div>
+                        <select class="form-control" id="alfombra1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro1">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro1" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño estan las alfombras?: <input> X <input>
                             </div>
-    
-                            <div>
-                                
-                                <div id="1_alfombra" style="display: none !important;">
-                                    <div class="text-center text py-2"> Tamaño </div>    
-                                    <select class="col-3 form-control" id="alfombra1" autocomplete="off" style="min-width: 100%;">
-                                        <option value="" selected="selected"></option>
-                                        <option value="3x3">3mts. x 3mts.</option>
-                                        <option value="3x4">3mts. x 4mts.</option>
-                                        <option value="4x4">4mts. x 4mts.</option>
-                                        <option value="otro">Otro</option>
-                                    </select>
+                        </div>
+                    </div>
 
-                                    <div class="d-flex pt-4" id="otro" style="display: none !important;">
-                                        <div class="text-center text py-2 mx-auto"> Otro </div>
-                                        <div class="d-inline-flex mx-auto">
-                                            <input type="text" class="my-1 mx-1" style="min-width: 50%; border-radius: 0px;"> X
-                                            <input type="text" class="my-1 mx-1" style="min-width: 50%; border-radius: 0px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex" id="2_alfombras" style="display: none !important;">
-                                    <input type="radio"> Todas son del mismo tamaño </input>
-                                    <input type="radio"> Hay algunas diferentes </input>
+                    <!-- alfombra2 -->
+                    <div class="col-12" id="alfombras2" style="display: none !important;">
+                        <div class="text-center text py-2"> Tamaños </div>
+                        <select class="form-control" id="alfombra2-1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro2-1">Otro</option>
+                        </select>
 
-                                     <!--
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                -->
-                                </div>
-                                <div class="d-flex" id="3_alfombras" style="display: none !important;">
-                                    <input type="radio"> Todas son del mismo tamaño </input>
-                                    <input type="radio"> Hay algunas diferentes </input>
-
-                                     <!--
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                -->
-                                </div>
-                                <div class="d-flex" id="4_alfombras" style="display: none !important;">
-                                    <input type="radio"> Todas son del mismo tamaño </input>
-                                    <input type="radio"> Hay algunas diferentes </input>
-
-                                     <!--
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                -->
-                                </div>
-                                <div class="d-flex" id="5_alfombras" style="display: none !important;">
-                                    <input type="radio"> Todas son del mismo tamaño </input>
-                                    <input type="radio"> Hay algunas diferentes </input>
-
-                                     <!--
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                    <select class="col-3 form-control" autocomplete="off">
-                                        <option value="" selected="selected"></option>
-                                        <option>3mts. x 3mts.</option>
-                                        <option>3mts. x 4mts.</option>
-                                        <option>4mts. x 4mts.</option>
-                                        <option>Otro</option>
-                                    </select>
-                                    <div>
-                                        <div class="text-center text py-2"> Otro </div>
-                                        <input type="text" class="" style="min-width: 100%; border-radius: 0px;">
-                                    </div>
-                                -->
-                                </div>
-                               
+                        <div class="d-flex">
+                            <div id="Otro2-1" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input> X <input>
                             </div>
-                        </form>
-                        
-                         
-                        <!--
-                            Faltan el resto de los servicios en todas las opciones
-                        -->
+                        </div>
+
+                        <select class="form-control" id="alfombra2-2-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro2-2">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro2-2" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input> X <input>
+                            </div>
+                        </div>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-                <!-- Servicio 2 -->
-                <div class="form-group" id="servicio2">
-                    <div class="d-flex">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Lavado de alfombra</option>
-                          <option>Lavado de sillones</option>
-                          <option>Lavado de sillas</option>
-                          <option>Lavado de ...</option>
-                          <option>5</option>
-                        </select>
-    
-                        <select class="form-control ml-4" id="exampleFormControlSelect1">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
+                    <!-- alfombra3 -->
+                    <div class="col-12" id="alfombra3">
+                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
                     </div>
-                </div>
-                <!-- Servicio 3 -->
-                <div class="form-group" id="servicio3">
-                    <div class="d-flex">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Lavado de alfombra</option>
-                          <option>Lavado de sillones</option>
-                          <option>Lavado de sillas</option>
-                          <option>Lavado de ...</option>
-                          <option>5</option>
-                        </select>
-    
-                        <select class="form-control ml-4" id="exampleFormControlSelect1">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
+
+                    <!-- alfombra4 -->
+                    <div class="col-12" id="alfombra4">
+                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
                     </div>
-                </div>
-                <!-- Servicio 4 -->
-                <div class="form-group" id="servicio4">
-                    <div class="d-flex">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Lavado de alfombra</option>
-                            <option>Lavado de sillones</option>
-                            <option>Lavado de sillas</option>
-                            <option>Lavado de ...</option>
-                            <option>5</option>
-                        </select>
-    
-                        <select class="form-control ml-4" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+
+                    <!-- alfombra5 -->
+                    <div class="col-12" id="alfombra5">
+                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
                     </div>
-                </div>
-                <!-- Servicio 5 -->
-                <div class="form-group" id="servicio5">
-                    <div class="d-flex">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>Lavado de alfombra</option>
-                            <option>Lavado de sillones</option>
-                            <option>Lavado de sillas</option>
-                            <option>Lavado de ...</option>
-                            <option>5</option>
-                        </select>
-    
-                        <select class="form-control ml-4" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+
+                    <!-- Mas de 5 alfombras -->
+                    <div class="d-flex pb-4">
+                        <div id="cantOtra" class="mx-auto pt-4" style="display: none !important;">
+                            <div class="d-flex">
+                                <div class="mx-auto pb-2">
+                                    Cuantas alfombras?: <input type=text id="cantServices" name="cantServices" value="" onchange="agregarCampos()" placeholder="ej. 8" style="width: 60px;" autocomplete="off"> alfombras (max. 10) (Mts.<sup>2</sup>)
+                                </div>
+                            </div>
+                            <div class="text-center text py-2" style="display: none !important;"> Tamaño </div>    
+                            <div id="container" class="mx-auto"></div>
+                        </div>                            
                     </div>
-                </div>           
-                
+                </form>
+
+
+
+
+
+
+                <!-- -->
                 <button type="submit" class="btn btn-primary my-4" id="btnAgregarServicios">Agregar servicios</button> <!-- Once you add Eliminar servicios cambiar my-4 -> mt-4 -->
                 <button type="submit" class="btn btn-primary my-3" id="btnEliminarServicios">Eliminar servicios</button>
 
