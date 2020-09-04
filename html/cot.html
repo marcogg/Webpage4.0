@@ -225,7 +225,7 @@
                 </form>
 
                 <!-- Lavado de alfombra-->
-                <form class="col-12" id="Lavado_de_alfombra">
+                <form class="col-12" id="Lavado_de_alfombra" style="display: none !important;">
                     <div class="text-center text py-2"> Cantidad </div>
                     <select class="form-control" id="alfombra-cant-selector" autocomplete="off">
                         <option value="" selected="selected"></option>
@@ -233,8 +233,7 @@
                         <option value="alfombras2">2 alfombras</option>
                         <option value="alfombras3">3 alfombras</option>
                         <option value="alfombras4">4 alfombras</option>
-                        <option value="alfombras5">5 alfombras</option>
-                        <option value="cantOtra">Mas de 5 alfombras</option>
+                        <option value="cantOtra">5 o mas alfombras</option>
                     </select>
                     
                     <!-- alfombra1 -->
@@ -250,7 +249,7 @@
 
                         <div class="d-flex">
                             <div id="Otro1" style="display: none !important;" class="pt-4 mx-auto">
-                                De que tamaño estan las alfombras?: <input> X <input>
+                                De que tamaño estan las alfombras?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
                             </div>
                         </div>
                     </div>
@@ -258,20 +257,22 @@
                     <!-- alfombra2 -->
                     <div class="col-12" id="alfombras2" style="display: none !important;">
                         <div class="text-center text py-2"> Tamaños </div>
-                        <select class="form-control" id="alfombra2-1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                        <div> Alfombra 1: </div>
+                        <select class="form-control mb-4" id="alfombra2-1-type-selector" autocomplete="off" style="min-width: 100%;" >
                             <option value="" selected="selected"></option>
                             <option value="x3x3">3mts. x 3mts.</option>
                             <option value="x3x4">3mts. x 4mts.</option>
                             <option value="x4x4">4mts. x 4mts.</option>
-                            <option value="Otro2-1">Otro</option>
+                            <option value="Otro2">Otro</option>
                         </select>
 
                         <div class="d-flex">
-                            <div id="Otro2-1" style="display: none !important;" class="pt-4 mx-auto">
-                                De que tamaño esta la alfombra?: <input> X <input>
+                            <div id="Otro2" style="display: none !important;" class="pt-2 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts.)
                             </div>
                         </div>
 
+                        <div> Alfombra 2: </div>
                         <select class="form-control" id="alfombra2-2-type-selector" autocomplete="off" style="min-width: 100%;" >
                             <option value="" selected="selected"></option>
                             <option value="x3x3">3mts. x 3mts.</option>
@@ -282,32 +283,131 @@
 
                         <div class="d-flex">
                             <div id="Otro2-2" style="display: none !important;" class="pt-4 mx-auto">
-                                De que tamaño esta la alfombra?: <input> X <input>
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
                             </div>
                         </div>
                     </div>
 
                     <!-- alfombra3 -->
-                    <div class="col-12" id="alfombra3">
-                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
+                    <div class="col-12" id="alfombras3" style="display: none !important;">
+                        <div class="text-center text py-2"> Tamaños </div>
+                        <div> Alfombra 1: </div>
+                        <select class="form-control" id="alfombra3-1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro3">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro3" style="display: none !important;" class="pt-2 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts.)
+                            </div>
+                        </div>
+
+                        <div> Alfombra 2: </div>
+                        <select class="form-control" id="alfombra3-2-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro3-2">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro3-2" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                            </div>
+                        </div>
+
+                        <div> Alfombra 3: </div>
+                        <select class="form-control" id="alfombra3-3-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro3-3">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro3-3" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                            </div>
+                        </div>
                     </div>
 
                     <!-- alfombra4 -->
-                    <div class="col-12" id="alfombra4">
-                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
+                    <div class="col-12" id="alfombras4" style="display: none !important;">
+                        <div class="text-center text py-2"> Tamaños </div>
+                        <div> Alfombra 1: </div>
+                        <select class="form-control" id="alfombra4-1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro4">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro4" style="display: none !important;" class="pt-2 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts.)
+                            </div>
+                        </div>
+
+                        <div> Alfombra 2: </div>
+                        <select class="form-control" id="alfombra4-2-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro4-2">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro4-2" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                            </div>
+                        </div>
+
+                        <div> Alfombra 3: </div>
+                        <select class="form-control" id="alfombra4-3-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro4-3">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro4-3" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                            </div>
+                        </div>
+
+
+                        <div> Alfombra 4: </div>
+                        <select class="form-control" id="alfombra4-4-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="" selected="selected"></option>
+                            <option value="x3x3">3mts. x 3mts.</option>
+                            <option value="x3x4">3mts. x 4mts.</option>
+                            <option value="x4x4">4mts. x 4mts.</option>
+                            <option value="Otro4-4">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="Otro4-4" style="display: none !important;" class="pt-4 mx-auto">
+                                De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- alfombra5 -->
-                    <div class="col-12" id="alfombra5">
-                        <div class="text-center text py-2" style="display: none !important;"> Tamaños </div>
-                    </div>
-
-                    <!-- Mas de 5 alfombras -->
+                    <!-- 5 o mas alfombras -->
                     <div class="d-flex pb-4">
                         <div id="cantOtra" class="mx-auto pt-4" style="display: none !important;">
                             <div class="d-flex">
-                                <div class="mx-auto pb-2">
-                                    Cuantas alfombras?: <input type=text id="cantServices" name="cantServices" value="" onchange="agregarCampos()" placeholder="ej. 8" style="width: 60px;" autocomplete="off"> alfombras (max. 10) (Mts.<sup>2</sup>)
+                                <div class="mx-auto pb-2" data-toggle="tooltip" data-placement="top" title="Para mas de 10 alfombras, favor de mandar un correo a: figueroasclean@outlook.com">                
+                                    Cuantas alfombras?: <input type=text id="cantServices" name="cantServices" value="" onchange="agregarCampos()" placeholder="ej. 8" style="width: 60px;" autocomplete="off"> alfombras (max. 10) (Mts.)
                                 </div>
                             </div>
                             <div class="text-center text py-2" style="display: none !important;"> Tamaño </div>    
@@ -315,6 +415,206 @@
                         </div>                            
                     </div>
                 </form>
+
+                <!-- Lavado de sillones-->
+                <form class="col-12" id="Lavado_de_sillones" style="display: none !important;">
+                    <div class="text-center text py-2"> Cantidad </div>
+                    <select class="form-control" id="sillones-cant-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="pieza1">1 pieza</option>
+                        <option value="piezas2">2 piezas</option>
+                        <option value="piezas3">3 piezas</option>
+                        <option value="piezaOtra">Multiples piezas (mas de 3)</option>
+                    </select>
+
+                    <!-- 1 pieza -->
+                    <div class="col-12" id="pieza1" style="display: none !important;">
+                        <div class="text-center text py-2"> Tipo </div>
+                        <select class="form-control" id="pieza1-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="pieza1_1">1 pieza (1 asiento) </option>
+                            <option value="pieza1_2">1 pieza (2 asientos) </option>
+                            <option value="pieza1_3">1 pieza (3 asientos) </option>
+                            <option value="pieza1Otro">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="pieza1Otro" style="display: none !important;" class="pt-4 mx-auto">
+                                De cuantos asientos es el sillon?: <input autocomplete="off" style="width: 60px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 piezas -->
+                    <div class="col-12" id="piezas2" style="display: none !important;">
+                        <div class="text-center text py-2"> Tipo </div>
+                        <select class="form-control" id="piezas2-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="piezas2a">2 piezas (1 asiento y 2 asientos) </option>
+                            <option value="piezas2b">2 piezas (2 asientos y 3 asientos) </option>
+                            <option value="piezas2b">2 piezas (En L) </option>
+                            <option value="piezas2_1">2 piezas (1 asiento) </option>
+                            <option value="piezas2_2">2 piezas (2 asientos) </option>
+                            <option value="piezas2_3">2 piezas (3 asientos) </option>
+                            <option value="pieza2Otro">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="pieza2Otro" style="display: none !important;" class="pt-4 mx-auto">
+                                De cuantos asientos es el sillon 1?: <input autocomplete="off" style="width: 60px"  class="my-2"> <br>
+                                De cuantos asientos es el sillon 2?: <input autocomplete="off" style="width: 60px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 piezas -->
+                    <div class="col-12" id="piezas3" style="display: none !important;">
+                        <div class="text-center text py-2"> Tipo </div>
+                        <select class="form-control" id="piezas3-type-selector" autocomplete="off" style="min-width: 100%;" >
+                            <option value="piezas3a">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
+                            <option value="piezas3b">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
+                            <option value="piezas3_1">3 piezas (1 asiento) </option>
+                            <option value="piezas3_2">3 piezas (2 asientos) </option>
+                            <option value="piezas3_3">3 piezas (3 asientos) </option>
+                            
+                            <option value="pieza3Otro">Otro</option>
+                        </select>
+
+                        <div class="d-flex">
+                            <div id="pieza3Otro" style="display: none !important;" class="pt-4 mx-auto">
+                                De cuantos asientos es el sillon 1?: <input autocomplete="off" style="width: 60px" class="my-2"> <br>
+                                De cuantos asientos es el sillon 2?: <input autocomplete="off" style="width: 60px" class="my-2"> <br>
+                                De cuantos asientos es el sillon 3?: <input autocomplete="off" style="width: 60px" class="my-2">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            
+                <!-- Lavado de sillas-->
+                <form class="col-12" id="Lavado_de_sillas" style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="sillas-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="asiento">Silla con asiento de tela</option>
+                        <option value="respaldo">Silla con respaldo de tela</option>
+                        <option value="ambos">Silla con asiento y respaldo de tela</option>
+                    </select>
+
+                    <!-- asientos de tela -->
+                    <div class="col-12" id="asiento" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="asientoOtro1" class="pt-4 mx-auto">
+                                Cuantas sillas serian?: <input autocomplete="off" style="width: 60px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- respaldo de tela -->
+                    <div class="col-12" id="respaldo" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="respaldoOtro1" class="pt-4 mx-auto">
+                                Cuantas sillas serian?: <input autocomplete="off" style="width: 60px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ambos de tela -->
+                    <div class="col-12" id="ambos" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="ambosOtro1" class="pt-4 mx-auto">
+                                Cuantas sillas serian?: <input autocomplete="off" style="width: 60px">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Lavado de colchones -->
+                <form class="col-12" id="Lavado_de_colchones" style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="alfombra-cant-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="individual">Individual</option>
+                        <option value="matrimonial">Matrimonial</option>
+                        <option value="queen">Queen</option>
+                        <option value="king">King</option>
+                        <option value="california_king">California King</option>
+                        <option value="sofa_cama">Sofa cama</option>
+                    </select>
+
+                    <!-- Individual -->
+                    <div class="col-12" id="individual" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="individualOtro1" class="pt-4 mx-auto">
+                                Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- Matrimonial -->
+                   <div class="col-12" id="matrimonial" style="display: none !important;">
+                    <div class="text-center text py-2"> Cantidad </div>
+                    <div class="d-flex">
+                        <div id="matrimonialOtro1" class="pt-4 mx-auto">
+                            Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                </form>
+
+                <!-- Lavado de interior de autos -->
+                <form class="col-12" id="Lavado_de_int_de_autos">
+
+                </form>
+                <!-- Lavado de pisos -->
+                <form class="col-12" id="Lavado_de_pisos">
+
+                </form>
+                <!-- Pulido de pisos --> 
+                <form class="col-12" id="Pulido_de_pisos">
+
+                </form>
+                <!-- Sanitizacion -->
+                <form class="col-12" id="Sanitizacion">
+
+                </form>
+                <!-- Limpiea de vidrios -->
+                <form class="col-12" id="Limpieza_de_vidrios">
+
+                </form>
+                <!-- Limpieza profunda -->
+                <form class="col-12" id="Limpieza_profunda">
+
+                </form>
+                <!-- Limpieza general -->
+                <form class="col-12" id="Limpieza_general">
+
+                </form>
+                <!-- Limpiea de ductos -->
+                <form class="col-12" id="Limpieza_de_ductos">
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,7 +629,13 @@
                     <label for="exampleFormControlTextarea1" class="text">Algun dato adicional que falto?, o algun dato importante que se requiera para realizar le el servicio? (+Covid-19, Germafobico/a, etc.) </label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>  
-                <button type="submit" class="btn btn-primary mt-4" id="btnEnviarCotizacion">Enviar</button>
+                <!--
+                <form>
+                    <button type="submit" class="btn btn-primary mt-4" id="btnEnviarCotizacion" src="../mail.php">
+                        Enviar
+                    </button>
+                </form>
+                -->
             </section>
         </main>
 
@@ -347,7 +653,7 @@
                 <div class="col-md-4">
                     <p class="text text-center">Celular: +52 - 656 - 603 - 6947</p>
                     <p class="text text-center">Oficina: 693 - 2537</p>
-                    <p class="text text-center">figueroasclean@outlook.com</p>
+                    <a class="text text-center" href="mailto:figueroasclean@outlook.com?subject=Quiero mas informacion&body=">figueroasclean@outlook.com</a>
                 </div>
             </div>
         </footer>
@@ -362,6 +668,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!--Ajax,.js
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+        <!--SMTP (Email)-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <!--Personalized.js -->
         <script src="../js/cot.js"></script>
         <script src="../js/calender.js"></script>

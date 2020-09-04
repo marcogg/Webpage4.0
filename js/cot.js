@@ -41,24 +41,174 @@ function cambioHorarioDeServicio(){
 
 window.addEventListener('change', cambioHorarioDeServicio);
 
+
+
+
 //Servicio
 $("#service-selector").on("change", function() {
-    $("#" + $(this).val()).show();
+    var e = document.getElementById("service-selector");
+    var cant = e.options[e.selectedIndex].value;
+    if(cant == "Lavado_de_alfombra"){
+        $("#Lavado_de_alfombra").show();
+    } else {
+        $("#Lavado_de_alfombra").hide();
+    }
+
+    if(cant == "Lavado_de_sillones"){
+        $("#Lavado_de_sillones").show();
+    } else {
+        $("#Lavado_de_sillones").hide();
+    }
+
+    if(cant == "Lavado_de_sillas"){
+        $("#Lavado_de_sillas").show();
+    } else {
+        $("#Lavado_de_sillas").hide();
+    }
+
+    if(cant == "Lavado_de_colchones"){
+        $("#Lavado_de_colchones").show();
+    } else {
+        $("#Lavado_de_colchones").hide();
+    }
+
+    if(cant == "Lavado_de_int_de_autos"){
+        $("#Lavado_de_int_de_autos").show();
+    } else {
+        $("#Lavado_de_int_de_autos").hide();
+    }
+
+    if(cant == "Lavado_de_pisos"){
+        $("#Lavado_de_pisos").show();
+    } else {
+        $("#Lavado_de_pisos").hide();
+    }
+
+    if(cant == "Pulido_de_pisos"){
+        $("#Pulido_de_pisos").show();
+    } else{
+        $("Pulido_de_pisos").hide();
+    }
+
+    if(cant == "Sanitizacion"){
+        $("#Sanitizacion").show();
+    } else {
+        $("#Sanitizacion").hide();
+    }
+
+    if(cant == "Limpieza_de_vidrios"){
+        $("#Limpieza_de_vidrios").show();
+    } else {
+        $("#Limpieza_de_vidrios").hide();
+    }
+
+    if(cant == "Limpieza_profunda"){
+        $("#Limpieza_profunda").show();
+    } else {
+        $("#Limpieza_profunda").hide();
+    }
+
+    if(cant == "Limpieza_general"){
+        $("#Limpieza_general").show();
+    } else {
+        $("#Limpieza_general").hide();
+    }
+
+    if(cant == "Limpieza_de_ductos"){
+        $("#Limpieza_de_ductos").show();
+    } else {
+        $("#Limpieza_de_ductos").hide();
+    }
 })
 
 function serviceSelector(){
     $("#service-selector").on("change", function() {
-        $("#" + $(this).val()).show();
+        var e = document.getElementById("service-selector");
+        var cant = e.options[e.selectedIndex].value;
+        if(cant == "Lavado_de_alfombra"){
+            $("#Lavado_de_alfombra").show();
+        } else {
+            $("#Lavado_de_alfombra").hide();
+        }
+    
+        if(cant == "Lavado_de_sillones"){
+            $("#Lavado_de_sillones").show();
+        } else {
+            $("#Lavado_de_sillones").hide();
+        }
+    
+        if(cant == "Lavado_de_sillas"){
+            $("#Lavado_de_sillas").show();
+        } else {
+            $("#Lavado_de_sillas").hide();
+        }
+    
+        if(cant == "Lavado_de_colchones"){
+            $("#Lavado_de_colchones").show();
+        } else {
+            $("#Lavado_de_colchones").hide();
+        }
+    
+        if(cant == "Lavado_de_int_de_autos"){
+            $("#Lavado_de_int_de_autos").show();
+        } else {
+            $("#Lavado_de_int_de_autos").hide();
+        }
+    
+        if(cant == "Lavado_de_pisos"){
+            $("#Lavado_de_pisos").show();
+        } else {
+            $("#Lavado_de_pisos").hide();
+        }
+    
+        if(cant == "Pulido_de_pisos"){
+            $("#Pulido_de_pisos").show();
+        } else{
+            $("Pulido_de_pisos").hide();
+        }
+    
+        if(cant == "Sanitizacion"){
+            $("#Sanitizacion").show();
+        } else {
+            $("#Sanitizacion").hide();
+        }
+    
+        if(cant == "Limpieza_de_vidrios"){
+            $("#Limpieza_de_vidrios").show();
+        } else {
+            $("#Limpieza_de_vidrios").hide();
+        }
+    
+        if(cant == "Limpieza_profunda"){
+            $("#Limpieza_profunda").show();
+        } else {
+            $("#Limpieza_profunda").hide();
+        }
+    
+        if(cant == "Limpieza_general"){
+            $("#Limpieza_general").show();
+        } else {
+            $("#Limpieza_general").hide();
+        }
+    
+        if(cant == "Limpieza_de_ductos"){
+            $("#Limpieza_de_ductos").show();
+        } else {
+            $("#Limpieza_de_ductos").hide();
+        }
     })
 }
 
 window.addEventListener('change', serviceSelector);
 
+
+
+
 //Lavado de alfombra cant
 $("#alfombra-cant-selector").on("change", function(){
     var e = document.getElementById("alfombra-cant-selector");
     var tipoDeServicio = e.options[e.selectedIndex].value;
-    console.log(tipoDeServicio);
+    
     if(tipoDeServicio == "cantOtra"){
         $("#" + $(this).val()).show();
     } else{
@@ -70,35 +220,48 @@ function alfombraCantSelect(){
     $("#alfombra-cant-selector").on("change", function(){
         var e = document.getElementById("alfombra-cant-selector");
         var tipoDeServicio = e.options[e.selectedIndex].value;
+        console.log(tipoDeServicio);
         if(tipoDeServicio == "alfombra1"){
             $("#" + $(this).val()).show();
-        } else if(tipoDeServicio != "alfombra1"){
+        } else{
             $("#alfombra1").hide();
-        } else if(tipoDeServicio == "alfombra2"){
+        } 
+        
+        if(tipoDeServicio == "alfombras2"){
             $("#" + $(this).val()).show();
-        } else if(tipoDeServicio != "alfombra2"){
+        } else{
             $("#alfombras2").hide();
-        } else if(tipoDeServicio == "alfombra3"){
+        }
+        
+        if(tipoDeServicio == "alfombras3"){
             $("#" + $(this).val()).show();
-        } else if(tipoDeServicio != "alfombra3"){
+        } else {
             $("#alfombras3").hide();
-        } else if(tipoDeServicio == "alfombra4"){
+        }
+        
+        if(tipoDeServicio == "alfombras4"){
             $("#" + $(this).val()).show();
-        } else if(tipoDeServicio != "alfombra4"){
+        } else {
             $("#alfombras4").hide();
-        } else if(tipoDeServicio == "alfombra5"){
+        } 
+        
+        if(tipoDeServicio == "alfombras5"){
             $("#" + $(this).val()).show();
-        } else if (tipoDeServicio != "alfombra5"){
+        } else{
             $("#alfombras5").hide();
-        } else if (tipoDeServicio == "cantOtra"){
+        }
+        
+        if (tipoDeServicio == "cantOtra"){
             $("#" + $(this).val()).show();
-        } else if (tipoDeServicio != "cantOtra"){
+        } else{
             $("#cantOtra").hide();
         }
     })
 }
 
 window.addEventListener('change', alfombraCantSelect);
+
+
 
 // Lavado alfombra agregar campos en base al campo de #cantOtra
 function agregarCampos(){
@@ -110,10 +273,10 @@ function agregarCampos(){
         number = 10;
         document.getElementById("cantServices").text = "10";
         document.getElementById("cantServices").value = "10";
-    } else if (number < 6){
-        number = 6;
-        document.getElementById("cantServices").text = "6";
-        document.getElementById("cantServices").value = "6";
+    } else if (number < 5){
+        number = 5;
+        document.getElementById("cantServices").text = "5";
+        document.getElementById("cantServices").value = "5";
     }
 
     while (container.hasChildNodes()) {
@@ -133,6 +296,9 @@ function agregarCampos(){
     }
 }
 
+
+
+
 //Lavado de alfombra - alfombra1 - cantOtra
 $("#alfombra1-type-selector").on("change", function() {
     var e = document.getElementById("alfombra1-type-selector");
@@ -144,7 +310,7 @@ $("#alfombra1-type-selector").on("change", function() {
     }
 })
 
-function alfombraCantOtra(){
+function alfombra1CantOtra(){
     $("#alfombra1-type-selector").on("change", function() {
         var e = document.getElementById("alfombra1-type-selector");
         var cant = e.options[e.selectedIndex].value;
@@ -156,4 +322,466 @@ function alfombraCantOtra(){
     })
 }
 
-window.addEventListener('change', alfombraCantOtra);
+window.addEventListener('change', alfombra1CantOtra);
+
+
+
+
+//Lavado de alfombra - alfombra2 - cantOtra
+$("#alfombra2-1-type-selector").on("change", function() {
+    var e1 = document.getElementById("alfombra2-1-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    console.log(cant1);
+    if(cant1 == "Otro2"){
+        $("#Otro2").show();
+    } else {
+        $("#Otro2").hide();
+    }
+})
+
+$("#alfombra2-2-type-selector").on("change", function() {
+    var e2 = document.getElementById("alfombra2-2-type-selector");
+    var cant2 = e2.options[e2.selectedIndex].value;
+    if(cant2 == "Otro2-2"){
+        $("#Otro2-2").show();
+    } else {
+        $("#Otro2-2").hide();
+    }
+})
+
+
+function alfombra2_1CantOtra(){
+    $("#alfombra2-1-type-selector").on("change", function() {
+        var e1 = document.getElementById("alfombra2-1-type-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        console.log(cant1);
+        if(cant1 == "Otro2"){
+            $("#Otro2").show();
+        } else {
+            $("#Otro2").hide();
+        }
+    })
+}
+
+function alfombra2_2CantOtra(){
+    $("#alfombra2-2-type-selector").on("change", function() {
+        var e2 = document.getElementById("alfombra2-2-type-selector");
+        var cant2 = e2.options[e2.selectedIndex].value;
+        if(cant2 == "Otro2-2"){
+            $("#Otro2-2").show();
+        } else {
+            $("#Otro2-2").hide();
+        }
+    })
+}
+
+window.addEventListener('change', alfombra2_1CantOtra);
+window.addEventListener('change', alfombra2_2CantOtra);
+
+
+
+
+//Lavado de alfombra - alfombra3 - cantOtra
+$("#alfombra3-1-type-selector").on("change", function() {
+    var e1 = document.getElementById("alfombra3-1-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    console.log(cant1);
+    if(cant1 == "Otro3"){
+        $("#Otro3").show();
+    } else {
+        $("#Otro3").hide();
+    }
+})
+
+$("#alfombra3-2-type-selector").on("change", function() {
+    var e2 = document.getElementById("alfombra3-2-type-selector");
+    var cant2 = e2.options[e2.selectedIndex].value;
+    if(cant2 == "Otro3-2"){
+        $("#Otro3-2").show();
+    } else {
+        $("#Otro3-2").hide();
+    }
+})
+
+$("#alfombra3-3-type-selector").on("change", function() {
+    var e3 = document.getElementById("alfombra3-3-type-selector");
+    var cant3 = e3.options[e3.selectedIndex].value;
+    if(cant3 == "Otro3-3"){
+        $("#Otro3-3").show();
+    } else {
+        $("#Otro3-3").hide();
+    }
+})
+
+function alfombra3_1CantOtra(){
+    $("#alfombra3-1-type-selector").on("change", function() {
+        var e1 = document.getElementById("alfombra3-1-type-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        console.log(cant1);
+        if(cant1 == "Otro3"){
+            $("#Otro3").show();
+        } else {
+            $("#Otro3").hide();
+        }
+    })
+}
+
+function alfombra3_2CantOtra(){
+    $("#alfombra3-2-type-selector").on("change", function() {
+        var e2 = document.getElementById("alfombra3-2-type-selector");
+        var cant2 = e2.options[e2.selectedIndex].value;
+        if(cant2 == "Otro3-2"){
+            $("#Otro3-2").show();
+        } else {
+            $("#Otro3-2").hide();
+        }
+    })
+}
+
+function alfombra3_3CantOtra(){
+    $("#alfombra3-3-type-selector").on("change", function() {
+        var e3 = document.getElementById("alfombra3-3-type-selector");
+        var cant3 = e3.options[e3.selectedIndex].value;
+        if(cant3 == "Otro3-3"){
+            $("#Otro3-3").show();
+        } else {
+            $("#Otro3-3").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', alfombra2_1CantOtra);
+window.addEventListener('change', alfombra2_2CantOtra);
+window.addEventListener('change', alfombra3_3CantOtra);
+
+
+
+
+//Lavado de alfombra - alfombra4 - cantOtra
+$("#alfombra4-1-type-selector").on("change", function() {
+    var e1 = document.getElementById("alfombra4-1-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    console.log(cant1);
+    if(cant1 == "Otro4"){
+        $("#Otro4").show();
+    } else {
+        $("#Otro4").hide();
+    }
+})
+
+$("#alfombra4-2-type-selector").on("change", function() {
+    var e2 = document.getElementById("alfombra4-2-type-selector");
+    var cant2 = e2.options[e2.selectedIndex].value;
+    if(cant2 == "Otro4-2"){
+        $("#Otro4-2").show();
+    } else {
+        $("#Otro4-2").hide();
+    }
+})
+
+$("#alfombra4-3-type-selector").on("change", function() {
+    var e3 = document.getElementById("alfombra4-3-type-selector");
+    var cant3 = e3.options[e3.selectedIndex].value;
+    if(cant3 == "Otro4-3"){
+        $("#Otro4-3").show();
+    } else {
+        $("#Otro4-3").hide();
+    }
+})
+
+$("#alfombra4-4-type-selector").on("change", function() {
+    var e4 = document.getElementById("alfombra4-4-type-selector");
+    var cant4 = e4.options[e4.selectedIndex].value;
+    if(cant4 == "Otro4-4"){
+        $("#Otro4-4").show();
+    } else {
+        $("#Otro4-4").hide();
+    }
+})
+
+function alfombra4_1CantOtra(){
+    $("#alfombra4-1-type-selector").on("change", function() {
+        var e1 = document.getElementById("alfombra4-1-type-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        console.log(cant1);
+        if(cant1 == "Otro4"){
+            $("#Otro4").show();
+        } else {
+            $("#Otro4").hide();
+        }
+    })
+}
+
+function alfombra4_2CantOtra(){
+    $("#alfombra4-2-type-selector").on("change", function() {
+        var e2 = document.getElementById("alfombra4-2-type-selector");
+        var cant2 = e2.options[e2.selectedIndex].value;
+        if(cant2 == "Otro4-2"){
+            $("#Otro4-2").show();
+        } else {
+            $("#Otro4-2").hide();
+        }
+    })
+}
+
+function alfombra4_3CantOtra(){
+    $("#alfombra4-3-type-selector").on("change", function() {
+        var e3 = document.getElementById("alfombra4-3-type-selector");
+        var cant3 = e3.options[e3.selectedIndex].value;
+        if(cant3 == "Otro4-3"){
+            $("#Otro4-3").show();
+        } else {
+            $("#Otro4-3").hide();
+        }
+    })  
+}
+
+function alfombra4_4CantOtra(){
+    $("#alfombra4-4-type-selector").on("change", function() {
+        var e4 = document.getElementById("alfombra4-4-type-selector");
+        var cant4 = e4.options[e4.selectedIndex].value;
+        if(cant4 == "Otro4-4"){
+            $("#Otro4-4").show();
+        } else {
+            $("#Otro4-4").hide();
+        }
+    })
+}
+
+window.addEventListener('change', alfombra4_1CantOtra);
+window.addEventListener('change', alfombra4_2CantOtra);
+window.addEventListener('change', alfombra4_3CantOtra);
+window.addEventListener('change', alfombra4_4CantOtra);
+
+/* Lavado de sillones - 1 pieza */
+$("#sillones-cant-selector").on("change", function() {
+    var e1 = document.getElementById("sillones-cant-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pieza1"){
+        $("#pieza1").show();
+    } else {
+        $("#pieza1").hide();
+    }
+})
+
+
+function sillones_cantSelector(){
+    $("#sillones-cant-selector").on("change", function() {
+        var e1 = document.getElementById("sillones-cant-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "pieza1"){
+            $("#pieza1").show();
+        } else {
+            $("#pieza1").hide();
+        }
+    })
+}
+
+window.addEventListener('change', sillones_cantSelector);
+
+
+/* Lavado de sillones - 1 pieza - Otro */
+$("#pieza1-type-selector").on("change", function() {
+    var e1 = document.getElementById("pieza1-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pieza1Otro"){
+        $("#pieza1Otro").show();
+    } else {
+        $("#pieza1Otro").hide();
+    }
+})
+
+function sillonesPieza1Otro_cantSelector(){
+    $("#pieza1-type-selector").on("change", function() {
+        var e1 = document.getElementById("pieza1-type-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "pieza1Otro"){
+            $("#pieza1Otro").show();
+        } else {
+            $("#pieza1Otro").hide();
+        }
+    })
+}
+
+window.addEventListener('change', sillonesPieza1Otro_cantSelector);
+
+/* Lavado de sillones - 2 piezas */
+$("#sillones-cant-selector").on("change", function() {
+    var e1 = document.getElementById("sillones-cant-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "piezas2"){
+        $("#piezas2").show();
+    } else {
+        $("#piezas2").hide();
+    }
+})
+
+
+function sillones2_cantSelector(){
+    $("#sillones-cant-selector").on("change", function() {
+        var e1 = document.getElementById("sillones-cant-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "piezas2"){
+            $("#piezas2").show();
+        } else {
+            $("#piezas2").hide();
+        }
+    })
+}
+
+window.addEventListener('change', sillones2_cantSelector);
+
+
+/* Lavado de sillones - 2 piezas - Otro */
+$("#piezas2-type-selector").on("change", function() {
+    var e1 = document.getElementById("piezas2-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pieza2Otro"){
+        $("#pieza2Otro").show();
+    } else {
+        $("#pieza2Otro").hide();
+    }
+})
+
+function sillonesPieza2Otro_cantSelector(){
+    $("#piezas2-type-selector").on("change", function() {
+        var e1 = document.getElementById("piezas2-type-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "pieza2Otro"){
+            $("#pieza2Otro").show();
+        } else {
+            $("#pieza2Otro").hide();
+        }
+    })
+}
+
+window.addEventListener('change', sillonesPieza2Otro_cantSelector);
+
+
+/* Lavado de sillones - 3 piezas */
+$("#sillones-cant-selector").on("change", function() {
+    var e1 = document.getElementById("sillones-cant-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "piezas3"){
+        $("#piezas3").show();
+    } else {
+        $("#piezas3").hide();
+    }
+})
+
+
+function sillones3_cantSelector(){
+    $("#sillones-cant-selector").on("change", function() {
+        var e1 = document.getElementById("sillones-cant-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "piezas3"){
+            $("#piezas3").show();
+        } else {
+            $("#piezas3").hide();
+        }
+    })
+}
+
+window.addEventListener('change', sillones3_cantSelector);
+
+/* Lavado de sillones - 3 piezas - Otro */
+$("#piezas3-type-selector").on("change", function() {
+    var e1 = document.getElementById("piezas3-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pieza3Otro"){
+        $("#pieza3Otro").show();
+    } else {
+        $("#pieza3Otro").hide();
+    }
+})
+
+function sillonesPieza3Otro_cantSelector(){
+    var e1 = document.getElementById("piezas3-type-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pieza3Otro"){
+        $("#pieza3Otro").show();
+    } else {
+        $("#pieza3Otro").hide();
+    }
+}
+
+window.addEventListener('change', sillonesPieza3Otro_cantSelector);
+
+/* Lavado de sillas - asiento - Otro */
+$("#sillas-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("sillas-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "asiento"){
+        $("#asiento").show();
+    } else {
+        $("#asiento").hide();
+    }
+})
+
+function sillasAsientoOtro_cantSelector(){
+    $("#sillas-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("sillas-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "asiento"){
+            $("#asiento").show();
+        } else {
+            $("#asiento").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', sillasAsientoOtro_cantSelector);
+
+
+/* Lavado de sillas - respaldo - Otro */
+$("#sillas-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("sillas-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "respaldo"){
+        $("#respaldo").show();
+    } else {
+        $("#respaldo").hide();
+    }
+})
+
+function sillasRespaldoOtro_cantSelector(){
+    $("#sillas-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("sillas-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "respaldo"){
+            $("#respaldo").show();
+        } else {
+            $("#respaldo").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', sillasRespaldoOtro_cantSelector);
+
+/* Lavado de sillas - ambos - Otro */
+$("#sillas-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("sillas-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "ambos"){
+        $("#ambos").show();
+    } else {
+        $("#ambos").hide();
+    }
+})
+
+function sillasRespaldoOtro_cantSelector(){
+    $("#sillas-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("sillas-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "ambos"){
+            $("#ambos").show();
+        } else {
+            $("#ambos").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', sillasRespaldoOtro_cantSelector);
