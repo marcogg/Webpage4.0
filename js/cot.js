@@ -785,3 +785,684 @@ function sillasRespaldoOtro_cantSelector(){
 }
 
 window.addEventListener('change', sillasRespaldoOtro_cantSelector);
+
+/* Lavado de colchones - Individual */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "individual"){
+        $("#individual").show();
+    } else {
+        $("#individual").hide();
+    }
+})
+
+function colchonesIndividual_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "individual"){
+            $("#individual").show();
+        } else {
+            $("#individual").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', colchonesIndividual_cantSelector);
+
+
+/* Lavado de colchones - Matrimonial */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "matrimonial"){
+        $("#matrimonial").show();
+    } else {
+        $("#matrimonial").hide();
+    }
+})
+
+function colchonesMatrimonial_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "matrimonial"){
+            $("#matrimonial").show();
+        } else {
+            $("#matrimonial").hide();
+        }
+    })
+}
+
+window.addEventListener('change', colchonesMatrimonial_cantSelector);
+
+
+/* Lavado de colchones - Queen */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "queen"){
+        $("#queen").show();
+    } else {
+        $("#queen").hide();
+    }
+})
+
+function colchonesQueen_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "queen"){
+            $("#queen").show();
+        } else {
+            $("#queen").hide();
+        }
+    })
+}
+
+window.addEventListener('change', colchonesQueen_cantSelector);
+
+
+/* Lavado de colchones - King */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "king"){
+        $("#king").show();
+    } else {
+        $("#king").hide();
+    }
+})
+
+function colchonesKing_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "king"){
+            $("#king").show();
+        } else {
+            $("#king").hide();
+        }
+    })
+}
+
+window.addEventListener('change', colchonesKing_cantSelector);
+
+
+/* Lavado de colchones - CKing */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "cking"){
+        $("#cking").show();
+    } else {
+        $("#cking").hide();
+    }
+})
+
+function colchonesCKing_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "cking"){
+            $("#cking").show();
+        } else {
+            $("#cking").hide();
+        }
+    })
+}
+
+window.addEventListener('change', colchonesCKing_cantSelector);
+
+/* Lavado de colchones - SCama */
+$("#colchon-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("colchon-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "scama"){
+        $("#scama").show();
+    } else {
+        $("#scama").hide();
+    }
+})
+
+function colchonesSCama_cantSelector(){
+    $("#colchon-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("colchon-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "scama"){
+            $("#scama").show();
+        } else {
+            $("#scama").hide();
+        }
+    })
+}
+
+window.addEventListener('change', colchonesSCama_cantSelector);
+
+/* Lavado de auto - Extra chico */
+$("#auto-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("auto-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "echico"){
+        $("#echico").show();
+    } else {
+        $("#echico").hide();
+    }
+})
+
+function autoEChico_cantSelector(){
+    $("#auto-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("auto-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "echico"){
+            $("#echico").show();
+        } else {
+            $("#echico").hide();
+        }
+    })
+}
+
+window.addEventListener('change', autoEChico_cantSelector);
+
+/* Lavado de auto - Chico */
+$("#auto-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("auto-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "chico"){
+        $("#chico").show();
+    } else {
+        $("#chico").hide();
+    }
+})
+
+function autoChico_cantSelector(){
+    $("#auto-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("auto-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "chico"){
+            $("#chico").show();
+        } else {
+            $("#chico").hide();
+        }
+    })
+}
+
+window.addEventListener('change', autoChico_cantSelector);
+
+/* Lavado de auto - Regular */
+$("#auto-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("auto-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "regular"){
+        $("#regular").show();
+    } else {
+        $("#regular").hide();
+    }
+})
+
+function autoRegular_cantSelector(){
+    $("#auto-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("auto-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "regular"){
+            $("#regular").show();
+        } else {
+            $("#regular").hide();
+        }
+    })
+}
+
+window.addEventListener('change', autoRegular_cantSelector);
+
+/* Lavado de auto - Grande */
+$("#auto-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("auto-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "grande"){
+        $("#grande").show();
+    } else {
+        $("#grande").hide();
+    }
+})
+
+function autoGrande_cantSelector(){
+    $("#auto-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("auto-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "grande"){
+            $("#grande").show();
+        } else {
+            $("#grande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', autoGrande_cantSelector);
+
+/* Lavado de auto - Extra grande */
+$("#auto-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("auto-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "egrande"){
+        $("#egrande").show();
+    } else {
+        $("#egrande").hide();
+    }
+})
+
+function autoEGrande_cantSelector(){
+    $("#auto-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("auto-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "egrande"){
+            $("#egrande").show();
+        } else {
+            $("#egrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', autoEGrande_cantSelector);
+
+/* Lavado de piso - Ceramica */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "ceramica"){
+        $("#ceramica").show();
+    } else {
+        $("#ceramica").hide();
+    }
+})
+
+function pisoCeramica_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "ceramica"){
+            $("#ceramica").show();
+        } else {
+            $("#ceramica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoCeramica_cantSelector);
+
+/* Lavado de piso - Liso */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "liso"){
+        $("#liso").show();
+    } else {
+        $("#liso").hide();
+    }
+})
+
+function pisoLiso_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "liso"){
+            $("#liso").show();
+        } else {
+            $("#liso").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoLiso_cantSelector);
+
+/* Lavado de piso - Rustico */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "rustico"){
+        $("#rustico").show();
+    } else {
+        $("#rustico").hide();
+    }
+})
+
+function pisoRustico_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "rustico"){
+            $("#rustico").show();
+        } else {
+            $("#rustico").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoRustico_cantSelector);
+
+/* Lavado de piso - Cemento */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "cemento"){
+        $("#cemento").show();
+    } else {
+        $("#cemento").hide();
+    }
+})
+
+function pisoCemento_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "cemento"){
+            $("#cemento").show();
+        } else {
+            $("#cemento").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoCemento_cantSelector);
+
+/* Lavado de piso - Pintado */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "pintado"){
+        $("#pintado").show();
+    } else {
+        $("#pintado").hide();
+    }
+})
+
+function pisoPintado_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "pintado"){
+            $("#pintado").show();
+        } else {
+            $("#pintado").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoPintado_cantSelector);
+
+/* Lavado de piso - Laminado */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "laminado"){
+        $("#laminado").show();
+    } else {
+        $("#laminado").hide();
+    }
+})
+
+function pisoLaminado_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "laminado"){
+            $("#laminado").show();
+        } else {
+            $("#laminado").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoLaminado_cantSelector);
+
+
+/* Lavado de piso - Madera */
+$("#pisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("pisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "madera"){
+        $("#madera").show();
+    } else {
+        $("#madera").hide();
+    }
+})
+
+function pisoMadera_cantSelector(){
+    $("#pisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("pisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "madera"){
+            $("#madera").show();
+        } else {
+            $("#madera").hide();
+        }
+    })
+}
+
+window.addEventListener('change', pisoMadera_cantSelector);
+
+/* Lavado de piso - Marmol */
+$("#ppisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("ppisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "marmol"){
+        $("#marmol").show();
+    } else {
+        $("#marmol").hide();
+    }
+})
+
+function ppisoMarmol_cantSelector(){
+    $("#ppisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("ppisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "marmol"){
+            $("#marmol").show();
+        } else {
+            $("#marmol").hide();
+        }
+    })
+}
+
+window.addEventListener('change', ppisoMarmol_cantSelector);
+
+/* Lavado de piso - Mosaico */
+$("#ppisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("ppisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "mosaico"){
+        $("#mosaico").show();
+    } else {
+        $("#mosaico").hide();
+    }
+})
+
+function ppisoMosaico_cantSelector(){
+    $("#ppisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("ppisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "mosaico"){
+            $("#mosaico").show();
+        } else {
+            $("#mosaico").hide();
+        }
+    })
+}
+
+window.addEventListener('change', ppisoMosaico_cantSelector);
+
+/* Lavado de piso - Terrazo */
+$("#ppisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("ppisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "terrazo"){
+        $("#terrazo").show();
+    } else {
+        $("#terrazo").hide();
+    }
+})
+
+function ppisoTerrazo_cantSelector(){
+    $("#ppisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("ppisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "terrazo"){
+            $("#terrazo").show();
+        } else {
+            $("#terrazo").hide();
+        }
+    })
+}
+
+window.addEventListener('change', ppisoTerrazo_cantSelector);
+
+/* Lavado de piso - Granito */
+$("#ppisos-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("ppisos-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "granito"){
+        $("#granito").show();
+    } else {
+        $("#granito").hide();
+    }
+})
+
+function ppisoGranito_cantSelector(){
+    $("#ppisos-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("ppisos-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "granito"){
+            $("#granito").show();
+        } else {
+            $("#granito").hide();
+        }
+    })
+}
+
+window.addEventListener('change', ppisoGranito_cantSelector);
+
+/* Limpieza de vidrios - Chica */
+$("#vidrios-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("vidrios-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "vchica"){
+        $("#vchica").show();
+    } else {
+        $("#vchica").hide();
+    }
+})
+
+function limVidriosChica_cantSelector(){
+    $("#vidrios-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("vidrios-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "vchica"){
+            $("#vchica").show();
+        } else {
+            $("#vchica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', limVidriosChica_cantSelector);
+
+/* Limpieza de vidrios - Mediana */
+$("#vidrios-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("vidrios-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "vmediana"){
+        $("#vmediana").show();
+    } else {
+        $("#vmediana").hide();
+    }
+})
+
+function limVidriosMediana_cantSelector(){
+    $("#vidrios-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("vidrios-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "vmediana"){
+            $("#vmediana").show();
+        } else {
+            $("#vmediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', limVidriosMediana_cantSelector);
+
+/* Limpieza de vidrios - Grande */
+$("#vidrios-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("vidrios-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "vgrande"){
+        $("#vgrande").show();
+    } else {
+        $("#vgrande").hide();
+    }
+})
+
+function limVidriosGrande_cantSelector(){
+    $("#vidrios-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("vidrios-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "vgrande"){
+            $("#vgrande").show();
+        } else {
+            $("#vgrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', limVidriosGrande_cantSelector);
+
+/* Limpieza de vidrios - Extra grande */
+$("#vidrios-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("vidrios-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "vegrande"){
+        $("#vegrande").show();
+    } else {
+        $("#vegrande").hide();
+    }
+})
+
+function limVidriosEGrande_cantSelector(){
+    $("#vidrios-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("vidrios-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "vegrande"){
+            $("#vegrande").show();
+        } else {
+            $("#vegrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', limVidriosEGrande_cantSelector);
+
+/* Limpieza de vidrios - Personalizado */
+$("#vidrios-tipo-selector").on("change", function() {
+    var e1 = document.getElementById("vidrios-tipo-selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "vpersonalizado"){
+        $("#vpersonalizado").show();
+    } else {
+        $("#vpersonalizado").hide();
+    }
+})
+
+function limVidriosPersonalizado_cantSelector(){
+    $("#vidrios-tipo-selector").on("change", function() {
+        var e1 = document.getElementById("vidrios-tipo-selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "vpersonalizado"){
+            $("#vpersonalizado").show();
+        } else {
+            $("#vpersonalizado").hide();
+        }
+    })
+}
+
+window.addEventListener('change', limVidriosPersonalizado_cantSelector);

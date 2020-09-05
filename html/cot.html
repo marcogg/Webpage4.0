@@ -533,14 +533,14 @@
                 <!-- Lavado de colchones -->
                 <form class="col-12" id="Lavado_de_colchones" style="display: none !important;">
                     <div class="text-center text py-2"> Tipo </div>
-                    <select class="form-control" id="alfombra-cant-selector" autocomplete="off">
+                    <select class="form-control" id="colchon-tipo-selector" autocomplete="off">
                         <option value="" selected="selected"></option>
                         <option value="individual">Individual</option>
                         <option value="matrimonial">Matrimonial</option>
                         <option value="queen">Queen</option>
                         <option value="king">King</option>
-                        <option value="california_king">California King</option>
-                        <option value="sofa_cama">Sofa cama</option>
+                        <option value="cking">California King</option>
+                        <option value="scama">Sofa cama</option>
                     </select>
 
                     <!-- Individual -->
@@ -555,13 +555,59 @@
 
                    <!-- Matrimonial -->
                    <div class="col-12" id="matrimonial" style="display: none !important;">
-                    <div class="text-center text py-2"> Cantidad </div>
-                    <div class="d-flex">
-                        <div id="matrimonialOtro1" class="pt-4 mx-auto">
-                            Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="matrimonialOtro1" class="pt-4 mx-auto">
+                                Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Queen -->
+                   <div class="col-12" id="queen" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="queenOtro1" class="pt-4 mx-auto">
+                                Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
                         </div>
                     </div>
 
+                    <!-- King -->
+                    <div class="col-12" id="king" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="kingOtro1" class="pt-4 mx-auto">
+                                Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- California King -->
+                    <div class="col-12" id="cking" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="ckingOtro1" class="pt-4 mx-auto">
+                                Cuantos colchones serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sofa cama -->
+                    <div class="col-12" id="scama" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <select class="form-control" id="scama-cant-selector" autocomplete="off">
+                            <option value="" selected="selected"></option>
+                            <option value="asiento1">1 asiento</option>
+                            <option value="asiento2">2 asientos</option>
+                            <option value="asiento3">3 asientos</option>
+                        </select>
+                        <div class="d-flex">
+                            <div id="scamaOtro1" class="pt-4 mx-auto">
+                                Cuantos sofa camas serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -571,28 +617,312 @@
                 </form>
 
                 <!-- Lavado de interior de autos -->
-                <form class="col-12" id="Lavado_de_int_de_autos">
+                <form class="col-12" id="Lavado_de_int_de_autos"  style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="auto-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="echico">Extra chico</option>
+                        <option value="chico">Chico</option>
+                        <option value="regular">Regular</option>
+                        <option value="grande">Grande</option>
+                        <option value="egrande">Extra grande</option>
+                    </select>
 
+                    <!-- Extra chico -->
+                    <div class="col-12" id="echico" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="echicoOtro1" class="pt-4 mx-auto">
+                                Cuantos auto(s) serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chico -->
+                    <div class="col-12" id="chico" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="chicoOtro1" class="pt-4 mx-auto">
+                                Cuantos auto(s) serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regular -->
+                    <div class="col-12" id="regular" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="regularOtro1" class="pt-4 mx-auto">
+                                Cuantos auto(s) serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grande  -->
+                    <div class="col-12" id="grande" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="grandeOtro1" class="pt-4 mx-auto">
+                                Cuantos auto(s) serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extra grande -->
+                    <div class="col-12" id="egrande" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="egrandeOtro1" class="pt-4 mx-auto">
+                                Cuantos auto(s) serian?: <input autocomplete="off" style="width: 60px" placeholder="ej. 2">
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
                 <!-- Lavado de pisos -->
-                <form class="col-12" id="Lavado_de_pisos">
+                <form class="col-12" id="Lavado_de_pisos" style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="pisos-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="ceramica">Piso de ceramica</option>
+                        <option value="liso">Piso liso</option>
+                        <option value="rustico">Piso rustico</option>
+                        <option value="cemento">Piso de cemento</option>
+                        <option value="pintado">Piso pintado</option>
+                        <option value="laminado">Piso lamindo</option>
+                        <option value="madera">Piso de madera</option>
+                    </select>
 
+                    <!-- Ceramica -->
+                    <div class="col-12" id="ceramica" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="ceramicaOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Liso -->
+                    <div class="col-12" id="liso" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="lisoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rustico -->
+                    <div class="col-12" id="rustico" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="rusticoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cemento -->
+                    <div class="col-12" id="cemento" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="cementoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pintado -->
+                    <div class="col-12" id="pintado" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="pintadoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Laminado -->
+                    <div class="col-12" id="laminado" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="laminadoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Madera -->
+                    <div class="col-12" id="madera" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="maderaOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
                 <!-- Pulido de pisos --> 
-                <form class="col-12" id="Pulido_de_pisos">
+                <form class="col-12" id="Pulido_de_pisos" style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="ppisos-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="marmol">Pulido de mármol</option>
+                        <option value="mosaico">Pulido de mosaico</option>
+                        <option value="terrazo">Pulido de terrazo</option>
+                        <option value="granito">Pulido de granito</option>
+                    </select>
+
+                    <!-- Marmol -->
+                    <div class="col-12" id="marmol" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="marmolOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mosico -->
+                    <div class="col-12" id="mosaico" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="mosaicoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terrazo -->
+                    <div class="col-12" id="terrazo" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="terrazoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Granito -->
+                    <div class="col-12" id="granito" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="granitoOtro1" class="pt-4 mx-auto">
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- 
+                    Sanitizacion 
+                -->
+                <form class="col-12" id="Sanitizacion" style="display: none !important;">
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="sanitizacion-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="casaChica">Casa chica</option>
+                        <option value="casaMediana">Casa mediana</option>
+                        <option value="casaGrande">Casa grande</option>
+                        <option value="casaExtraGrande">Casa extra grande</option>
+                    </select>
+                    <div style="color: yellow !important"> Informacion pendiente - Manual de servicio se requiere para poder generar </div>
+                    <!-- Casa Chica -->
+                    <div class="col-12" id="casaChica" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="casaChicaOtro1" class="pt-4 mx-auto">
+                                
+                                <!--Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)-->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
 
                 </form>
-                <!-- Sanitizacion -->
-                <form class="col-12" id="Sanitizacion">
 
-                </form>
-                <!-- Limpiea de vidrios -->
-                <form class="col-12" id="Limpieza_de_vidrios">
+                <!-- Limpieza de vidrios -->
+                <form class="col-12" id="Limpieza_de_vidrios" style="display: none !important;"> 
+                    <div class="text-center text py-2"> Tipo </div>
+                    <select class="form-control" id="vidrios-tipo-selector" autocomplete="off">
+                        <option value="" selected="selected"></option>
+                        <option value="vchica">Chicas (.1mts - .5mts)</option>
+                        <option value="vmediana">Medianas (.6mts - 1mts)</option>
+                        <option value="vgrande">Grandes (1.1mts - 2mts)</option>
+                        <option value="vegrande">Extra grandes (2.1mts - 4mts)</option>
+                        <option value="vpersonalizado">Personalizado (4.1mts -)</option>
+                    </select>
+                    
+                    
+                    <!-- Ventana chica -->
+                    <div class="col-12" id="vchica" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="vchicaOtro1" class="pt-4 mx-auto">                                
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Ventana mediana -->
+                    <div class="col-12" id="vmediana" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="vmedianaOtro1" class="pt-4 mx-auto">                                
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ventana grande -->
+                    <div class="col-12" id="vgrande" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="vgrandeOtro1" class="pt-4 mx-auto">                                
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ventana extra grande -->
+                    <div class="col-12" id="vegrande" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="vegrandeOtro1" class="pt-4 mx-auto">                                
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ventana personalizado -->
+                    <div class="col-12" id="vpersonalizado" style="display: none !important;">
+                        <div class="text-center text py-2"> Cantidad </div>
+                        <div class="d-flex">
+                            <div id="vpersonalizadoOtro1" class="pt-4 mx-auto">                                
+                                Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                            </div>
+                        </div>
+                    </div>
                 </form>
+
                 <!-- Limpieza profunda -->
-                <form class="col-12" id="Limpieza_profunda">
-
+                <form class="col-12" id="Limpieza_profunda" style="display: none !important;">
+                    <form class="col-12" id="Limpieza_de_vidrios"> 
+                        <div class="text-center text py-2"> Elementos interesados </div>
+                       
+                        <div class="col-12" id="vchica">
+                            <div class="text-center text py-2"> Cantidad </div>
+                            <div class="d-flex">
+                                <div id="vchicaOtro1" class="pt-4 mx-auto">                                
+                                    Cuantos metros serian?: <input autocomplete="off" style="width: 70px" placeholder="ej. 5"> X <input autocomplete="off" style="width: 70px" placeholder="ej. 2.5"> (Mts)
+                                </div>
+                            </div>
+                        </div>
                 </form>
                 <!-- Limpieza general -->
                 <form class="col-12" id="Limpieza_general">
