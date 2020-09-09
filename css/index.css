@@ -238,7 +238,11 @@ main{
     /* end of mision-vision-section */
 
     /* servicios-section */
-
+    #servicios-section-top-servicios-residenciales-t,
+    #servicios-section-top-servicios-comerciales-t,
+    #servicios-section-bottom-t{
+        height: 150px !important;
+    }
     /* end of servicios-section */
 
     /* footer */
@@ -282,60 +286,64 @@ main{
     /* end of nav */
 
     /* video-player-section */
-        #video-player-section{
-            padding-left: 50px;
-        }
+    #video-player-section{
+        padding-left: 50px;
+    }
 
-        .video-player{
-            max-height: 450px;
-            background-color: #000000;
-        }
+    .video-player{
+        max-height: 450px;
+        background-color: #000000;
+    }
 
-        .video-social-media-container{
-            position: relative;
-            right: 0px;
-            
-        }
+    .video-social-media-container{
+        position: relative;
+        right: 0px;
+        
+    }
 
-        .video-player-images{
-            width: auto;
-            height: 50px;
-            max-height: 50px;    
-        }
+    .video-player-images{
+        width: auto;
+        height: 50px;
+        max-height: 50px;    
+    }
     /* end of video-player-section */
 
     /* nosotros-somos-section */
-        #nosotros-somos-section figure{
-            max-width: 100%;
-        }
+    #nosotros-somos-section figure{
+        max-width: 100%;
+    }
 
-        #nosotros-somos-section figure button{
-            max-width: 100%;
-        }
+    #nosotros-somos-section figure button{
+        max-width: 100%;
+    }
 
-        #nosotros-somos-section figure, 
-        #nosotros-somos-section figure button, 
-        #nosotros-somos-section figure button img{
-            width: 100%;
-            height: auto;
-            max-height: 300px;
-        }
+    #nosotros-somos-section figure, 
+    #nosotros-somos-section figure button, 
+    #nosotros-somos-section figure button img{
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
     /* end of nosotros-somos-section */
 
     /* mision-vision-section */
-        .card{
-            width: 100%;
-            margin-bottom: 26px;
-        }
-        #servicios-residenciales-btn,
-        #servicios-comerciales-btn,
-        #servicios-industriales-btn{
-            float: right;
-        }
+    .card{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    #servicios-residenciales-btn,
+    #servicios-comerciales-btn,
+    #servicios-industriales-btn{
+        float: right;
+    }
     /* end of mision-vision-section */
 
     /* servicios-section */
-
+    #servicios-section-top-servicios-residenciales-t,
+    #servicios-section-top-servicios-comerciales-t,
+    #servicios-section-bottom-t{
+        height: 130px !important;
+    }
     /* end of servicios-section */
 
     /* footer */
@@ -438,19 +446,23 @@ main{
     /* end of nosotros-somos-section */
 
     /* mision-vision-section */
-        .card{
-            width: 100%;
-            margin-bottom: 26px;
-        }
-        #servicios-residenciales-btn,
-        #servicios-comerciales-btn,
-        #servicios-industriales-btn{
-            float: right;
-        }
+    .card{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    #servicios-residenciales-btn,
+    #servicios-comerciales-btn,
+    #servicios-industriales-btn{
+        float: right;
+    }
     /* end of mision-vision-section */
 
     /* servicios-section */
-
+    #servicios-section-top-servicios-residenciales-t,
+    #servicios-section-top-servicios-comerciales-t,
+    #servicios-section-bottom-t{
+        height: 130px !important;
+    }
 
     /* end of servicios-section */
 
@@ -577,9 +589,6 @@ main{
     .vision{
         padding-left: 30px !important;
     }
-
-
-
     /* end of mision-vision-section */
 
     /* servicios-section */
@@ -608,6 +617,12 @@ main{
     #servicios-comerciales-btn,
     #servicios-industriales-btn{
         float: right;
+    }
+
+    #servicios-section-top-servicios-residenciales-t,
+    #servicios-section-top-servicios-comerciales-t,
+    #servicios-section-bottom-t{
+        height: 170px !important;
     }
     /* end of servicios-section */
 
@@ -767,6 +782,12 @@ main{
     #servicios-comerciales-btn,
     #servicios-industriales-btn{
         float: right;
+    }
+
+    #servicios-section-top-servicios-residenciales-t,
+    #servicios-section-top-servicios-comerciales-t,
+    #servicios-section-bottom-t{
+        height: 216px !important;
     }
     /* end of servicios-section */
 

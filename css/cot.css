@@ -93,7 +93,7 @@ main{
         background-color: transparent;
     }
 
-    #btnEnviarCotizacion, #btnAgregarServicios, #btnEliminarServicios{
+    #btnEnviar, #btnAgregarServicios, #btnEliminarServicios{
         width: 100%;
         background-color: #ffffff;
         color: rgba(26, 100, 209, 1);
