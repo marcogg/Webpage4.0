@@ -152,85 +152,85 @@ $("#S1service_selector1").on("change", function() {
     }
 })
 
-function fS1service_selector1(){
-    $("#S1service_selector1").on("change", function() {
-        var e = document.getElementById("S1service_selector1");
+function fS5service_selector1(){
+    $("#S5service_selector1").on("change", function() {
+        var e = document.getElementById("S5service_selector1");
         var cant = e.options[e.selectedIndex].value;
-        if(cant == "S1Lavado_de_alfombra"){
-            $("#S1Lavado_de_alfombra").show();
+        if(cant == "S5Lavado_de_alfombra"){
+            $("#S5Lavado_de_alfombra").show();
         } else {
-            $("#S1Lavado_de_alfombra").hide();
+            $("#S5Lavado_de_alfombra").hide();
         }
      
-        if(cant == "S1Lavado_de_sillones"){
-            $("#S1Lavado_de_sillones").show();
+        if(cant == "S5Lavado_de_sillones"){
+            $("#S5Lavado_de_sillones").show();
         } else {
-            $("#S1Lavado_de_sillones").hide();
+            $("#S5Lavado_de_sillones").hide();
         }
     
-        if(cant == "S1Lavado_de_sillas"){
-            $("#S1Lavado_de_sillas").show();
+        if(cant == "S5Lavado_de_sillas"){
+            $("#S5Lavado_de_sillas").show();
         } else {
-            $("#S1Lavado_de_sillas").hide();
+            $("#S5Lavado_de_sillas").hide();
         }
     
-        if(cant == "S1Lavado_de_colchones"){
-            $("#S1Lavado_de_colchones").show();
+        if(cant == "S5Lavado_de_colchones"){
+            $("#S5Lavado_de_colchones").show();
         } else {
-            $("#S1Lavado_de_colchones").hide();
+            $("#S5Lavado_de_colchones").hide();
         }
     
-        if(cant == "S1Lavado_de_int_de_autos"){
-            $("#S1Lavado_de_int_de_autos").show();
+        if(cant == "S5Lavado_de_int_de_autos"){
+            $("#S5Lavado_de_int_de_autos").show();
         } else {
-            $("#S1Lavado_de_int_de_autos").hide();
+            $("#S5Lavado_de_int_de_autos").hide();
         }
     
-        if(cant == "S1Lavado_de_pisos"){
-            $("#S1Lavado_de_pisos").show();
+        if(cant == "S5Lavado_de_pisos"){
+            $("#S5Lavado_de_pisos").show();
         } else {
-            $("#S1Lavado_de_pisos").hide();
+            $("#S5Lavado_de_pisos").hide();
         }
     
-        if(cant == "S1Pulido_de_pisos"){
-            $("#S1Pulido_de_pisos").show();
+        if(cant == "S5Pulido_de_pisos"){
+            $("#S5Pulido_de_pisos").show();
         } else{
-            $("#S1Pulido_de_pisos").hide();
+            $("#S5Pulido_de_pisos").hide();
         }
     
-        if(cant == "S1Sanitizacion"){
-            $("#S1Sanitizacion").show();
+        if(cant == "S5Sanitizacion"){
+            $("#S5Sanitizacion").show();
         } else {
-            $("#S1Sanitizacion").hide();
+            $("#S5Sanitizacion").hide();
         }
     
-        if(cant == "S1Limpieza_de_vidrios"){
-            $("#S1Limpieza_de_vidrios").show();
+        if(cant == "S5Limpieza_de_vidrios"){
+            $("#S5Limpieza_de_vidrios").show();
         } else {
-            $("#S1Limpieza_de_vidrios").hide();
+            $("#S5Limpieza_de_vidrios").hide();
         }
     
-        if(cant == "S1Limpieza_profunda"){
-            $("#S1Limpieza_profunda").show();
+        if(cant == "S5Limpieza_profunda"){
+            $("#S5Limpieza_profunda").show();
         } else {
-            $("#S1Limpieza_profunda").hide();
+            $("#S5Limpieza_profunda").hide();
         }
     
-        if(cant == "S1Limpieza_general"){
-            $("#S1Limpieza_general").show();
+        if(cant == "S5Limpieza_general"){
+            $("#S5Limpieza_general").show();
         } else {
-            $("#S1Limpieza_general").hide();
+            $("#S5Limpieza_general").hide();
         }
     
-        if(cant == "S1Limpieza_de_ductos"){
-            $("#S1Limpieza_de_ductos").show();
+        if(cant == "S5Limpieza_de_ductos"){
+            $("#S5Limpieza_de_ductos").show();
         } else {
-            $("#S1Limpieza_de_ductos").hide();
+            $("#S5Limpieza_de_ductos").hide();
         }
     })
 }
 
-window.addEventListener('change', fS1service_selector1);
+window.addEventListener('change', fS5service_selector1);
 
 //Servicio select2
 $("#S2service_selector1").on("change", function() {
@@ -1236,32 +1236,32 @@ function fS5Lavado_de_alfombra_cant_selector(){
 window.addEventListener('change', fS5Lavado_de_alfombra_cant_selector);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector").on("change", function() {
-    var e = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector").on("change", function() {
+    var e = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector");
     var cant = e.options[e.selectedIndex].value;
-    if(cant == "S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro"){
+    if(cant == "S5Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro").hide();
     }
 })
 
-function S1alfombra1CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector").on("change", function() {
-        var e = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector");
+function S5alfombra1CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector").on("change", function() {
+        var e = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector");
         var cant = e.options[e.selectedIndex].value;
-        if(cant == "S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro"){
+        if(cant == "S5Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra1CantOtra);
+window.addEventListener('change', S5alfombra1CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -1376,32 +1376,32 @@ function S5alfombra1CantOtra(){
 window.addEventListener('change', S5alfombra1CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1").on("change", function() {
-    var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1").on("change", function() {
+    var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1");
     var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1"){
+    if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1").hide();
     }
 })
 
-function S1alfombra2_1CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1").on("change", function() {
-        var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1");
+function S5alfombra2_1CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1").on("change", function() {
+        var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1");
         var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1"){
+        if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra2_1CantOtra);
+window.addEventListener('change', S5alfombra2_1CantOtra);
 
 
 //Lavado de alfombra 
@@ -1517,32 +1517,32 @@ function S5alfombra2_1CantOtra(){
 window.addEventListener('change', S5alfombra2_1CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2").on("change", function() {
-    var e2 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2").on("change", function() {
+    var e2 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2");
     var cant2 = e2.options[e2.selectedIndex].value;
-    if(cant2 == "S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2"){
+    if(cant2 == "S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2").hide();
     }
 })
 
-function S1alfombra2_2CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2").on("change", function() {
-        var e2 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2");
+function S5alfombra2_2CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2").on("change", function() {
+        var e2 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2");
         var cant2 = e2.options[e2.selectedIndex].value;
-        if(cant2 == "S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2"){
+        if(cant2 == "S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra2_2CantOtra);
+window.addEventListener('change', S5alfombra2_2CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -1657,32 +1657,32 @@ function S5alfombra2_2CantOtra(){
 window.addEventListener('change', S5alfombra2_2CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1").on("change", function() {
-    var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1").on("change", function() {
+    var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1");
     var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1"){
+    if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1").hide();
     }
 })
 
-function S1alfombra3_1CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1").on("change", function() {
-        var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1");
+function S5alfombra3_1CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1").on("change", function() {
+        var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1");
         var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1"){
+        if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra3_1CantOtra);
+window.addEventListener('change', S5alfombra3_1CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -1797,32 +1797,32 @@ function S5alfombra3_1CantOtra(){
 window.addEventListener('change', S5alfombra3_1CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2").on("change", function() {
-    var e2 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2").on("change", function() {
+    var e2 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2");
     var cant2 = e2.options[e2.selectedIndex].value;
-    if(cant2 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2"){
+    if(cant2 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2").hide();
     }
 })
 
-function S1alfombra3_2CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2").on("change", function() {
-        var e2 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2");
+function S5alfombra3_2CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2").on("change", function() {
+        var e2 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2");
         var cant2 = e2.options[e2.selectedIndex].value;
-        if(cant2 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2"){
+        if(cant2 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra3_2CantOtra);
+window.addEventListener('change', S5alfombra3_2CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -1937,32 +1937,32 @@ function S5alfombra3_2CantOtra(){
 window.addEventListener('change', S5alfombra3_2CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3").on("change", function() {
-    var e3 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3").on("change", function() {
+    var e3 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3");
     var cant3 = e3.options[e3.selectedIndex].value;
-    if(cant3 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3"){
+    if(cant3 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3").hide();
     }
 }) 
 
-function S1alfombra3_3CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3").on("change", function() {
-        var e3 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3");
+function S5alfombra3_3CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3").on("change", function() {
+        var e3 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3");
         var cant3 = e3.options[e3.selectedIndex].value;
-        if(cant3 == "S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3"){
+        if(cant3 == "S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3").hide();
         }
     })    
 }
 
-window.addEventListener('change', S1alfombra3_3CantOtra);
+window.addEventListener('change', S5alfombra3_3CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -2077,32 +2077,32 @@ function S5alfombra3_3CantOtra(){
 window.addEventListener('change', S5alfombra3_3CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1").on("change", function() {
-    var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1").on("change", function() {
+    var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1");
     var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1"){
+    if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1").hide();
     }
 })
 
-function S1alfombra4_1CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1").on("change", function() {
-        var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1");
+function S5alfombra4_1CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1").on("change", function() {
+        var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1");
         var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1"){
+        if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1Otro1").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra4_1CantOtra);
+window.addEventListener('change', S5alfombra4_1CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -2218,32 +2218,32 @@ function S5alfombra4_1CantOtra(){
 window.addEventListener('change', S5alfombra4_1CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2").on("change", function() {
-    var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2").on("change", function() {
+    var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2");
     var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2"){
+    if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2").hide();
     }
 })
 
-function S1alfombra4_2CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2").on("change", function() {
-        var e1 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2");
+function S5alfombra4_2CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2").on("change", function() {
+        var e1 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2");
         var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2"){
+        if(cant1 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2Otro2").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra4_2CantOtra);
+window.addEventListener('change', S5alfombra4_2CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -2358,32 +2358,32 @@ function S5alfombra4_2CantOtra(){
 window.addEventListener('change', S5alfombra4_2CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3").on("change", function() {
-    var e3 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3").on("change", function() {
+    var e3 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3");
     var cant3 = e3.options[e3.selectedIndex].value;
-    if(cant3 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3"){
+    if(cant3 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3").hide();
     }
 })
 
-function S1alfombra4_3CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3").on("change", function() {
-        var e3 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3");
+function S5alfombra4_3CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3").on("change", function() {
+        var e3 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3");
         var cant3 = e3.options[e3.selectedIndex].value;
-        if(cant3 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3"){
+        if(cant3 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3Otro3").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra4_3CantOtra);
+window.addEventListener('change', S5alfombra4_3CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -2498,32 +2498,32 @@ function S5alfombra4_3CantOtra(){
 window.addEventListener('change', S5alfombra4_3CantOtra);
 
 //Lavado de alfombra 
-//S1Lavado_de_alfombra
-//S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4
+//S5Lavado_de_alfombra
+//S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4
 //Otro
-$("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4").on("change", function() {
-    var e4 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4");
+$("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4").on("change", function() {
+    var e4 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4");
     var cant4 = e4.options[e4.selectedIndex].value;
-    if(cant4 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4"){
+    if(cant4 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4"){
         $("#" + $(this).val()).show();
     } else {
-        $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4").hide();
+        $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4").hide();
     }
 })
 
-function S1alfombra4_4CantOtra(){
-    $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4").on("change", function() {
-        var e4 = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4");
+function S5alfombra4_4CantOtra(){
+    $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4").on("change", function() {
+        var e4 = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4");
         var cant4 = e4.options[e4.selectedIndex].value;
-        if(cant4 == "S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4"){
+        if(cant4 == "S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4"){
             $("#" + $(this).val()).show();
         } else {
-            $("#S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4").hide();
+            $("#S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4Otro4").hide();
         }
     })
 }
 
-window.addEventListener('change', S1alfombra4_4CantOtra);
+window.addEventListener('change', S5alfombra4_4CantOtra);
 
 //Lavado de alfombra 
 //S2Lavado_de_alfombra
@@ -2638,20 +2638,20 @@ function S5alfombra4_4CantOtra(){
 window.addEventListener('change', S5alfombra4_4CantOtra);
 
 // Lavado alfombra 
-// S1Lavado_de_alfombra
-// S1Lavado_de_alfombra_cant_selector_alfombra5omas
-function S1agregarCampos(){   
-    var number = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value;
-    var container = document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_container");
+// S5Lavado_de_alfombra
+// S5Lavado_de_alfombra_cant_selector_alfombra5omas
+function S5agregarCampos(){   
+    var number = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value;
+    var container = document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_container");
     
     if(number > 10){
         number = 10;
-        document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").text = "10";
-        document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value = "10";
+        document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").text = "10";
+        document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value = "10";
     } else if (number < 5){
         number = 5;
-        document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").text = "5";
-        document.getElementById("S1Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value = "5";
+        document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").text = "5";
+        document.getElementById("S5Lavado_de_alfombra_cant_selector_alfombra5omas_cantServices").value = "5";
     }
 
     while (container.hasChildNodes()) {
@@ -7677,27 +7677,1381 @@ function S5LimpiezaVidriosChica_cantSelector(){
 
 window.addEventListener('change', S5LimpiezaVidriosChica_cantSelector);
 
+// Limpieza de vidrios 
+// S1Limpieza_de_vidrios_type_selector
+// Mediana 
+$("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_vidrios_type_selector_mediana"){
+        $("#S1Limpieza_de_vidrios_type_selector_mediana").show();
+    } else {
+        $("#S1Limpieza_de_vidrios_type_selector_mediana").hide();
+    }
+})
+
+function S1LimpiezaVidriosMediana_cantSelector(){
+    $("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_vidrios_type_selector_mediana"){
+            $("#S1Limpieza_de_vidrios_type_selector_mediana").show();
+        } else {
+            $("#S1Limpieza_de_vidrios_type_selector_mediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S1LimpiezaVidriosMediana_cantSelector);
+
+// Limpieza de vidrios 
+// S2Limpieza_de_vidrios_type_selector
+// Mediana 
+$("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_vidrios_type_selector_mediana"){
+        $("#S2Limpieza_de_vidrios_type_selector_mediana").show();
+    } else {
+        $("#S2Limpieza_de_vidrios_type_selector_mediana").hide();
+    }
+})
+
+function S2LimpiezaVidriosMediana_cantSelector(){
+    $("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_vidrios_type_selector_mediana"){
+            $("#S2Limpieza_de_vidrios_type_selector_mediana").show();
+        } else {
+            $("#S2Limpieza_de_vidrios_type_selector_mediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S2LimpiezaVidriosMediana_cantSelector);
+
+// Limpieza de vidrios 
+// S3Limpieza_de_vidrios_type_selector
+// Mediana 
+$("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_vidrios_type_selector_mediana"){
+        $("#S3Limpieza_de_vidrios_type_selector_mediana").show();
+    } else {
+        $("#S3Limpieza_de_vidrios_type_selector_mediana").hide();
+    }
+})
+
+function S3LimpiezaVidriosMediana_cantSelector(){
+    $("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_vidrios_type_selector_mediana"){
+            $("#S3Limpieza_de_vidrios_type_selector_mediana").show();
+        } else {
+            $("#S3Limpieza_de_vidrios_type_selector_mediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S3LimpiezaVidriosMediana_cantSelector);
+
+// Limpieza de vidrios 
+// S4Limpieza_de_vidrios_type_selector
+// Mediana 
+$("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_vidrios_type_selector_mediana"){
+        $("#S4Limpieza_de_vidrios_type_selector_mediana").show();
+    } else {
+        $("#S4Limpieza_de_vidrios_type_selector_mediana").hide();
+    }
+})
+
+function S4LimpiezaVidriosMediana_cantSelector(){
+    $("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_vidrios_type_selector_mediana"){
+            $("#S4Limpieza_de_vidrios_type_selector_mediana").show();
+        } else {
+            $("#S4Limpieza_de_vidrios_type_selector_mediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S4LimpiezaVidriosMediana_cantSelector);
+
+// Limpieza de vidrios 
+// S5Limpieza_de_vidrios_type_selector
+// Mediana 
+$("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_vidrios_type_selector_mediana"){
+        $("#S5Limpieza_de_vidrios_type_selector_mediana").show();
+    } else {
+        $("#S5Limpieza_de_vidrios_type_selector_mediana").hide();
+    }
+})
+
+function S5LimpiezaVidriosMediana_cantSelector(){
+    $("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_vidrios_type_selector_mediana"){
+            $("#S5Limpieza_de_vidrios_type_selector_mediana").show();
+        } else {
+            $("#S5Limpieza_de_vidrios_type_selector_mediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S5LimpiezaVidriosMediana_cantSelector);
+
+// Limpieza de vidrios 
+// S1Limpieza_de_vidrios_type_selector
+// Grande 
+$("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_vidrios_type_selector_grande"){
+        $("#S1Limpieza_de_vidrios_type_selector_grande").show();
+    } else {
+        $("#S1Limpieza_de_vidrios_type_selector_grande").hide();
+    }
+})
+
+function S1LimpiezaVidriosGrande_cantSelector(){
+    $("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_vidrios_type_selector_grande"){
+            $("#S1Limpieza_de_vidrios_type_selector_grande").show();
+        } else {
+            $("#S1Limpieza_de_vidrios_type_selector_grande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S1LimpiezaVidriosGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S2Limpieza_de_vidrios_type_selector
+// Grande 
+$("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_vidrios_type_selector_grande"){
+        $("#S2Limpieza_de_vidrios_type_selector_grande").show();
+    } else {
+        $("#S2Limpieza_de_vidrios_type_selector_grande").hide();
+    }
+})
+
+function S2LimpiezaVidriosGrande_cantSelector(){
+    $("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_vidrios_type_selector_grande"){
+            $("#S2Limpieza_de_vidrios_type_selector_grande").show();
+        } else {
+            $("#S2Limpieza_de_vidrios_type_selector_grande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S2LimpiezaVidriosGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S3Limpieza_de_vidrios_type_selector
+// Grande 
+$("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_vidrios_type_selector_grande"){
+        $("#S3Limpieza_de_vidrios_type_selector_grande").show();
+    } else {
+        $("#S3Limpieza_de_vidrios_type_selector_grande").hide();
+    }
+})
+
+function S3LimpiezaVidriosGrande_cantSelector(){
+    $("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_vidrios_type_selector_grande"){
+            $("#S3Limpieza_de_vidrios_type_selector_grande").show();
+        } else {
+            $("#S3Limpieza_de_vidrios_type_selector_grande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S3LimpiezaVidriosGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S4Limpieza_de_vidrios_type_selector
+// Grande 
+$("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_vidrios_type_selector_grande"){
+        $("#S4Limpieza_de_vidrios_type_selector_grande").show();
+    } else {
+        $("#S4Limpieza_de_vidrios_type_selector_grande").hide();
+    }
+})
+
+function S4LimpiezaVidriosGrande_cantSelector(){
+    $("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_vidrios_type_selector_grande"){
+            $("#S4Limpieza_de_vidrios_type_selector_grande").show();
+        } else {
+            $("#S4Limpieza_de_vidrios_type_selector_grande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S4LimpiezaVidriosGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S1Limpieza_de_vidrios_type_selector
+// Extra Grande 
+$("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_vidrios_type_selector_extraGrande"){
+        $("#S1Limpieza_de_vidrios_type_selector_extraGrande").show();
+    } else {
+        $("#S1Limpieza_de_vidrios_type_selector_extraGrande").hide();
+    }
+})
+
+function S1LimpiezaVidriosExtraGrande_cantSelector(){
+    $("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_vidrios_type_selector_extraGrande"){
+            $("#S1Limpieza_de_vidrios_type_selector_extraGrande").show();
+        } else {
+            $("#S1Limpieza_de_vidrios_type_selector_extraGrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S1LimpiezaVidriosExtraGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S2Limpieza_de_vidrios_type_selector
+// Extra Grande 
+$("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_vidrios_type_selector_extraGrande"){
+        $("#S2Limpieza_de_vidrios_type_selector_extraGrande").show();
+    } else {
+        $("#S2Limpieza_de_vidrios_type_selector_extraGrande").hide();
+    }
+})
+
+function S2LimpiezaVidriosExtraGrande_cantSelector(){
+    $("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_vidrios_type_selector_extraGrande"){
+            $("#S2Limpieza_de_vidrios_type_selector_extraGrande").show();
+        } else {
+            $("#S2Limpieza_de_vidrios_type_selector_extraGrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S2LimpiezaVidriosExtraGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S3Limpieza_de_vidrios_type_selector
+// Extra Grande 
+$("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_vidrios_type_selector_extraGrande"){
+        $("#S3Limpieza_de_vidrios_type_selector_extraGrande").show();
+    } else {
+        $("#S3Limpieza_de_vidrios_type_selector_extraGrande").hide();
+    }
+})
+
+function S3LimpiezaVidriosExtraGrande_cantSelector(){
+    $("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_vidrios_type_selector_extraGrande"){
+            $("#S3Limpieza_de_vidrios_type_selector_extraGrande").show();
+        } else {
+            $("#S3Limpieza_de_vidrios_type_selector_extraGrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S3LimpiezaVidriosExtraGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S4Limpieza_de_vidrios_type_selector
+// Extra Grande 
+$("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_vidrios_type_selector_extraGrande"){
+        $("#S4Limpieza_de_vidrios_type_selector_extraGrande").show();
+    } else {
+        $("#S4Limpieza_de_vidrios_type_selector_extraGrande").hide();
+    }
+})
+
+function S4LimpiezaVidriosExtraGrande_cantSelector(){
+    $("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_vidrios_type_selector_extraGrande"){
+            $("#S4Limpieza_de_vidrios_type_selector_extraGrande").show();
+        } else {
+            $("#S4Limpieza_de_vidrios_type_selector_extraGrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S4LimpiezaVidriosExtraGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S5Limpieza_de_vidrios_type_selector
+// Extra Grande 
+$("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_vidrios_type_selector_extraGrande"){
+        $("#S5Limpieza_de_vidrios_type_selector_extraGrande").show();
+    } else {
+        $("#S5Limpieza_de_vidrios_type_selector_extraGrande").hide();
+    }
+})
+
+function S5LimpiezaVidriosExtraGrande_cantSelector(){
+    $("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_vidrios_type_selector_extraGrande"){
+            $("#S5Limpieza_de_vidrios_type_selector_extraGrande").show();
+        } else {
+            $("#S5Limpieza_de_vidrios_type_selector_extraGrande").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S5LimpiezaVidriosExtraGrande_cantSelector);
+
+// Limpieza de vidrios 
+// S1Limpieza_de_vidrios_type_selector
+// Personalizado
+$("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_vidrios_type_selector_personalizado"){
+        $("#S1Limpieza_de_vidrios_type_selector_personalizado").show();
+    } else {
+        $("#S1Limpieza_de_vidrios_type_selector_personalizado").hide();
+    }
+})
+
+function S1LimpiezaVidriosPersonalizado_cantSelector(){
+    $("#S1Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_vidrios_type_selector_personalizado"){
+            $("#S1Limpieza_de_vidrios_type_selector_personalizado").show();
+        } else {
+            $("#S1Limpieza_de_vidrios_type_selector_personalizado").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S1LimpiezaVidriosPersonalizado_cantSelector);
+
+// Limpieza de vidrios 
+// S2Limpieza_de_vidrios_type_selector
+// Personalizado
+$("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_vidrios_type_selector_personalizado"){
+        $("#S2Limpieza_de_vidrios_type_selector_personalizado").show();
+    } else {
+        $("#S2Limpieza_de_vidrios_type_selector_personalizado").hide();
+    }
+})
+
+function S2LimpiezaVidriosPersonalizado_cantSelector(){
+    $("#S2Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_vidrios_type_selector_personalizado"){
+            $("#S2Limpieza_de_vidrios_type_selector_personalizado").show();
+        } else {
+            $("#S2Limpieza_de_vidrios_type_selector_personalizado").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S2LimpiezaVidriosPersonalizado_cantSelector);
+
+// Limpieza de vidrios 
+// S3Limpieza_de_vidrios_type_selector
+// Personalizado
+$("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_vidrios_type_selector_personalizado"){
+        $("#S3Limpieza_de_vidrios_type_selector_personalizado").show();
+    } else {
+        $("#S3Limpieza_de_vidrios_type_selector_personalizado").hide();
+    }
+})
+
+function S3LimpiezaVidriosPersonalizado_cantSelector(){
+    $("#S3Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_vidrios_type_selector_personalizado"){
+            $("#S3Limpieza_de_vidrios_type_selector_personalizado").show();
+        } else {
+            $("#S3Limpieza_de_vidrios_type_selector_personalizado").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S3LimpiezaVidriosPersonalizado_cantSelector);
+
+// Limpieza de vidrios 
+// S4Limpieza_de_vidrios_type_selector
+// Personalizado
+$("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_vidrios_type_selector_personalizado"){
+        $("#S4Limpieza_de_vidrios_type_selector_personalizado").show();
+    } else {
+        $("#S4Limpieza_de_vidrios_type_selector_personalizado").hide();
+    }
+})
+
+function S4LimpiezaVidriosPersonalizado_cantSelector(){
+    $("#S4Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_vidrios_type_selector_personalizado"){
+            $("#S4Limpieza_de_vidrios_type_selector_personalizado").show();
+        } else {
+            $("#S4Limpieza_de_vidrios_type_selector_personalizado").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S4LimpiezaVidriosPersonalizado_cantSelector);
+
+// Limpieza de vidrios 
+// S5Limpieza_de_vidrios_type_selector
+// Personalizado
+$("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_vidrios_type_selector_personalizado"){
+        $("#S5Limpieza_de_vidrios_type_selector_personalizado").show();
+    } else {
+        $("#S5Limpieza_de_vidrios_type_selector_personalizado").hide();
+    }
+})
+
+function S5LimpiezaVidriosPersonalizado_cantSelector(){
+    $("#S5Limpieza_de_vidrios_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_vidrios_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_vidrios_type_selector_personalizado"){
+            $("#S5Limpieza_de_vidrios_type_selector_personalizado").show();
+        } else {
+            $("#S5Limpieza_de_vidrios_type_selector_personalizado").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S5LimpiezaVidriosPersonalizado_cantSelector);
+
+/* ------------------------------------------------------------------------------------------------*/
+
+// Limpieza de ductos 
+// S1Limpieza_de_ductos_type_selector
+// Chica
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaChica"){
+        $("#S1Limpieza_de_ductos_type_selector_rejillaChica").show();
+    } else {
+        $("#S1Limpieza_de_ductos_type_selector_rejillaChica").hide();
+    }
+})
+
+function S1LimpiezaDuctosRChica_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaChica"){
+            $("#S1Limpieza_de_ductos_type_selector_rejillaChica").show();
+        } else {
+            $("#S1Limpieza_de_ductos_type_selector_rejillaChica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S1LimpiezaDuctosRChica_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_de_ductos_type_selector
+// Chica
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaChica"){
+        $("#S2Limpieza_de_ductos_type_selector_rejillaChica").show();
+    } else {
+        $("#S2Limpieza_de_ductos_type_selector_rejillaChica").hide();
+    }
+})
+
+function S2LimpiezaDuctosRChica_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaChica"){
+            $("#S2Limpieza_de_ductos_type_selector_rejillaChica").show();
+        } else {
+            $("#S2Limpieza_de_ductos_type_selector_rejillaChica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S2LimpiezaDuctosRChica_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_de_ductos_type_selector
+// Chica
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaChica"){
+        $("#S3Limpieza_de_ductos_type_selector_rejillaChica").show();
+    } else {
+        $("#S3Limpieza_de_ductos_type_selector_rejillaChica").hide();
+    }
+})
+
+function S3LimpiezaDuctosRChica_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaChica"){
+            $("#S3Limpieza_de_ductos_type_selector_rejillaChica").show();
+        } else {
+            $("#S3Limpieza_de_ductos_type_selector_rejillaChica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S3LimpiezaDuctosRChica_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_de_ductos_type_selector
+// Chica
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaChica"){
+        $("#S4Limpieza_de_ductos_type_selector_rejillaChica").show();
+    } else {
+        $("#S4Limpieza_de_ductos_type_selector_rejillaChica").hide();
+    }
+})
+
+function S4LimpiezaDuctosRChica_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaChica"){
+            $("#S4Limpieza_de_ductos_type_selector_rejillaChica").show();
+        } else {
+            $("#S4Limpieza_de_ductos_type_selector_rejillaChica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S4LimpiezaDuctosRChica_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_de_ductos_type_selector
+// Chica
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaChica"){
+        $("#S5Limpieza_de_ductos_type_selector_rejillaChica").show();
+    } else {
+        $("#S5Limpieza_de_ductos_type_selector_rejillaChica").hide();
+    }
+})
+
+function S5LimpiezaDuctosRChica_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaChica"){
+            $("#S5Limpieza_de_ductos_type_selector_rejillaChica").show();
+        } else {
+            $("#S5Limpieza_de_ductos_type_selector_rejillaChica").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S5LimpiezaDuctosRChica_cantSelector);
+
+// Limpieza de ductos 
+// S1Limpieza_de_ductos_type_selector
+// Mediana
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaMediana"){
+        $("#S1Limpieza_de_ductos_type_selector_rejillaMediana").show();
+    } else {
+        $("#S1Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+    }
+})
+
+function S1LimpiezaDuctosRMediana_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaMediana"){
+            $("#S1Limpieza_de_ductos_type_selector_rejillaMediana").show();
+        } else {
+            $("#S1Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S1LimpiezaDuctosRMediana_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_de_ductos_type_selector
+// Mediana
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaMediana"){
+        $("#S2Limpieza_de_ductos_type_selector_rejillaMediana").show();
+    } else {
+        $("#S2Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+    }
+})
+
+function S2LimpiezaDuctosRMediana_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaMediana"){
+            $("#S2Limpieza_de_ductos_type_selector_rejillaMediana").show();
+        } else {
+            $("#S2Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S2LimpiezaDuctosRMediana_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_de_ductos_type_selector
+// Mediana
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaMediana"){
+        $("#S3Limpieza_de_ductos_type_selector_rejillaMediana").show();
+    } else {
+        $("#S3Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+    }
+})
+
+function S3LimpiezaDuctosRMediana_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaMediana"){
+            $("#S3Limpieza_de_ductos_type_selector_rejillaMediana").show();
+        } else {
+            $("#S3Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S3LimpiezaDuctosRMediana_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_de_ductos_type_selector
+// Mediana
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaMediana"){
+        $("#S4Limpieza_de_ductos_type_selector_rejillaMediana").show();
+    } else {
+        $("#S4Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+    }
+})
+
+function S4LimpiezaDuctosRMediana_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaMediana"){
+            $("#S4Limpieza_de_ductos_type_selector_rejillaMediana").show();
+        } else {
+            $("#S4Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S4LimpiezaDuctosRMediana_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_de_ductos_type_selector
+// Mediana
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaMediana"){
+        $("#S5Limpieza_de_ductos_type_selector_rejillaMediana").show();
+    } else {
+        $("#S5Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+    }
+})
+
+function S5LimpiezaDuctosRMediana_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaMediana"){
+            $("#S5Limpieza_de_ductos_type_selector_rejillaMediana").show();
+        } else {
+            $("#S5Limpieza_de_ductos_type_selector_rejillaMediana").hide();
+        }
+    })
+}
+
+window.addEventListener('change', S5LimpiezaDuctosRMediana_cantSelector);
+
+// Limpieza de ductos 
+// S1Limpieza_de_ductos_type_selector
+// Grande
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaGrande"){
+        $("#S1Limpieza_de_ductos_type_selector_rejillaGrande").show();
+    } else {
+        $("#S1Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+    }
+})
+
+function S1LimpiezaDuctosRGrande_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaGrande"){
+            $("#S1Limpieza_de_ductos_type_selector_rejillaGrande").show();
+        } else {
+            $("#S1Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S1LimpiezaDuctosRGrande_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_de_ductos_type_selector
+// Grande
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaGrande"){
+        $("#S2Limpieza_de_ductos_type_selector_rejillaGrande").show();
+    } else {
+        $("#S2Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+    }
+})
+
+function S2LimpiezaDuctosRGrande_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaGrande"){
+            $("#S2Limpieza_de_ductos_type_selector_rejillaGrande").show();
+        } else {
+            $("#S2Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S2LimpiezaDuctosRGrande_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_de_ductos_type_selector
+// Grande
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaGrande"){
+        $("#S3Limpieza_de_ductos_type_selector_rejillaGrande").show();
+    } else {
+        $("#S3Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+    }
+})
+
+function S3LimpiezaDuctosRGrande_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaGrande"){
+            $("#S3Limpieza_de_ductos_type_selector_rejillaGrande").show();
+        } else {
+            $("#S3Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S3LimpiezaDuctosRGrande_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_de_ductos_type_selector
+// Grande
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaGrande"){
+        $("#S4Limpieza_de_ductos_type_selector_rejillaGrande").show();
+    } else {
+        $("#S4Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+    }
+})
+
+function S4LimpiezaDuctosRGrande_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaGrande"){
+            $("#S4Limpieza_de_ductos_type_selector_rejillaGrande").show();
+        } else {
+            $("#S4Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S4LimpiezaDuctosRGrande_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_de_ductos_type_selector
+// Grande
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaGrande"){
+        $("#S5Limpieza_de_ductos_type_selector_rejillaGrande").show();
+    } else {
+        $("#S5Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+    }
+})
+
+function S5LimpiezaDuctosRGrande_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaGrande"){
+            $("#S5Limpieza_de_ductos_type_selector_rejillaGrande").show();
+        } else {
+            $("#S5Limpieza_de_ductos_type_selector_rejillaGrande").hide();
+        }
+    })
+    
+}
+
+window.addEventListener('change', S5LimpiezaDuctosRGrande_cantSelector);
+
+// Limpieza de ductos 
+// S1Limpieza_de_ductos_type_selector
+// Extra Grande
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+        $("#S1Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+    } else {
+        $("#S1Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+    }
+})
+
+function S1LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+            $("#S1Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+        } else {
+            $("#S1Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', S1LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_de_ductos_type_selector
+// Extra Grande
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+        $("#S2Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+    } else {
+        $("#S2Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+    }
+})
+
+function S2LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+            $("#S2Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+        } else {
+            $("#S2Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', S2LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_de_ductos_type_selector
+// Extra Grande
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+        $("#S3Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+    } else {
+        $("#S3Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+    }
+})
+
+function S3LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+            $("#S3Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+        } else {
+            $("#S3Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', S3LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_de_ductos_type_selector
+// Extra Grande
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+        $("#S4Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+    } else {
+        $("#S4Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+    }
+})
+
+function S4LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+            $("#S4Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+        } else {
+            $("#S4Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', S4LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_de_ductos_type_selector
+// Extra Grande
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+        $("#S5Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+    } else {
+        $("#S5Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+    }
+})
+
+function S5LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaExtraGrande"){
+            $("#S5Limpieza_de_ductos_type_selector_rejillaExtraGrande").show();
+        } else {
+            $("#S5Limpieza_de_ductos_type_selector_rejillaExtraGrande").hide();
+        }
+    })    
+}
+
+window.addEventListener('change', S5LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S1Limpieza_de_ductos_type_selector
+// Personalizado
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+        $("#S1Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+    } else {
+        $("#S1Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+    }
+})
+
+function S1LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+            $("#S1Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+        } else {
+            $("#S1Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S1LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_de_ductos_type_selector
+// Personalizado
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+        $("#S2Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+    } else {
+        $("#S2Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+    }
+})
+
+function S2LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+            $("#S2Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+        } else {
+            $("#S2Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S2LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_de_ductos_type_selector
+// Personalizado
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+        $("#S3Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+    } else {
+        $("#S3Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+    }
+})
+
+function S3LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+            $("#S3Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+        } else {
+            $("#S3Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S3LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_de_ductos_type_selector
+// Personalizado
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+        $("#S4Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+    } else {
+        $("#S4Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+    }
+})
+
+function S4LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+            $("#S4Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+        } else {
+            $("#S4Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S4LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_de_ductos_type_selector
+// Personalizado
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+        $("#S5Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+    } else {
+        $("#S5Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+    }
+})
+
+function S5LimpiezaDuctosRExtraGrande_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_de_ductos_type_selector_rejillaPersonalizado"){
+            $("#S5Limpieza_de_ductos_type_selector_rejillaPersonalizado").show();
+        } else {
+            $("#S5Limpieza_de_ductos_type_selector_rejillaPersonalizado").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S5LimpiezaDuctosRExtraGrande_cantSelector);
+
+// Limpieza de ductos 
+// S1Limpieza_profunda
+// Personalizado
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_profunda"){
+        $("#S1Limpieza_profunda").show();
+    } else {
+        $("#S1Limpieza_profunda").hide();
+    }
+})
+
+function S1LimpiezaProfunda_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_profunda"){
+            $("#S1Limpieza_profunda").show();
+        } else {
+            $("#S1Limpieza_profunda").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S1LimpiezaProfunda_cantSelector);
+
+// Limpieza de ductos 
+// S2Limpieza_profunda
+// Personalizado
+$("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S2Limpieza_profunda"){
+        $("#S2Limpieza_profunda").show();
+    } else {
+        $("#S2Limpieza_profunda").hide();
+    }
+})
+
+function S2LimpiezaProfunda_cantSelector(){
+    $("#S2Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S2Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S2Limpieza_profunda"){
+            $("#S2Limpieza_profunda").show();
+        } else {
+            $("#S2Limpieza_profunda").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S2LimpiezaProfunda_cantSelector);
+
+// Limpieza de ductos 
+// S3Limpieza_profunda
+// Personalizado
+$("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S3Limpieza_profunda"){
+        $("#S3Limpieza_profunda").show();
+    } else {
+        $("#S3Limpieza_profunda").hide();
+    }
+})
+
+function S3LimpiezaProfunda_cantSelector(){
+    $("#S3Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S3Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S3Limpieza_profunda"){
+            $("#S3Limpieza_profunda").show();
+        } else {
+            $("#S3Limpieza_profunda").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S3LimpiezaProfunda_cantSelector);
+
+// Limpieza de ductos 
+// S4Limpieza_profunda
+// Personalizado
+$("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S4Limpieza_profunda"){
+        $("#S4Limpieza_profunda").show();
+    } else {
+        $("#S4Limpieza_profunda").hide();
+    }
+})
+
+function S4LimpiezaProfunda_cantSelector(){
+    $("#S4Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S4Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S4Limpieza_profunda"){
+            $("#S4Limpieza_profunda").show();
+        } else {
+            $("#S4Limpieza_profunda").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S4LimpiezaProfunda_cantSelector);
+
+// Limpieza de ductos 
+// S5Limpieza_profunda
+// Personalizado
+$("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S5Limpieza_profunda"){
+        $("#S5Limpieza_profunda").show();
+    } else {
+        $("#S5Limpieza_profunda").hide();
+    }
+})
+
+function S5LimpiezaProfunda_cantSelector(){
+    $("#S5Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S5Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S5Limpieza_profunda"){
+            $("#S5Limpieza_profunda").show();
+        } else {
+            $("#S5Limpieza_profunda").hide();
+        }
+    })
+      
+}
+
+window.addEventListener('change', S5LimpiezaProfunda_cantSelector);
 
 
+// Limpieza de ductos 
+// S1Limpieza_profunda
+// Personalizado
+$("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+    var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+    var cant1 = e1.options[e1.selectedIndex].value;
+    if(cant1 == "S1Limpieza_general"){
+        $("#S1Limpieza_general").show();
+    } else {
+        $("#S1Limpieza_general").hide();
+    }
+})
 
+function S1LimpiezaProfunda_cantSelector(){
+    $("#S1Limpieza_de_ductos_type_selector").on("change", function() {
+        var e1 = document.getElementById("S1Limpieza_de_ductos_type_selector");
+        var cant1 = e1.options[e1.selectedIndex].value;
+        if(cant1 == "S1Limpieza_general"){
+            $("#S1Limpieza_general").show();
+        } else {
+            $("#S1Limpieza_general").hide();
+        }
+    })
+      
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.addEventListener('change', S1LimpiezaProfunda_cantSelector);
 
 
 
@@ -7705,141 +9059,4 @@ window.addEventListener('change', S5LimpiezaVidriosChica_cantSelector);
 
 
 /* ------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Limpieza de ductos - Chica */
-$("#ductos-tipo-selector").on("change", function() {
-    var e1 = document.getElementById("ductos-tipo-selector");
-    var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "rchica"){
-        $("#rchica").show();
-    } else {
-        $("#rchica").hide();
-    }
-})
-
-function ducRChica_cantSelector(){
-    $("#ductos-tipo-selector").on("change", function() {
-        var e1 = document.getElementById("ductos-tipo-selector");
-        var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "rchica"){
-            $("#rchica").show();
-        } else {
-            $("#rchica").hide();
-        }
-    })
-}
-
-window.addEventListener('change', ducRChica_cantSelector);
-
-/* Limpieza de ductos - Mediana */
-$("#ductos-tipo-selector").on("change", function() {
-    var e1 = document.getElementById("ductos-tipo-selector");
-    var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "rmediana"){
-        $("#rmediana").show();
-    } else {
-        $("#rmediana").hide();
-    }
-})
-
-function ducRMediana_cantSelector(){
-    $("#ductos-tipo-selector").on("change", function() {
-        var e1 = document.getElementById("ductos-tipo-selector");
-        var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "rmediana"){
-            $("#rmediana").show();
-        } else {
-            $("#rmediana").hide();
-        }
-    })
-}
-
-window.addEventListener('change', ducRMediana_cantSelector);
-
-/* Limpieza de ductos - Grande */
-$("#ductos-tipo-selector").on("change", function() {
-    var e1 = document.getElementById("ductos-tipo-selector");
-    var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "rgrande"){
-        $("#rgrande").show();
-    } else {
-        $("#rgrande").hide();
-    }
-})
-
-function ducRGrande_cantSelector(){
-    $("#ductos-tipo-selector").on("change", function() {
-        var e1 = document.getElementById("ductos-tipo-selector");
-        var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "rgrande"){
-            $("#rgrande").show();
-        } else {
-            $("#rgrande").hide();
-        }
-    })
-}
-
-window.addEventListener('change', ducRGrande_cantSelector);
-
-/* Limpieza de ductos - Extra Grande */
-$("#ductos-tipo-selector").on("change", function() {
-    var e1 = document.getElementById("ductos-tipo-selector");
-    var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "regrande"){
-        $("#regrande").show();
-    } else {
-        $("#regrande").hide();
-    }
-})
-
-function ducRExtraGrande_cantSelector(){
-    $("#ductos-tipo-selector").on("change", function() {
-        var e1 = document.getElementById("ductos-tipo-selector");
-        var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "regrande"){
-            $("#regrande").show();
-        } else {
-            $("#regrande").hide();
-        }
-    })
-}
-
-window.addEventListener('change', ducRExtraGrande_cantSelector);
-
-/* Limpieza de ductos - Personalizado */
-$("#ductos-tipo-selector").on("change", function() {
-    var e1 = document.getElementById("ductos-tipo-selector");
-    var cant1 = e1.options[e1.selectedIndex].value;
-    if(cant1 == "rpersonalizado"){
-        $("#rpersonalizado").show();
-    } else {
-        $("#rpersonalizado").hide();
-    }
-})
-
-function ducRPersonalizado_cantSelector(){
-    $("#ductos-tipo-selector").on("change", function() {
-        var e1 = document.getElementById("ductos-tipo-selector");
-        var cant1 = e1.options[e1.selectedIndex].value;
-        if(cant1 == "rpersonalizado"){
-            $("#rpersonalizado").show();
-        } else {
-            $("#rpersonalizado").hide();
-        }
-    })
-}
-
-window.addEventListener('change', ducRPersonalizado_cantSelector);
 
