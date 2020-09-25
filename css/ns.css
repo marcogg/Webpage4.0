@@ -36,12 +36,12 @@ nav{
 }
 
 
-img{
+/*img{
     min-width: 100%;
     width: 100%;
     max-width: 100%;
     height: auto;
-}
+}*/
 
 button, .col-6, p{
     background-color: transparent;

@@ -89,29 +89,29 @@
         <main>
             <!-- Datos del cliente-->
             <section style="border: #ffffff solid 1px; padding: 20px" class="my-4">
-                <form style="padding-top: 26px">
+                <form method="POST" action="../test.php" style="padding-top: 26px">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity" class="text text-center">Nombre completo</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="ej. Juan Alberto Castillo Santana" autocomplete="off">
+                            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="ej. Juan Alberto Castillo Santana" autocomplete="off">
                             
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputCity" class="text text-center">Telefono</label>
-                            <input type="text" class="form-control" id="inputTel" placeholder="ej. 656-000-0011" autocomplete="off">
+                            <input type="text" class="form-control" id="inputTel" name="inputTel" placeholder="ej. 656-000-0011" autocomplete="off">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputCity" class="text text-center">Celular</label>
-                            <input type="text" class="form-control" id="inputCel" placeholder="ej. 656-000-0012" autocomplete="off">
+                            <input type="text" class="form-control" id="inputCel" name="inputCel" placeholder="ej. 656-000-0012" autocomplete="off" required>
                           </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4" class="text text-center">Correo</label>
-                            <input type="email" class="form-control" id="inputEmail4 " placeholder="ej. mi_correo@dominio.com" autocomplete="off" multiple>
+                            <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="ej. mi_correo@dominio.com" autocomplete="off" multiple required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress" class="text text-center">Direccion</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="ej. Teofilo Borunda #5487 *(Int. Piso 2) Colonia/Frac./Info./etc. " autocomplete="off">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="ej. Teofilo Borunda #5487 *(Int. Piso 2) Colonia/Frac./Info./etc. " autocomplete="off" name="inputAddress">
                         <small id="" class="form-text text-muted text">
                             (*) Dejar en blanco si no se tiene la informacion correcta.
                         </small>
@@ -119,19 +119,19 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputCity" class="text text-center">Ciudad</label>
-                        <select id="inputCity" class="form-control" >
+                        <select id="inputCity" name="inputCity" class="form-control" >
                             <option selected>Ciudad Juarez</option>
                           </select>
                       </div>
                       <div class="form-group col-md-4">
                         <label for="inputState" class="text text-center">Estado</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" name="inputState" class="form-control">
                           <option selected>Chihuahua</option>
                         </select>
                       </div>
                       <div class="form-group col-md-2">
                         <label for="inputZip" class="text text-center">Codigo postal</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder="ej. 42312" autocomplete="off">
+                        <input type="text" class="form-control" name="inputZip" id="inputZip" placeholder="ej. 42312" autocomplete="off">
                       </div>
                     </div>
                     
@@ -147,11 +147,11 @@
                             <div class="col-xl-6 col-lg-12">
                                 <div class="calendar calendar-first" id="calendar_first">
                                     <div class="calendar_header">
-                                        <button class="switch-month switch-left">
+                                        <button class="switch-month switch-left text-white">
                                         <i class="glyphicon glyphicon-chevron-left"></i>
                                         </button>
                                         <h2></h2>
-                                        <button class="switch-month switch-right">
+                                        <button class="switch-month switch-right text-white">
                                         <i class="glyphicon glyphicon-chevron-right"></i>
                                         </button>
                                     </div>
@@ -184,7 +184,7 @@
             <section id="horario" class="d-flex my-4">
                 <div class="dropdown mx-auto">
                     <label for="calendarioHorario" style="outline: #ffffff solid 1px;" class="px-2 py-2"> Horario de servicio</label>
-                    <select class="form-control" id="calendarioHorario" autocomplete="off">
+                    <select class="form-control" id="calendarioHorario" autocomplete="off" name="calendarioHorario">
                         <option>8:30a.m.</option>
                         <option>9:00a.m.</option>
                         <option>9:30a.m.</option>
@@ -206,9 +206,9 @@
                 <!-- Servicio1 -->
                 <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 " id="servicio1">
                     <!-- Form selector -->
-                    <form id="form-shower" class="col-12">
+                    <form method="POST" action="../test.php" id="form-shower" class="col-12">
                         <div class="text-center text pb-2"> Servicio </div>
-                        <select class="form-control " id="S1service_selector1" autocomplete="off">
+                        <select class="form-control " id="S1service_selector1" autocomplete="off" name="S1service_selector1">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
                             <option value="S1Lavado_de_sillones">Lavado de sillones</option>
@@ -226,9 +226,9 @@
                     </form>
 
                     <!-- Lavado de alfombra-->
-                    <form class="col-12" id="S1Lavado_de_alfombra" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_alfombra" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S1Lavado_de_alfombra_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_alfombra_cant_selector" autocomplete="off" name="S1Lavado_de_alfombra_cant_selector">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_alfombra_cant_selector_alfombra1">1 alfombra</option>
                             <option value="S1Lavado_de_alfombra_cant_selector_alfombra2">2 alfombras</option>
@@ -238,9 +238,9 @@
                         </select>
                         
                         <!-- alfombra1 -->
-                        <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
+                        <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra1" name="S1Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaño </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector" name="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x4">3mts. x 4mts.</option>
@@ -249,8 +249,8 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro" style="display: none !important;" class="pt-4 mx-auto">
-                                    De que tamaño estan las alfombras?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro" name="S1Lavado_de_alfombra_cant_selector_alfombra1_type_selectorOtro" style="display: none !important;" class="pt-4 mx-auto">
+                                    De que tamaño estan las alfombras?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px" name="S1TamanoAlfombrasOtro"> (Mts)
                                 </div>
                             </div>
                         </div>
@@ -259,7 +259,7 @@
                         <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra2" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control mb-4" id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control mb-4" id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" name="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x4">3mts. x 4mts.</option>
@@ -268,13 +268,13 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1" style="display: none !important;" class="pt-2 mx-auto">
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1" name="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector1Otro1" style="display: none !important;" class="pt-2 mx-auto">
                                     De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts.)
                                 </div>
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" name="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x4">3mts. x 4mts.</option>
@@ -283,17 +283,17 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2" style="display: none !important;" class="pt-4 mx-auto">
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2" name="S1Lavado_de_alfombra_cant_selector_alfombra2_type_selector2Otro2" style="display: none !important;" class="pt-4 mx-auto">
                                     De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
                                 </div>
                             </div>
                         </div>
 
                         <!-- alfombra3 -->
-                        <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
+                        <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra3" name="S1Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x4">3mts. x 4mts.</option>
@@ -302,13 +302,13 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1" style="display: none !important;" class="pt-2 mx-auto">
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector1Otro1" style="display: none !important;" class="pt-2 mx-auto">
                                     De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts.)
                                 </div>
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x4">3mts. x 4mts.</option>
@@ -317,13 +317,13 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2" style="display: none !important;" class="pt-4 mx-auto">
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector2Otro2" style="display: none !important;" class="pt-4 mx-auto">
                                     De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
                                 </div>
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x4">3mts. x 4mts.</option>
@@ -332,7 +332,7 @@
                             </select>
 
                             <div class="d-flex">
-                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3" style="display: none !important;" class="pt-4 mx-auto">
+                                <div id="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3" name="S1Lavado_de_alfombra_cant_selector_alfombra3_type_selector3Otro3" style="display: none !important;" class="pt-4 mx-auto">
                                     De que tamaño esta la alfombra?: <input autocomplete="off" style="width: 60px"> X <input autocomplete="off" style="width: 60px"> (Mts)
                                 </div>
                             </div>
@@ -342,7 +342,7 @@
                         <div class="col-12" id="S1Lavado_de_alfombra_cant_selector_alfombra4" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" name="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x4">3mts. x 4mts.</option>
@@ -357,7 +357,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" name="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x4">3mts. x 4mts.</option>
@@ -372,7 +372,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" name="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x4">3mts. x 4mts.</option>
@@ -388,7 +388,8 @@
 
 
                             <div> Alfombra 4: </div>
-                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4"
+                            name="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x3">3mts. x 3mts.</option>
                                 <option value="S1Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x4">3mts. x 4mts.</option>
@@ -419,9 +420,9 @@
                     </form>
 
                     <!-- Lavado de sillones-->
-                    <form class="col-12" id="S1Lavado_de_sillones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_sillones" name="S1Lavado_de_sillones" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S1Lavado_de_sillones_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_sillones_cant_selector" name="S1Lavado_de_sillones_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_sillones_cant_selector_pieza1">1 pieza</option>
                             <option value="S1Lavado_de_sillones_cant_selector_pieza2">2 piezas</option>
@@ -432,7 +433,7 @@
                         <!-- 1 pieza -->
                         <div class="col-12" id="S1Lavado_de_sillones_cant_selector_pieza1" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza1_type_selector" name="S1Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento1">1 pieza (1 asiento) </option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento2">1 pieza (2 asientos) </option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento3">1 pieza (3 asientos) </option>
@@ -449,7 +450,7 @@
                         <!-- 2 piezas -->
                         <div class="col-12" id="S1Lavado_de_sillones_cant_selector_pieza2" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza2_type_selector" name="S1Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento1_asiento2">2 piezas (1 asiento y 2 asientos) </option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento2_asiento3">2 piezas (2 asientos y 3 asientos) </option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza2_type_selector_asientoL">2 piezas (En L) </option>
@@ -470,7 +471,7 @@
                         <!-- 3 piezas -->
                         <div class="col-12" id="S1Lavado_de_sillones_cant_selector_pieza3" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S1Lavado_de_sillones_cant_selector_pieza3_type_selector" name="S1Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1_asiento2_asiento3">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento2_asiento2_asiento3">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
                                 <option value="S1Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1">3 piezas (1 asiento c/u) </option>
@@ -503,9 +504,9 @@
                     </form>
 
                     <!-- Lavado de sillas-->
-                    <form class="col-12" id="S1Lavado_de_sillas" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_sillas" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Lavado_de_sillas_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_sillas_type_selector" name="S1Lavado_de_sillas_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_sillas_type_selector_asiento">Silla con asiento de tela</option>
                             <option value="S1Lavado_de_sillas_type_selector_respaldo">Silla con respaldo de tela</option>
@@ -544,9 +545,9 @@
                     </form>
 
                     <!-- Lavado de colchones -->
-                    <form class="col-12" id="S1Lavado_de_colchones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_colchones" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Lavado_de_colchones_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_colchones_type_selector" name="S1Lavado_de_colchones_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_colchones_type_selector_individual">Individual</option>
                             <option value="S1Lavado_de_colchones_type_selector_matrimonial">Matrimonial</option>
@@ -609,7 +610,7 @@
                         <!-- Sofa cama -->
                         <div class="col-12" id="S1Lavado_de_colchones_type_selector_sofaCama" style="display: none !important;">
                             <div class="text-center text py-2"> De cuantos asientos? </div>
-                            <select class="form-control" id="S1Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
+                            <select class="form-control" id="S1Lavado_de_colchones_type_selector_sofaCama_cant_selector" name="S1Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
                                 <option value="" selected="selected"></option>
                                 <option value="S1Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento1">1 asiento</option>
                                 <option value="S1Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento2">2 asientos</option>
@@ -625,9 +626,9 @@
                     </form>
 
                     <!-- Lavado de interior de autos -->
-                    <form class="col-12" id="S1Lavado_de_int_de_autos"  style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_int_de_autos"  style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Lavado_de_int_de_autos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_int_de_autos_type_selector" name="S1Lavado_de_int_de_autos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_int_de_autos_type_selector_chico">Chico (1 fila de asientos)</option>
                             <option value="S1Lavado_de_int_de_autos_type_selector_regular">Regular (2 filas de asientos*) </option>
@@ -677,9 +678,9 @@
                     </form>
 
                     <!-- Lavado de pisos -->
-                    <form class="col-12" id="S1Lavado_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Lavado_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Lavado_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Lavado_de_pisos_type_selector" name="S1Lavado_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Lavado_de_pisos_type_selector_pisoCeramica">Piso de ceramica</option>
                             <option value="S1Lavado_de_pisos_type_selector_pisoLiso">Piso liso</option>
@@ -762,9 +763,9 @@
                     </form>
 
                     <!-- Pulido de pisos --> 
-                    <form class="col-12" id="S1Pulido_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Pulido_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Pulido_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Pulido_de_pisos_type_selector" name="S1Pulido_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Pulido_de_pisos_type_selector_marmol">Pulido de mármol</option>
                             <option value="S1Pulido_de_pisos_type_selector_mosaico">Pulido de mosaico</option>
@@ -814,9 +815,9 @@
                     </form>
 
                     <!-- Sanitizacion -->
-                    <form class="col-12" id="S1Sanitizacion" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Sanitizacion" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Sanitizacion_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Sanitizacion_type_selector" name="S1Sanitizacion_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Sanitizacion_type_selector_casaChica">Casa chica (2 habitaciones) </option>
                             <option value="S1Sanitizacion_type_selector_casaMediana">Casa mediana (3 habitaciones) </option>
@@ -866,9 +867,9 @@
                     </form>
 
                     <!-- Limpieza de vidrios -->
-                    <form class="col-12" id="S1Limpieza_de_vidrios" style="display: none !important;"> 
+                    <form method="POST" action="../test.php" class="col-12" id="S1Limpieza_de_vidrios" style="display: none !important;"> 
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Limpieza_de_vidrios_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Limpieza_de_vidrios_type_selector" name="S1Limpieza_de_vidrios_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Limpieza_de_vidrios_type_selector_chica">Chicas (.1mts - .5mts)</option>
                             <option value="S1Limpieza_de_vidrios_type_selector_mediana">Medianas (.6mts - 1mts)</option>
@@ -936,9 +937,9 @@
                     </form>
 
                     <!-- Limpieza de ductos -->
-                    <form class="col-12" id="S1Limpieza_de_ductos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Limpieza_de_ductos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S1Limpieza_de_ductos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S1Limpieza_de_ductos_type_selector" name="S1Limpieza_de_ductos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S1Limpieza_de_ductos_type_selector_rejillaChica">Chicas (.1mts - .5mts)</option>
                             <option value="S1Limpieza_de_ductos_type_selector_rejillaMediana">Medianas (.6mts - 1mts)</option>
@@ -999,28 +1000,28 @@
                     </form>
 
                     <!-- Limpieza profunda -->
-                    <form class="col-12" id="S1Limpieza_profunda" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Limpieza_profunda" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalles </div>
                         </div>
-                        <textarea class="form-control mt-3" id="S1Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
+                        <textarea class="form-control mt-3" id="S1Limpieza_profunda-text" name="S1Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
                     </form>
 
                     <!-- Limpieza general -->
-                    <form class="col-12" id="S1Limpieza_general" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S1Limpieza_general" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalle </div>
                         </div>
-                        <textarea class="form-control mt-3" id="Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
+                        <textarea class="form-control mt-3" id="S1Limpieza-general-text" name="S1Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
                     </form>
                 </section>
 
                 <!-- Servicio2 -->
                 <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 " id="servicio2">
                     <!-- Form selector -->
-                    <form id="form-shower" class="col-12">
+                    <form method="POST" action="../test.php" id="form-shower" class="col-12">
                         <div class="text-center text pb-2"> Servicio </div>
-                        <select class="form-control " id="S2service_selector1" autocomplete="off">
+                        <select class="form-control " id="S2service_selector1" name="S2service_selector1" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
                             <option value="S2Lavado_de_sillones">Lavado de sillones</option>
@@ -1038,9 +1039,9 @@
                     </form>
 
                     <!-- Lavado de alfombra-->
-                    <form class="col-12" id="S2Lavado_de_alfombra" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_alfombra" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S2Lavado_de_alfombra_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_alfombra_cant_selector" name="S2Lavado_de_alfombra_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_alfombra_cant_selector_alfombra1">1 alfombra</option>
                             <option value="S2Lavado_de_alfombra_cant_selector_alfombra2">2 alfombras</option>
@@ -1052,7 +1053,7 @@
                         <!-- alfombra1 -->
                         <div class="col-12" id="S2Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaño </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra1_type_selector" name="S2Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x4">3mts. x 4mts.</option>
@@ -1071,7 +1072,7 @@
                         <div class="col-12" id="S2Lavado_de_alfombra_cant_selector_alfombra2" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control mb-4" id="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control mb-4" id="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" name="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x4">3mts. x 4mts.</option>
@@ -1086,7 +1087,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" name="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector2"autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x4">3mts. x 4mts.</option>
@@ -1105,7 +1106,7 @@
                         <div class="col-12" id="S2Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" name="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x4">3mts. x 4mts.</option>
@@ -1120,7 +1121,8 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector2"
+                            name="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x4">3mts. x 4mts.</option>
@@ -1135,7 +1137,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" name="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x4">3mts. x 4mts.</option>
@@ -1154,7 +1156,7 @@
                         <div class="col-12" id="S2Lavado_de_alfombra_cant_selector_alfombra4" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" name="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x4">3mts. x 4mts.</option>
@@ -1169,7 +1171,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" name="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x4">3mts. x 4mts.</option>
@@ -1184,7 +1186,8 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector3"
+                            name="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x4">3mts. x 4mts.</option>
@@ -1200,7 +1203,7 @@
 
 
                             <div> Alfombra 4: </div>
-                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" name="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x3">3mts. x 3mts.</option>
                                 <option value="S2Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x4">3mts. x 4mts.</option>
@@ -1231,9 +1234,9 @@
                     </form>
 
                     <!-- Lavado de sillones-->
-                    <form class="col-12" id="S2Lavado_de_sillones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_sillones" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S2Lavado_de_sillones_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_sillones_cant_selector" name="S2Lavado_de_sillones_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_sillones_cant_selector_pieza1">1 pieza</option>
                             <option value="S2Lavado_de_sillones_cant_selector_pieza2">2 piezas</option>
@@ -1244,7 +1247,7 @@
                         <!-- 1 pieza -->
                         <div class="col-12" id="S2Lavado_de_sillones_cant_selector_pieza1" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza1_type_selector" name="S2Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento1">1 pieza (1 asiento) </option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento2">1 pieza (2 asientos) </option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento3">1 pieza (3 asientos) </option>
@@ -1261,7 +1264,7 @@
                         <!-- 2 piezas -->
                         <div class="col-12" id="S2Lavado_de_sillones_cant_selector_pieza2" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza2_type_selector" name="S2Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento1_asiento2">2 piezas (1 asiento y 2 asientos) </option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento2_asiento3">2 piezas (2 asientos y 3 asientos) </option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza2_type_selector_asientoL">2 piezas (En L) </option>
@@ -1282,7 +1285,7 @@
                         <!-- 3 piezas -->
                         <div class="col-12" id="S2Lavado_de_sillones_cant_selector_pieza3" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S2Lavado_de_sillones_cant_selector_pieza3_type_selector" name="S2Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1_asiento2_asiento3">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento2_asiento2_asiento3">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
                                 <option value="S2Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1">3 piezas (1 asiento c/u) </option>
@@ -1315,9 +1318,9 @@
                     </form>
 
                     <!-- Lavado de sillas-->
-                    <form class="col-12" id="S2Lavado_de_sillas" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_sillas" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Lavado_de_sillas_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_sillas_type_selector" name="S2Lavado_de_sillas_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_sillas_type_selector_asiento">Silla con asiento de tela</option>
                             <option value="S2Lavado_de_sillas_type_selector_respaldo">Silla con respaldo de tela</option>
@@ -1356,9 +1359,9 @@
                     </form>
 
                     <!-- Lavado de colchones -->
-                    <form class="col-12" id="S2Lavado_de_colchones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_colchones" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Lavado_de_colchones_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_colchones_type_selector" name="S2Lavado_de_colchones_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_colchones_type_selector_individual">Individual</option>
                             <option value="S2Lavado_de_colchones_type_selector_matrimonial">Matrimonial</option>
@@ -1437,9 +1440,9 @@
                     </form>
 
                     <!-- Lavado de interior de autos -->
-                    <form class="col-12" id="S2Lavado_de_int_de_autos"  style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_int_de_autos"  style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Lavado_de_int_de_autos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_int_de_autos_type_selector" name="S2Lavado_de_int_de_autos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_int_de_autos_type_selector_chico">Chico (1 fila de asientos)</option>
                             <option value="S2Lavado_de_int_de_autos_type_selector_regular">Regular (2 filas de asientos*) </option>
@@ -1489,9 +1492,9 @@
                     </form>
 
                     <!-- Lavado de pisos -->
-                    <form class="col-12" id="S2Lavado_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Lavado_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Lavado_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Lavado_de_pisos_type_selector" name="S2Lavado_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Lavado_de_pisos_type_selector_pisoCeramica">Piso de ceramica</option>
                             <option value="S2Lavado_de_pisos_type_selector_pisoLiso">Piso liso</option>
@@ -1574,9 +1577,9 @@
                     </form>
 
                     <!-- Pulido de pisos --> 
-                    <form class="col-12" id="S2Pulido_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Pulido_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Pulido_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Pulido_de_pisos_type_selector" name="S2Pulido_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Pulido_de_pisos_type_selector_marmol">Pulido de mármol</option>
                             <option value="S2Pulido_de_pisos_type_selector_mosaico">Pulido de mosaico</option>
@@ -1626,9 +1629,9 @@
                     </form>
 
                     <!-- Sanitizacion -->
-                    <form class="col-12" id="S2Sanitizacion" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Sanitizacion" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Sanitizacion_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Sanitizacion_type_selector" name="S2Sanitizacion_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Sanitizacion_type_selector_casaChica">Casa chica (2 habitaciones) </option>
                             <option value="S2Sanitizacion_type_selector_casaMediana">Casa mediana (3 habitaciones) </option>
@@ -1641,7 +1644,7 @@
                             <div class="text-center text py-2"> Detalles </div>
                             <div class="d-flex">
                                 <div id="S2Sanitizacion_type_selector_casaChicaOtro" class="pt-2 w-100">
-                                    <textarea class="form-control" id="S2Sanitizacion_type_selector_casaChicaOtro_text" rows="3"></textarea>
+                                    <textarea class="form-control" id="S2Sanitizacion_type_selector_casaChicaOtro_text" name="S2Sanitizacion_type_selector_casaChicaOtro_text" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -1651,7 +1654,7 @@
                             <div class="text-center text py-2"> Detalles </div>
                             <div class="d-flex">
                                 <div id="S2cmOtro" class="pt-2 w-100">
-                                    <textarea class="form-control" id="Sanitizacion-cm-text" rows="3"></textarea>
+                                    <textarea class="form-control" id="Sanitizacion-cm-text" name="Sanitizacion-cm-text" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -1661,7 +1664,7 @@
                             <div class="text-center text py-2"> Detalles </div>
                             <div class="d-flex">
                                 <div id="S2cgOtro" class="pt-2 w-100">
-                                    <textarea class="form-control" id="Sanitizacion-cg-text" rows="3"></textarea>
+                                    <textarea class="form-control" id="Sanitizacion-cg-text" name="Sanitizacion-cg-text" rows="3"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -1671,16 +1674,16 @@
                             <div class="text-center text py-2"> Detalles </div>
                             <div class="d-flex">
                                 <div id="S2cegOtro" class="pt-2 w-100">
-                                    <textarea class="form-control" id="Sanitizacion-ceg-text" rows="5"></textarea>
+                                    <textarea class="form-control" id="Sanitizacion-ceg-text" name="Sanitizacion-ceg-text" rows="5"></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
 
                     <!-- Limpieza de vidrios -->
-                    <form class="col-12" id="S2Limpieza_de_vidrios" style="display: none !important;"> 
+                    <form method="POST" action="../test.php" class="col-12" id="S2Limpieza_de_vidrios" style="display: none !important;"> 
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Limpieza_de_vidrios_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Limpieza_de_vidrios_type_selector" name="S2Limpieza_de_vidrios_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Limpieza_de_vidrios_type_selector_chica">Chicas (.1mts - .5mts)</option>
                             <option value="S2Limpieza_de_vidrios_type_selector_mediana">Medianas (.6mts - 1mts)</option>
@@ -1748,9 +1751,9 @@
                     </form>
 
                     <!-- Limpieza de ductos -->
-                    <form class="col-12" id="S2Limpieza_de_ductos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Limpieza_de_ductos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S2Limpieza_de_ductos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S2Limpieza_de_ductos_type_selector" name="S2Limpieza_de_ductos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S2Limpieza_de_ductos_type_selector_rejillaChica">Chicas (.1mts - .5mts)</option>
                             <option value="S2Limpieza_de_ductos_type_selector_rejillaMediana">Medianas (.6mts - 1mts)</option>
@@ -1811,28 +1814,28 @@
                     </form>
 
                     <!-- Limpieza profunda -->
-                    <form class="col-12" id="S2Limpieza_profunda" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Limpieza_profunda" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalles </div>
                         </div>
-                        <textarea class="form-control mt-3" id="S2Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
+                        <textarea class="form-control mt-3" id="S2Limpieza_profunda-text" name="S2Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
                     </form>
 
                     <!-- Limpieza general -->
-                    <form class="col-12" id="S2Limpieza_general" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S2Limpieza_general" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalle </div>
                         </div>
-                        <textarea class="form-control mt-3" id="Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
+                        <textarea class="form-control mt-3" id="S2Limpieza-general-text" name="S2Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
                     </form>
                 </section>
 
                 <!-- Servicio3 -->
                 <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 " id="servicio3">
                     <!-- Form selector -->
-                    <form id="form-shower" class="col-12">
+                    <form method="POST" action="../test.php" id="form-shower" class="col-12">
                         <div class="text-center text pb-2"> Servicio </div>
-                        <select class="form-control " id="S3service_selector1" autocomplete="off">
+                        <select class="form-control " id="S3service_selector1" name="S3service_selector1" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
                             <option value="S3Lavado_de_sillones">Lavado de sillones</option>
@@ -1850,9 +1853,9 @@
                     </form>
 
                     <!-- Lavado de alfombra-->
-                    <form class="col-12" id="S3Lavado_de_alfombra" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_alfombra" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S3Lavado_de_alfombra_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S3Lavado_de_alfombra_cant_selector" name="S3Lavado_de_alfombra_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_alfombra_cant_selector_alfombra1">1 alfombra</option>
                             <option value="S3Lavado_de_alfombra_cant_selector_alfombra2">2 alfombras</option>
@@ -1864,7 +1867,7 @@
                         <!-- alfombra1 -->
                         <div class="col-12" id="S3Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaño </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra1_type_selector" name="S3Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x4">3mts. x 4mts.</option>
@@ -1883,7 +1886,7 @@
                         <div class="col-12" id="S3Lavado_de_alfombra_cant_selector_alfombra2" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control mb-4" id="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control mb-4" id="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" name="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x4">3mts. x 4mts.</option>
@@ -1898,7 +1901,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" name="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x4">3mts. x 4mts.</option>
@@ -1917,7 +1920,7 @@
                         <div class="col-12" id="S3Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" name="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x4">3mts. x 4mts.</option>
@@ -1932,7 +1935,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" name="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x4">3mts. x 4mts.</option>
@@ -1947,7 +1950,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" name="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x4">3mts. x 4mts.</option>
@@ -1966,7 +1969,7 @@
                         <div class="col-12" id="S3Lavado_de_alfombra_cant_selector_alfombra4" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" name="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x4">3mts. x 4mts.</option>
@@ -1981,7 +1984,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" name="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x4">3mts. x 4mts.</option>
@@ -1996,7 +1999,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" name="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x4">3mts. x 4mts.</option>
@@ -2012,7 +2015,7 @@
 
 
                             <div> Alfombra 4: </div>
-                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" name="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x3">3mts. x 3mts.</option>
                                 <option value="S3Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x4">3mts. x 4mts.</option>
@@ -2043,9 +2046,9 @@
                     </form>
 
                     <!-- Lavado de sillones-->
-                    <form class="col-12" id="S3Lavado_de_sillones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_sillones" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S3Lavado_de_sillones_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S3Lavado_de_sillones_cant_selector" name="S3Lavado_de_sillones_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_sillones_cant_selector_pieza1">1 pieza</option>
                             <option value="S3Lavado_de_sillones_cant_selector_pieza2">2 piezas</option>
@@ -2056,7 +2059,7 @@
                         <!-- 1 pieza -->
                         <div class="col-12" id="S3Lavado_de_sillones_cant_selector_pieza1" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza1_type_selector" name="S3Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento1">1 pieza (1 asiento) </option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento2">1 pieza (2 asientos) </option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento3">1 pieza (3 asientos) </option>
@@ -2073,7 +2076,7 @@
                         <!-- 2 piezas -->
                         <div class="col-12" id="S3Lavado_de_sillones_cant_selector_pieza2" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza2_type_selector" name="S3Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento1_asiento2">2 piezas (1 asiento y 2 asientos) </option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento2_asiento3">2 piezas (2 asientos y 3 asientos) </option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza2_type_selector_asientoL">2 piezas (En L) </option>
@@ -2094,7 +2097,7 @@
                         <!-- 3 piezas -->
                         <div class="col-12" id="S3Lavado_de_sillones_cant_selector_pieza3" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S3Lavado_de_sillones_cant_selector_pieza3_type_selector" name="S3Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1_asiento2_asiento3">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento2_asiento2_asiento3">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
                                 <option value="S3Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1">3 piezas (1 asiento c/u) </option>
@@ -2127,9 +2130,9 @@
                     </form>
 
                     <!-- Lavado de sillas-->
-                    <form class="col-12" id="S3Lavado_de_sillas" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_sillas" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Lavado_de_sillas_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Lavado_de_sillas_type_selector" name="S3Lavado_de_sillas_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_sillas_type_selector_asiento">Silla con asiento de tela</option>
                             <option value="S3Lavado_de_sillas_type_selector_respaldo">Silla con respaldo de tela</option>
@@ -2168,9 +2171,9 @@
                     </form>
 
                     <!-- Lavado de colchones -->
-                    <form class="col-12" id="S3Lavado_de_colchones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_colchones" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Lavado_de_colchones_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Lavado_de_colchones_type_selector" name="S3Lavado_de_colchones_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_colchones_type_selector_individual">Individual</option>
                             <option value="S3Lavado_de_colchones_type_selector_matrimonial">Matrimonial</option>
@@ -2233,7 +2236,7 @@
                         <!-- Sofa cama -->
                         <div class="col-12" id="S3Lavado_de_colchones_type_selector_sofaCama" style="display: none !important;">
                             <div class="text-center text py-2"> De cuantos asientos? </div>
-                            <select class="form-control" id="S3Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
+                            <select class="form-control" id="S3Lavado_de_colchones_type_selector_sofaCama_cant_selector" name="S3Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
                                 <option value="" selected="selected"></option>
                                 <option value="S3Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento1">1 asiento</option>
                                 <option value="S3Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento2">2 asientos</option>
@@ -2249,9 +2252,9 @@
                     </form>
 
                     <!-- Lavado de interior de autos -->
-                    <form class="col-12" id="S3Lavado_de_int_de_autos"  style="display: none !important;">
-                        <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Lavado_de_int_de_autos_type_selector" autocomplete="off">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_int_de_autos"  style="display: none !important;">
+                        <div class="text-center text py-2"> Selecciona un Tamaño </div>
+                        <select class="form-control" id="S3Lavado_de_int_de_autos_type_selector" name="S3Lavado_de_int_de_autos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_int_de_autos_type_selector_chico">Chico (1 fila de asientos)</option>
                             <option value="S3Lavado_de_int_de_autos_type_selector_regular">Regular (2 filas de asientos*) </option>
@@ -2301,9 +2304,9 @@
                     </form>
 
                     <!-- Lavado de pisos -->
-                    <form class="col-12" id="S3Lavado_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Lavado_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Lavado_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Lavado_de_pisos_type_selector" name="S3Lavado_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Lavado_de_pisos_type_selector_pisoCeramica">Piso de ceramica</option>
                             <option value="S3Lavado_de_pisos_type_selector_pisoLiso">Piso liso</option>
@@ -2386,9 +2389,9 @@
                     </form>
 
                     <!-- Pulido de pisos --> 
-                    <form class="col-12" id="S3Pulido_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Pulido_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Pulido_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Pulido_de_pisos_type_selector" name="S3Pulido_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Pulido_de_pisos_type_selector_marmol">Pulido de mármol</option>
                             <option value="S3Pulido_de_pisos_type_selector_mosaico">Pulido de mosaico</option>
@@ -2438,9 +2441,9 @@
                     </form>
 
                     <!-- Sanitizacion -->
-                    <form class="col-12" id="S3Sanitizacion" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Sanitizacion" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Sanitizacion_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Sanitizacion_type_selector" name="S3Sanitizacion_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Sanitizacion_type_selector_casaChica">Casa chica (2 habitaciones) </option>
                             <option value="S3Sanitizacion_type_selector_casaMediana">Casa mediana (3 habitaciones) </option>
@@ -2483,16 +2486,16 @@
                             <div class="text-center text py-2"> Detalles </div>
                             <div class="d-flex">
                                 <div id="S3cegOtro" class="pt-2 w-100">
-                                    <textarea class="form-control" id="Sanitizacion-ceg-text" rows="5"></textarea>
+                                    <textarea class="form-control" id="Sanitizacion-ceg-text" name="Sanitizacion-ceg-text" rows="5"></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
 
                     <!-- Limpieza de vidrios -->
-                    <form class="col-12" id="S3Limpieza_de_vidrios" style="display: none !important;"> 
+                    <form method="POST" action="../test.php" class="col-12" id="S3Limpieza_de_vidrios" style="display: none !important;"> 
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Limpieza_de_vidrios_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Limpieza_de_vidrios_type_selector" name="S3Limpieza_de_vidrios_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Limpieza_de_vidrios_type_selector_chica">Chicas (.1mts - .5mts)</option>
                             <option value="S3Limpieza_de_vidrios_type_selector_mediana">Medianas (.6mts - 1mts)</option>
@@ -2560,9 +2563,9 @@
                     </form>
 
                     <!-- Limpieza de ductos -->
-                    <form class="col-12" id="S3Limpieza_de_ductos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Limpieza_de_ductos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S3Limpieza_de_ductos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S3Limpieza_de_ductos_type_selector" name="S3Limpieza_de_ductos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S3Limpieza_de_ductos_type_selector_rejillaChica">Chicas (.1mts - .5mts)</option>
                             <option value="S3Limpieza_de_ductos_type_selector_rejillaMediana">Medianas (.6mts - 1mts)</option>
@@ -2623,28 +2626,28 @@
                     </form>
 
                     <!-- Limpieza profunda -->
-                    <form class="col-12" id="S3Limpieza_profunda" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Limpieza_profunda" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalles </div>
                         </div>
-                        <textarea class="form-control mt-3" id="S3Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
+                        <textarea class="form-control mt-3" id="S3Limpieza_profunda-text" name="S3Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
                     </form>
 
                     <!-- Limpieza general -->
-                    <form class="col-12" id="S3Limpieza_general" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S3Limpieza_general" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalle </div>
                         </div>
-                        <textarea class="form-control mt-3" id="Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
+                        <textarea class="form-control mt-3" id="S3Limpieza-general-text" name="S3Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
                     </form>
                 </section>
 
                 <!-- Servicio4 -->
                 <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 " id="servicio4">
                     <!-- Form selector -->
-                    <form id="form-shower" class="col-12">
+                    <form method="POST" action="../test.php" id="form-shower" class="col-12">
                         <div class="text-center text pb-2"> Servicio </div>
-                        <select class="form-control " id="S4service_selector1" autocomplete="off">
+                        <select class="form-control " id="S4service_selector1" name="S4service_selector1" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
                             <option value="S4Lavado_de_sillones">Lavado de sillones</option>
@@ -2662,9 +2665,9 @@
                     </form>
 
                     <!-- Lavado de alfombra-->
-                    <form class="col-12" id="S4Lavado_de_alfombra" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_alfombra" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S4Lavado_de_alfombra_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_alfombra_cant_selector" name="S4Lavado_de_alfombra_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_alfombra_cant_selector_alfombra1">1 alfombra</option>
                             <option value="S4Lavado_de_alfombra_cant_selector_alfombra2">2 alfombras</option>
@@ -2674,7 +2677,8 @@
                         </select>
                         
                         <!-- alfombra1 -->
-                        <div class="col-12" id="S4Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
+                        <div class="col-12" id="S4Lavado_de_alfombra_cant_selector_alfombra1" name
+                        ="S4Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaño </div>
                             <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
@@ -2695,7 +2699,7 @@
                         <div class="col-12" id="S4Lavado_de_alfombra_cant_selector_alfombra2" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control mb-4" id="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control mb-4" id="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" name="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x4">3mts. x 4mts.</option>
@@ -2710,7 +2714,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" name="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x4">3mts. x 4mts.</option>
@@ -2729,7 +2733,7 @@
                         <div class="col-12" id="S4Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" name="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x4">3mts. x 4mts.</option>
@@ -2744,7 +2748,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" name="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x4">3mts. x 4mts.</option>
@@ -2759,7 +2763,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" name="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x4">3mts. x 4mts.</option>
@@ -2778,7 +2782,7 @@
                         <div class="col-12" id="S4Lavado_de_alfombra_cant_selector_alfombra4" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" name="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x4">3mts. x 4mts.</option>
@@ -2793,7 +2797,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" name="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x4">3mts. x 4mts.</option>
@@ -2808,7 +2812,7 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" name="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x4">3mts. x 4mts.</option>
@@ -2824,7 +2828,7 @@
 
 
                             <div> Alfombra 4: </div>
-                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" name="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x3">3mts. x 3mts.</option>
                                 <option value="S4Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x4">3mts. x 4mts.</option>
@@ -2855,9 +2859,9 @@
                     </form>
 
                     <!-- Lavado de sillones-->
-                    <form class="col-12" id="S4Lavado_de_sillones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_sillones" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S4Lavado_de_sillones_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_sillones_cant_selector" name="S4Lavado_de_sillones_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_sillones_cant_selector_pieza1">1 pieza</option>
                             <option value="S4Lavado_de_sillones_cant_selector_pieza2">2 piezas</option>
@@ -2868,7 +2872,7 @@
                         <!-- 1 pieza -->
                         <div class="col-12" id="S4Lavado_de_sillones_cant_selector_pieza1" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza1_type_selector" name="S4Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento1">1 pieza (1 asiento) </option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento2">1 pieza (2 asientos) </option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento3">1 pieza (3 asientos) </option>
@@ -2885,7 +2889,7 @@
                         <!-- 2 piezas -->
                         <div class="col-12" id="S4Lavado_de_sillones_cant_selector_pieza2" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza2_type_selector" name="S4Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento1_asiento2">2 piezas (1 asiento y 2 asientos) </option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento2_asiento3">2 piezas (2 asientos y 3 asientos) </option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza2_type_selector_asientoL">2 piezas (En L) </option>
@@ -2906,7 +2910,7 @@
                         <!-- 3 piezas -->
                         <div class="col-12" id="S4Lavado_de_sillones_cant_selector_pieza3" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S4Lavado_de_sillones_cant_selector_pieza3_type_selector" name="S4Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1_asiento2_asiento3">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento2_asiento2_asiento3">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
                                 <option value="S4Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1">3 piezas (1 asiento c/u) </option>
@@ -2939,9 +2943,9 @@
                     </form>
 
                     <!-- Lavado de sillas-->
-                    <form class="col-12" id="S4Lavado_de_sillas" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_sillas" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Lavado_de_sillas_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_sillas_type_selector" name="S4Lavado_de_sillas_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_sillas_type_selector_asiento">Silla con asiento de tela</option>
                             <option value="S4Lavado_de_sillas_type_selector_respaldo">Silla con respaldo de tela</option>
@@ -2980,9 +2984,9 @@
                     </form>
 
                     <!-- Lavado de colchones -->
-                    <form class="col-12" id="S4Lavado_de_colchones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_colchones" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Lavado_de_colchones_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_colchones_type_selector" name="S4Lavado_de_colchones_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_colchones_type_selector_individual">Individual</option>
                             <option value="S4Lavado_de_colchones_type_selector_matrimonial">Matrimonial</option>
@@ -3045,7 +3049,7 @@
                         <!-- Sofa cama -->
                         <div class="col-12" id="S4Lavado_de_colchones_type_selector_sofaCama" style="display: none !important;">
                             <div class="text-center text py-2"> De cuantos asientos? </div>
-                            <select class="form-control" id="S4Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
+                            <select class="form-control" id="S4Lavado_de_colchones_type_selector_sofaCama_cant_selector" name="S4Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
                                 <option value="" selected="selected"></option>
                                 <option value="S4Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento1">1 asiento</option>
                                 <option value="S4Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento2">2 asientos</option>
@@ -3061,9 +3065,9 @@
                     </form>
 
                     <!-- Lavado de interior de autos -->
-                    <form class="col-12" id="S4Lavado_de_int_de_autos"  style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_int_de_autos"  style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Lavado_de_int_de_autos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_int_de_autos_type_selector" name="S4Lavado_de_int_de_autos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_int_de_autos_type_selector_chico">Chico (1 fila de asientos)</option>
                             <option value="S4Lavado_de_int_de_autos_type_selector_regular">Regular (2 filas de asientos*) </option>
@@ -3113,9 +3117,9 @@
                     </form>
 
                     <!-- Lavado de pisos -->
-                    <form class="col-12" id="S4Lavado_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Lavado_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Lavado_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Lavado_de_pisos_type_selector" name="S4Lavado_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Lavado_de_pisos_type_selector_pisoCeramica">Piso de ceramica</option>
                             <option value="S4Lavado_de_pisos_type_selector_pisoLiso">Piso liso</option>
@@ -3198,9 +3202,9 @@
                     </form>
 
                     <!-- Pulido de pisos --> 
-                    <form class="col-12" id="S4Pulido_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Pulido_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Pulido_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Pulido_de_pisos_type_selector" name="S4Pulido_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Pulido_de_pisos_type_selector_marmol">Pulido de mármol</option>
                             <option value="S4Pulido_de_pisos_type_selector_mosaico">Pulido de mosaico</option>
@@ -3250,9 +3254,9 @@
                     </form>
 
                     <!-- Sanitizacion -->
-                    <form class="col-12" id="S4Sanitizacion" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Sanitizacion" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Sanitizacion_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Sanitizacion_type_selector" name="S4Sanitizacion_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Sanitizacion_type_selector_casaChica">Casa chica (2 habitaciones) </option>
                             <option value="S4Sanitizacion_type_selector_casaMediana">Casa mediana (3 habitaciones) </option>
@@ -3302,9 +3306,9 @@
                     </form>
 
                     <!-- Limpieza de vidrios -->
-                    <form class="col-12" id="S4Limpieza_de_vidrios" style="display: none !important;"> 
+                    <form method="POST" action="../test.php" class="col-12" id="S4Limpieza_de_vidrios" style="display: none !important;"> 
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Limpieza_de_vidrios_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Limpieza_de_vidrios_type_selector" name="S4Limpieza_de_vidrios_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Limpieza_de_vidrios_type_selector_chica">Chicas (.1mts - .5mts)</option>
                             <option value="S4Limpieza_de_vidrios_type_selector_mediana">Medianas (.6mts - 1mts)</option>
@@ -3372,9 +3376,9 @@
                     </form>
 
                     <!-- Limpieza de ductos -->
-                    <form class="col-12" id="S4Limpieza_de_ductos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Limpieza_de_ductos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S4Limpieza_de_ductos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S4Limpieza_de_ductos_type_selector" name="S4Limpieza_de_ductos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S4Limpieza_de_ductos_type_selector_rejillaChica">Chicas (.1mts - .5mts)</option>
                             <option value="S4Limpieza_de_ductos_type_selector_rejillaMediana">Medianas (.6mts - 1mts)</option>
@@ -3435,28 +3439,28 @@
                     </form>
 
                     <!-- Limpieza profunda -->
-                    <form class="col-12" id="S4Limpieza_profunda" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Limpieza_profunda" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalles </div>
                         </div>
-                        <textarea class="form-control mt-3" id="S4Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
+                        <textarea class="form-control mt-3" id="S4Limpieza_profunda-text" name="S4Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
                     </form>
 
                     <!-- Limpieza general -->
-                    <form class="col-12" id="S4Limpieza_general" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S4Limpieza_general" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalle </div>
                         </div>
-                        <textarea class="form-control mt-3" id="Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
+                        <textarea class="form-control mt-3" id="S4Limpieza-general-text" name="S4Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
                     </form>
                 </section>
                 
                 <!-- Servicio5 -->
                 <section style="outline: #ffffff solid 1px; padding: 20px" class="mt-5 my-4 " id="servicio5">
                     <!-- Form selector -->
-                    <form id="form-shower" class="col-12">
+                    <form method="POST" action="../test.php" id="form-shower" class="col-12">
                         <div class="text-center text pb-2"> Servicio </div>
-                        <select class="form-control " id="S5service_selector1" autocomplete="off">
+                        <select class="form-control " id="S5service_selector1" name="S5service_selector1" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_alfombra">Lavado de alfombra</option> <!-- Actual -->
                             <option value="S5Lavado_de_sillones">Lavado de sillones</option>
@@ -3474,9 +3478,9 @@
                     </form>
 
                     <!-- Lavado de alfombra-->
-                    <form class="col-12" id="S5Lavado_de_alfombra" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_alfombra" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S5Lavado_de_alfombra_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_alfombra_cant_selector" name="S5Lavado_de_alfombra_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_alfombra_cant_selector_alfombra1">1 alfombra</option>
                             <option value="S5Lavado_de_alfombra_cant_selector_alfombra2">2 alfombras</option>
@@ -3488,7 +3492,8 @@
                         <!-- alfombra1 -->
                         <div class="col-12" id="S5Lavado_de_alfombra_cant_selector_alfombra1" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaño </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra1_type_selector3x4">3mts. x 4mts.</option>
@@ -3507,7 +3512,7 @@
                         <div class="col-12" id="S5Lavado_de_alfombra_cant_selector_alfombra2" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control mb-4" id="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control mb-4" id="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" name="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector13x4">3mts. x 4mts.</option>
@@ -3522,7 +3527,7 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" name="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra2_type_selector23x4">3mts. x 4mts.</option>
@@ -3541,7 +3546,8 @@
                         <div class="col-12" id="S5Lavado_de_alfombra_cant_selector_alfombra3" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector13x4">3mts. x 4mts.</option>
@@ -3556,7 +3562,8 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector23x4">3mts. x 4mts.</option>
@@ -3571,7 +3578,8 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra3_type_selector33x4">3mts. x 4mts.</option>
@@ -3590,7 +3598,8 @@
                         <div class="col-12" id="S5Lavado_de_alfombra_cant_selector_alfombra4" style="display: none !important;">
                             <div class="text-center text py-2"> Tamaños </div>
                             <div> Alfombra 1: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector1" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector13x4">3mts. x 4mts.</option>
@@ -3605,7 +3614,8 @@
                             </div>
 
                             <div> Alfombra 2: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector2" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector23x4">3mts. x 4mts.</option>
@@ -3620,7 +3630,8 @@
                             </div>
 
                             <div> Alfombra 3: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3"
+                            name="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector3" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector33x4">3mts. x 4mts.</option>
@@ -3636,7 +3647,7 @@
 
 
                             <div> Alfombra 4: </div>
-                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" name="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector4" autocomplete="off" style="min-width: 100%;" >
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x3">3mts. x 3mts.</option>
                                 <option value="S5Lavado_de_alfombra_cant_selector_alfombra4_type_selector43x4">3mts. x 4mts.</option>
@@ -3667,9 +3678,9 @@
                     </form>
 
                     <!-- Lavado de sillones-->
-                    <form class="col-12" id="S5Lavado_de_sillones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_sillones" style="display: none !important;">
                         <div class="text-center text py-2"> Cantidad </div>
-                        <select class="form-control" id="S5Lavado_de_sillones_cant_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_sillones_cant_selector" name="S5Lavado_de_sillones_cant_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_sillones_cant_selector_pieza1">1 pieza</option>
                             <option value="S5Lavado_de_sillones_cant_selector_pieza2">2 piezas</option>
@@ -3680,7 +3691,7 @@
                         <!-- 1 pieza -->
                         <div class="col-12" id="S5Lavado_de_sillones_cant_selector_pieza1" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza1_type_selector" name="S5Lavado_de_sillones_cant_selector_pieza1_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento1">1 pieza (1 asiento) </option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento2">1 pieza (2 asientos) </option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza1_type_selector_asiento3">1 pieza (3 asientos) </option>
@@ -3697,7 +3708,7 @@
                         <!-- 2 piezas -->
                         <div class="col-12" id="S5Lavado_de_sillones_cant_selector_pieza2" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza2_type_selector" name="S5Lavado_de_sillones_cant_selector_pieza2_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento1_asiento2">2 piezas (1 asiento y 2 asientos) </option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza2_type_selector_asiento2_asiento3">2 piezas (2 asientos y 3 asientos) </option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza2_type_selector_asientoL">2 piezas (En L) </option>
@@ -3718,7 +3729,7 @@
                         <!-- 3 piezas -->
                         <div class="col-12" id="S5Lavado_de_sillones_cant_selector_pieza3" style="display: none !important;">
                             <div class="text-center text py-2"> type </div>
-                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
+                            <select class="form-control" id="S5Lavado_de_sillones_cant_selector_pieza3_type_selector" name="S5Lavado_de_sillones_cant_selector_pieza3_type_selector" autocomplete="off" style="min-width: 100%;" >
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1_asiento2_asiento3">3 piezas (1 asiento, 2 asientos y 3 asientos)</option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento2_asiento2_asiento3">3 piezas (2 asientos, 2 asientos y 3 asientos)</option>
                                 <option value="S5Lavado_de_sillones_cant_selector_pieza3_type_selector_asiento1">3 piezas (1 asiento c/u) </option>
@@ -3751,9 +3762,9 @@
                     </form>
 
                     <!-- Lavado de sillas-->
-                    <form class="col-12" id="S5Lavado_de_sillas" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_sillas" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Lavado_de_sillas_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_sillas_type_selector" name="S5Lavado_de_sillas_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_sillas_type_selector_asiento">Silla con asiento de tela</option>
                             <option value="S5Lavado_de_sillas_type_selector_respaldo">Silla con respaldo de tela</option>
@@ -3792,9 +3803,9 @@
                     </form>
 
                     <!-- Lavado de colchones -->
-                    <form class="col-12" id="S5Lavado_de_colchones" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_colchones" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Lavado_de_colchones_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_colchones_type_selector" name="S5Lavado_de_colchones_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_colchones_type_selector_individual">Individual</option>
                             <option value="S5Lavado_de_colchones_type_selector_matrimonial">Matrimonial</option>
@@ -3857,7 +3868,7 @@
                         <!-- Sofa cama -->
                         <div class="col-12" id="S5Lavado_de_colchones_type_selector_sofaCama" style="display: none !important;">
                             <div class="text-center text py-2"> De cuantos asientos? </div>
-                            <select class="form-control" id="S5Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
+                            <select class="form-control" id="S5Lavado_de_colchones_type_selector_sofaCama_cant_selector" name="S5Lavado_de_colchones_type_selector_sofaCama_cant_selector" autocomplete="off">
                                 <option value="" selected="selected"></option>
                                 <option value="S5Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento1">1 asiento</option>
                                 <option value="S5Lavado_de_colchones_type_selector_sofaCama_cant_selector_asiento2">2 asientos</option>
@@ -3873,9 +3884,9 @@
                     </form>
 
                     <!-- Lavado de interior de autos -->
-                    <form class="col-12" id="S5Lavado_de_int_de_autos"  style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_int_de_autos"  style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Lavado_de_int_de_autos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_int_de_autos_type_selector" name="S5Lavado_de_int_de_autos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_int_de_autos_type_selector_chico">Chico (1 fila de asientos)</option>
                             <option value="S5Lavado_de_int_de_autos_type_selector_regular">Regular (2 filas de asientos*) </option>
@@ -3925,9 +3936,9 @@
                     </form>
 
                     <!-- Lavado de pisos -->
-                    <form class="col-12" id="S5Lavado_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Lavado_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Lavado_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Lavado_de_pisos_type_selector" name="S5Lavado_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Lavado_de_pisos_type_selector_pisoCeramica">Piso de ceramica</option>
                             <option value="S5Lavado_de_pisos_type_selector_pisoLiso">Piso liso</option>
@@ -4010,9 +4021,9 @@
                     </form>
 
                     <!-- Pulido de pisos --> 
-                    <form class="col-12" id="S5Pulido_de_pisos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Pulido_de_pisos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Pulido_de_pisos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Pulido_de_pisos_type_selector" name="S5Pulido_de_pisos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Pulido_de_pisos_type_selector_marmol">Pulido de mármol</option>
                             <option value="S5Pulido_de_pisos_type_selector_mosaico">Pulido de mosaico</option>
@@ -4062,9 +4073,9 @@
                     </form>
 
                     <!-- Sanitizacion -->
-                    <form class="col-12" id="S5Sanitizacion" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Sanitizacion" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Sanitizacion_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Sanitizacion_type_selector" name="S5Sanitizacion_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Sanitizacion_type_selector_casaChica">Casa chica (2 habitaciones) </option>
                             <option value="S5Sanitizacion_type_selector_casaMediana">Casa mediana (3 habitaciones) </option>
@@ -4114,9 +4125,9 @@
                     </form>
 
                     <!-- Limpieza de vidrios -->
-                    <form class="col-12" id="S5Limpieza_de_vidrios" style="display: none !important;"> 
+                    <form method="POST" action="../test.php" class="col-12" id="S5Limpieza_de_vidrios" style="display: none !important;"> 
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Limpieza_de_vidrios_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Limpieza_de_vidrios_type_selector" name="S5Limpieza_de_vidrios_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Limpieza_de_vidrios_type_selector_chica">Chicas (.1mts - .5mts)</option>
                             <option value="S5Limpieza_de_vidrios_type_selector_mediana">Medianas (.6mts - 1mts)</option>
@@ -4184,9 +4195,9 @@
                     </form>
 
                     <!-- Limpieza de ductos -->
-                    <form class="col-12" id="S5Limpieza_de_ductos" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Limpieza_de_ductos" style="display: none !important;">
                         <div class="text-center text py-2"> type </div>
-                        <select class="form-control" id="S5Limpieza_de_ductos_type_selector" autocomplete="off">
+                        <select class="form-control" id="S5Limpieza_de_ductos_type_selector" name="S5Limpieza_de_ductos_type_selector" autocomplete="off">
                             <option value="" selected="selected"></option>
                             <option value="S5Limpieza_de_ductos_type_selector_rejillaChica">Chicas (.1mts - .5mts)</option>
                             <option value="S5Limpieza_de_ductos_type_selector_rejillaMediana">Medianas (.6mts - 1mts)</option>
@@ -4247,19 +4258,19 @@
                     </form>
 
                     <!-- Limpieza profunda -->
-                    <form class="col-12" id="S5Limpieza_profunda" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Limpieza_profunda" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalles </div>
                         </div>
-                        <textarea class="form-control mt-3" id="S5Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
+                        <textarea class="form-control mt-3" id="S5Limpieza_profunda-text" name="S5Limpieza_profunda-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza profunda. ej. Limpieza de 3 ventanas grandes, lavado de set de 2 piezas, etc., etc."></textarea>
                     </form>
 
                     <!-- Limpieza general -->
-                    <form class="col-12" id="S5Limpieza_general" style="display: none !important;">
+                    <form method="POST" action="../test.php" class="col-12" id="S5Limpieza_general" style="display: none !important;">
                         <div class="d-flex mt-3">
                             <div class="mx-auto"> Detalle </div>
                         </div>
-                        <textarea class="form-control mt-3" id="Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
+                        <textarea class="form-control mt-3" id="S5Limpieza-general-text" name="S5Limpieza-general-text" rows="5" placeholder="Porafavor describir los articulos que requieren limpieza general. ej. Limpieza de patio, barrer, trapear, limpiar muebles, etc. etc."></textarea>
                     </form>
                 </section>
             </section>
@@ -4278,8 +4289,8 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>  
             
-            <form>
-                <button type="submit" class="btn btn-primary my-4 " id="btnEnviar">
+            <form method="POST" action="../test.php">
+                <button type="submit" class="btn btn-primary my-4 " id="btnEnviar" method="POST" formaction="../test.php">
                     Enviar
                 </button>
             </form>
@@ -4305,6 +4316,17 @@
                 </div>
             </div>
         </footer>
+
+        <!-- BEGIN: WHATSAPP BUTTON -->
+        <div style="background-color:#02a047; width: 70px; height:70px; border-radius: 50%; position:fixed; top: 87vh; left: 5px; z-index:50000; display: block; ">
+            <div style="margin: auto; display: block; position: relative; left: 18%; top: 13%">
+                <a href="https://wa.me/526566036947">
+                    <img src="../assets/whatsapp-outline-01.png" alt="Whatsapp" style="width: 47px !important;">
+                </a>
+            </div>
+            
+        </div>
+        <!-- END: WHATSAPP BUTTON -->
 
 
         <!-- Optional JavaScript -->
