@@ -69,10 +69,14 @@ button, .col-6, p{
     visibility: visible;
 }
 
-input{
+input, select, textarea{
     border-radius: 20px;
     border: none;
     padding: 1px 11px;
+    
+}
+#cotizador input[type=text], textarea{
+    width: 100%;
 }
 
 main{
@@ -355,6 +359,8 @@ main{
         z-index: 2;
     }
 
+
+
     #navbarNavAltMarkup div{
         background-color: rgba(64, 159, 239, 1);
         height: 150px;
@@ -384,3 +390,10 @@ main{
     }
     /* end of footer */ 
 }
+
+    .box-servicios{
+        background-color: #438fff;
+        border-radius: 15px;
+        padding: 2%;
+        border:#1a64d1 solid 2px;
+    }

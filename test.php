@@ -1,15 +1,6 @@
 <?php
-// Esto le dice a PHP que usaremos cadenas UTF-8 hasta el final
-mb_internal_encoding('UTF-8');
- 
-// Esto le dice a PHP que generaremos cadenas UTF-8
-mb_http_output('UTF-8');
 
-    $from = "no-responder@figueroasclean.com";
-    $to = "marcogarcia.gon@gmail.com";
-    $subject = "Nueva entrada en formulario";
-
-if(isset($_POST['inputEmail4'])){
+if(!empty($_POST['inputEmail4'])){
     $nombrecompleto = $_POST['inputName'];
     $telefono = $_POST['inputTel'];
     $celular = $_POST['inputCel'];
@@ -18,8 +9,8 @@ if(isset($_POST['inputEmail4'])){
     $ciudad = $_POST['inputCity'];
     $estado = $_POST['inputState'];
     $cp = $_POST['inputZip'];
-    $fecha = $_POST['selected'];
-    $hora = $_POST['calendarioHorario'];
+    //$fecha = $_POST['selected'];
+    //$hora = $_POST['calendarioHorario'];
 
 
     $message = '<table style="width:100%">
@@ -31,13 +22,15 @@ if(isset($_POST['inputEmail4'])){
         <tr><td>Ciudad: '.$ciudad.'</td></tr>
         <tr><td>Estado: '.$estado.'</td></tr>
         <tr><td>Código postal: '.$cp.'</td></tr>
-        <tr><td>Fecha: '.$fecha.'</td></tr>
-        <tr><td>Hora: '.$hora.'</td></tr>
         </table>';
     }
     $headers = "From:" . $from;
+
+    $from = "no-responder@figueroasclean.com";
+    $to = "marcogarcia.gon@gmail.com";
+    $subject = "Nueva cotizacion";
     
-    @mail($to,$subject,$message, $headers);
+    mail($to,$subject,$message, $headers);
     echo '<script>alert("Datos enviados, en breve te contactaremos");</script>';
 
 ?>
