@@ -13,77 +13,71 @@
 			<title>Figueroas clean</title>
 			<link rel="Figueroas Clean icon" href="../assets/mini Logo Figueroas clean.png" type="image"> <!-- Fix -->
 		</head>
-		<body class="container " >
+		<body class="container" >
 		<header></header>
 		<nav class="d-flex">
-			<div class="flex-grow-1 align-self-center nav-options" id="nav-options">
-				<div>
-					<button clss="nav-options-img">
-					<img src="../assets/mini Logo Figueroas clean.png">
-					</button>
-					<a href="../index.html">
-						<button class="text">Inicio</button>
-					</a>
-					<a href="../html/ns.html">
-						<button class="text">Nuestros servicios</button>
-					</a>
-					<a href="../html/cotizador.html">
-						<button class="text">Cotizaciones</button>
-					</a>
-					<a href="../html/cont.html">
-						<button class="text">Contactanos</button>
-					</a>
-				</div>
-			</div>
-			<div class="align-self-center">
-				<button class="navbar-toggler flex-shrink-0" id="nav-btn-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation" onclick="hide('nav-img-menu-icon')">
-				<img src="../assets/nav menu icon.svg" id="nav-img-menu-icon">
-				</button>
-			</div>
-			<!-- collapse menu -->
-			<div class="collapse navbar-collapse container" id="navbarNavAltMarkup">
-				<div class="navbar-nav text-center">
-					<div class="nav-item nav-link unneeded-text-option" href="">
-						<a href="../index.html">
-							<button class="text">Inicio</button>
-						</a>
-					</div>
-					<div class="nav-item nav-link unneeded-text-option" >
-						<a href="../html/ns.html">
-							<button class="text">Nuestros servicios</button>
-						</a>
-					</div>
-					<div class="nav-item nav-link unneeded-text-option" href="#">
-						<a href="../html/cotizador.html">
-							<button class="text">Cotizaciones</button>
-						</a>
-					</div>
-					<div class="nav-item nav-link unneeded-text-option" href="#">
-						<a href="../html/cont.html">
-							<button class="text">Contactanos</button>
-						</a>
-					</div>
-					<div class="nav-item nav-link" href="#">
-						<input type="text" style="margin-top: 10px">
-						<button class="">
-						<img src='../assets/nav search icon.png' class="nav-img">
-						</button>
-					</div>
-					<div class="nav-item nav-link" href="#">
-						<button class="">
-						<img src="../assets/nav notifiaction icon.png" class="nav-img">
-						</button>
-					</div>
-					<div class="nav-item nav-link" href="#">
-						<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="show('nav-img-menu-icon')">
-						<img src="../assets/nav cancel icon.png" class="nav-img">
-						</button>
-					</div>
-					<!-- Disabled link -->
-					<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
-				</div>
-			</div>
-		</nav>
+        <div class="flex-grow-1 align-self-center nav-options" id="nav-options">
+            <div>
+                <button clss="nav-options-img">
+                    <img src="../assets/mini Logo Figueroas clean.png">
+                </button>    
+                <a href="../html/index.html">
+                    <button class="text">Inicio</button>
+                </a>
+                <a href="../html/ns.html">
+                    <button class="text">Nuestros servicios</button>
+                </a>
+                <a href="../html/cotizador.html">
+                    <button class="text">Cotizaciones</button>
+                </a>
+                <a href="../html/cont.html">
+                    <button class="text">Contactanos</button>
+                </a>
+            </div>
+        </div>   
+            <div class="align-self-center">
+                <button class="navbar-toggler flex-shrink-0" id="nav-btn-menu-icon" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation" onclick="show('navbarNavAltMarkup')">
+                    <img src="../assets/nav menu icon.svg" id="nav-img-menu-icon">
+                </button>
+            </div>            
+            <!-- collapse menu -->
+            <div class="collapse navbar-collapse container" id="navbarNavAltMarkup" style="padding: 0px; height: 90px !important;">
+                <div class="navbar-nav text-center">
+                    <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
+                        <a href="index.html">
+                            <button class="text">Inicio</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;" >
+                        <a href="html/ns.html">
+                            <button class="text">Nuestros servicios</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
+                        <a href="html/cotizador.html">
+                            <button class="text">Cotizaciones</button>
+                        </a>
+                    </div>
+                    <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
+                        <a href="html/cont.html">
+                            <button class="text">Contactanos</button>
+                        </a>
+                    </div>
+                    <!-- <div class="nav-item nav-link" href="#">
+                        <button>
+                            <img src="assets/nav notifiaction icon.png" class="nav-img">
+                        </button>
+                    </div>	 -->
+                    <div class="nav-item nav-link" style="background-color:#409fef;">
+                        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" onclick="hide('navbarNavAltMarkup')"> 
+                            <img src="../assets/nav cancel icon.png" class="nav-img">
+                        </button>
+                    </div>
+                    <!-- Disabled link -->
+                    <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+                </div>
+            </div>
+        </nav>
 		<section>
 			<div class="container-fluid">
 				<div class="row">
@@ -131,6 +125,7 @@
 						<div class="col-lg-6">
 							<label class="d-block">Fecha del servicio</label>
 							<input type="date" name="cotDate" id="cotDate" required class="inputFullWidth">
+							<p><small>Da click en el ícono para desplegar el calendario</small></p>
 						</div>
 						<div class="col-lg-6">
 							<label class="d-block">Horario deseado</label>
@@ -293,6 +288,10 @@
         </div>
         <!-- END: WHATSAPP BUTTON -->
 	</footer>
+	<!-- jQuery first-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!-- CUSTOM JS -->
+	<script src="../js/cot.js"></script>
 	<script type="text/javascript">
 		//Limitar el servicio al dia siguiente
 		var today = new Date();

@@ -787,7 +787,7 @@ main{
     #servicios-section-top-servicios-residenciales-t,
     #servicios-section-top-servicios-comerciales-t,
     #servicios-section-bottom-t{
-        height: 216px !important;
+        height: 270px !important;
     }
     /* end of servicios-section */
 
@@ -808,4 +808,14 @@ main{
         margin-bottom: 16px;
     }
     /* end of footer */ 
+}
+
+@media screen and (min-width: 992px){
+    #nav-btn-menu-icon{
+        display: none !important;
+    }
+}
+
+.card button{
+    margin-top: auto;
 }

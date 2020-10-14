@@ -37,7 +37,7 @@ nav{
 }
 
 img{
-    min-width: 100%;
+    /*min-width: 100%*/;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -544,4 +544,10 @@ main{
         margin-bottom: 16px;
     }
     /* end of footer */ 
+}
+
+@media screen and (min-width: 992px){
+    #nav-btn-menu-icon{
+        display: none !important;
+    }
 }
