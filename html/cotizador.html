@@ -21,16 +21,16 @@
                 <button clss="nav-options-img">
                     <img src="../assets/mini Logo Figueroas clean.png">
                 </button>    
-                <a href="../html/index.html">
+                <a href="../index.html">
                     <button class="text">Inicio</button>
                 </a>
-                <a href="../html/ns.html">
+                <a href="ns.html">
                     <button class="text">Nuestros servicios</button>
                 </a>
-                <a href="../html/cotizador.html">
+                <a href="cotizador.html">
                     <button class="text">Cotizaciones</button>
                 </a>
-                <a href="../html/cont.html">
+                <a href="cont.html">
                     <button class="text">Contactanos</button>
                 </a>
             </div>
@@ -44,22 +44,22 @@
             <div class="collapse navbar-collapse container" id="navbarNavAltMarkup" style="padding: 0px; height: 90px !important;">
                 <div class="navbar-nav text-center">
                     <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
-                        <a href="index.html">
+                        <a href=".../index.html">
                             <button class="text">Inicio</button>
                         </a>
                     </div>
                     <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;" >
-                        <a href="html/ns.html">
+                        <a href="ns.html">
                             <button class="text">Nuestros servicios</button>
                         </a>
                     </div>
                     <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
-                        <a href="html/cotizador.html">
+                        <a href="cotizador.html">
                             <button class="text">Cotizaciones</button>
                         </a>
                     </div>
                     <div class="nav-item nav-link unneeded-text-option" style="background-color:#409fef;">
-                        <a href="html/cont.html">
+                        <a href="cont.html">
                             <button class="text">Contactanos</button>
                         </a>
                     </div>
@@ -150,104 +150,309 @@
 						<div class="col-lg-12 mt-5 mb-3">
 							<h3>Selecciona los servicios de tu interés</h3>
 						</div>
+						<!-- INICIO: LAVADO ALFOMBRAS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoAlfombras" id="lavadoAlfombras" value="Seleccionado" onclick="verAlfombras()">
 							<label for="Lavado de Alfombras">Lavado de Alfombras</label>
 							<div style="display: none;" id="especsAlfombras">
-								<label class="d-block" for="cantidadLavadoAlfombras">Cantidad</label>
-								<input type="text" name="cantidadLavadoAlfombras" placeholder="¿Cuántos m² aprox.?">
+								<p>Ayúdanos a darte una cotización más detallada y completa la siguiente información</p>
+								<br>
+								<table class="table text-white">
+									<thead>
+										<tr>
+											<td><strong>Cantidad</strong></td>
+											<td><strong>Selecciona su tamaño</strong></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><input type="number" name="cantidadAlfombra1" min="1" placeholder="1" /></td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra1">Selecciona un tamaño</label> -->
+												<select name="tamanoAlfombra1" id="tamanoAlfombra1">
+													<option value="Chica - 3x3mts">Chica - 3 x 3 mts.</option>
+													<option value="Chica - 3x3mts">Mediana - 4 x 4 mts.</option>
+													<option value="Chica - 3x3mts">Grande - 5 x 5 mts.</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="number" name="cantidadAlfombra2"/></td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra2">Selecciona un tamaño</label> -->
+												<select name="tamanoAlfombra2" id="tamanoAlfombra2">
+													<option value=""></option>
+													<option value="Chica - 3x3mts">Chica - 3 x 3 mts.</option>
+													<option value="Chica - 3x3mts">Mediana - 4 x 4 mts.</option>
+													<option value="Chica - 3x3mts">Grande - 5 x 5 mts.</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="number" name="cantidadAlfombra3"/></td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra3">Selecciona un tamaño</label> -->
+												<select name="tamanoAlfombra3" id="tamanoAlfombra3">
+													<option value=""></option>
+													<option value="Chica - 3x3mts">Chica - 3 x 3 mts.</option>
+													<option value="Chica - 3x3mts">Mediana - 4 x 4 mts.</option>
+													<option value="Chica - 3x3mts">Grande - 5 x 5 mts.</option>
+												</select>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- <label class="d-block" for="cantidadLavadoAlfombras">Cantidad</label>
+								<input type="text" name="cantidadLavadoAlfombras" placeholder="¿Cuántos m² aprox.?"> -->
 							</div>
 							
 						</div>
+						<!-- FIN: LAVADO ALFOMBRAS -->
+						<!-- INICIO: LAVADO SILLONES -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoSillones" id="lavadoSillones" value="Seleccionado" onclick="verSillones()">
 							<label for="Lavado de Sillones">Lavado de Sillones</label>
 							<div style="display: none;" id="especsSillones">
-								<label class="d-block" for="cantidadLavadoSillones">Cantidad</label>
-								<input type="text" name="cantidadLavadoSillones" placeholder="¿Cuantas piezas y asientos?">
+								<p>¿Cuántos asientos en total tienen tus sillones?</p>
+								<label class="d-inline-block" for="cantidadLavadoSillones">Cantidad</label>
+								<input type="number" name="cantidadLavadoSillones" id="cantidadLavadoSillones" min="1" max="20" placeholder="1">
+								<br>
+								<small>Considera asientos como los cojines en los que se sienta una persona</small>
 							</div>
 						</div>
+						<!-- FIN: LAVADO DE SILLONES -->
+						<!-- INICIO: LAVADO DE SILLAS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoSillas" id="lavadoSillas" value="Seleccionado" onclick="verSillas()">
 							<label for="Lavado de Sillas">Lavado de Sillas</label>
 							<div style="display: none;" id="especsSillas">
-								<label class="d-block" class="d-block" for="cantidadLavadoSillas">Cantidad</label>
-								<input type="text" name="cantidadLavadoSillas" placeholder="¿Cuántas Sillas?">
+								<label class="d-block" class="d-block" for="cantidadLavadoSillas">Cantidad de sillas</label>
+								<input type="number" name="cantidadLavadoSillas" placeholder="1">
+								<p class="mt-4 mb-1">¿Cómo son las sillas?</p>
+								<select name="tipoSillas" id="tipoSillas">
+									<option disabled selected>Selecciona un tipo de silla</option>
+									<option value="Silla con asiento de tela">Sillas con asiento de tela</option>
+									<option value="Silla con respaldo de tela">Sillas con respaldo de tela</option>
+									<option value="Silla con asiento y respaldo de tela">Sillas con asiento y respaldo de tela</option>
+								</select>
 							</div>
 						</div>
+						<!-- FIN:LAVADO DE SILLAS -->
+						<!-- INICIO: LAVADO DE COLCHONES -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoColchones" id="lavadoColchones" value="Seleccionado" onclick="verColchones()">
 							<label for="Lavado de Colchones">Lavado de Colchones</label>
 							<div style="display: none;" id="especsColchones">
-								<label class="d-block"for="cantidadLavadoColchones">¿Qué tamaño y cuantas piezas?</label>
-								<input type="text" name="cantidadLavadoColchones" placeholder="Especifica el tamaño y número de piezas">
+								<table class="table text-white">
+									<thead>
+										<tr>
+											<td><strong>Cantidad</strong></td>
+											<td><strong>¿De qué su tamaño?</strong></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<input type="number" name="cantidadColchon1" min="1" placeholder="1" />
+											</td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra1">Selecciona un tamaño</label> -->
+												<select name="tamanoColchon1" id="tamanoColchon1">
+													<option disabled selected>Selecciona un tamaño</option>
+													<option value="Individual">Individual</option>
+													<option value="Matrimonial">Matrimonial</option>
+													<option value="Queen">Queen</option>
+													<option value="King">King</option>
+													<option value="California King">California King</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="number" name="cantidadColchon2" min="1" />
+											</td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra2">Selecciona un tamaño</label> -->
+												<select name="tamanoColchon2" id="tamanoColchon2">
+													<option disabled selected>Selecciona un tamaño</option>
+													<option value=""></option>
+													<option value="Individual">Individual</option>
+													<option value="Matrimonial">Matrimonial</option>
+													<option value="Queen">Queen</option>
+													<option value="King">King</option>
+													<option value="California King">California King</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="number" name="cantidadColchon3" min="1" />
+											</td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra3">Selecciona un tamaño</label> -->
+												<select name="tamanoColchon3" id="tamanoColchon3">
+													<option disabled selected>Selecciona un tamaño</option>
+													<option value="Individual">Individual</option>
+													<option value="Matrimonial">Matrimonial</option>
+													<option value="Queen">Queen</option>
+													<option value="King">King</option>
+													<option value="California King">California King</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="number" name="cantidadColchon4"/>
+											</td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra4">Selecciona un tamaño</label> -->
+												<select name="tamanoColchon4" id="tamanoColchon4">
+													<option disabled selected>Selecciona un tamaño</option>
+													<option value=""></option>
+													<option value="Individual">Individual</option>
+													<option value="Matrimonial">Matrimonial</option>
+													<option value="Queen">Queen</option>
+													<option value="King">King</option>
+													<option value="California King">California King</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="number" name="cantidadColchon5"/></td>
+											<td>
+												<!-- <label class="d-block" for="tamanoAlfombra5">Selecciona un tamaño</label> -->
+												<select name="tamanoColchon5" id="tamanoColchon5">
+													<option disabled selected>Selecciona un tamaño</option>
+													<option value=""></option>
+													<option value="Individual">Individual</option>
+													<option value="Matrimonial">Matrimonial</option>
+													<option value="Queen">Queen</option>
+													<option value="King">King</option>
+													<option value="California King">California King</option>
+												</select>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- <label class="d-block"for="cantidadLavadoColchones"></label>
+								<input type="text" name="cantidadLavadoColchones" placeholder="Especifica el tamaño y número de piezas"> -->
 							</div>
 						</div>
+						<!-- FIN: LAVADO DE COLCHONES -->
+						<!-- INICIO: Lavado de Autos -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoAutos" id="lavadoAutos" value="Seleccionado" onclick="verAutos()">
 							<label for="Lavado de Int. Autos">Lavado de Int. Autos</label>
 							<div style="display: none;" id="especsAutos">
-								<label class="d-block"for="cantidadLavadoAutos">¿Qué modelo de auto?</label>
-								<input type="text" name="cantidadLavadoAutos" placeholder="Cantidad de filas de asientos">
+								<label class="d-block" for="modeloLavadoAutos">¿Qué modelo de auto?</label>
+								<input type="text" name="modeloLavadoAutos" placeholder="Ej: Toyota Yaris">
+								<label class="d-block" for="cantidadFilas">¿Cuantas filas de asientos?</label>
+								<select name="cantidadFilas" id="catnidadFilas">
+									<option disabled selected>Selecciona una opción</option>
+									<option value="Auto - 1 fila de asientos">Auto - 1 fila de asientos</option>
+									<option value="Camioneta Chica - 2 filas de asientos"> Camioneta Chica - 2 filas de asientos</option>
+									<option value="Camioneta mediana - 3 filas de asientos">Camioneta mediana - 3 filas de asientos</option>
+									<option value="Camioneta grande - 4 o más filas">Camioneta grande - 4 o más filas</option>
+								</select>
 							</div>
 						</div>
+						<!-- INICIO:LAVADO DE PISOS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="lavadoPisos" id="lavadoPisos" value="Seleccionado" onclick="verPisos()">
 							<label for="Lavado de Pisos">Lavado de Pisos</label>
 							<div style="display: none;" id="especsPisos">
-								<label class="d-block"for="cantidadLavadoPisos">Especifica</label>
-								<input type="text" name="cantidadLavadoPisos" placeholder="¿Cuántos m² aprox. y tipo de piso?">
+								<label for="tipoLavadoPiso">¿Cómo es el piso?</label>
+									<select name="tipoLavadoPiso" id="tipoLavadoPiso">
+										<option disabled selected>Selecciona un tipo</option>
+										<option value="Piso de cerámica">Piso de cerámica</option>
+										<option value="Piso Liso">Piso Liso</option>
+										<option value="Piso Rústico">Piso Rústico</option>
+										<option value="Piso de Cemento">Piso de Cemento</option>
+										<option value="Piso Pintado">Piso Pintado</option>
+										<option value="Piso Laminado">Piso Laminado</option>
+										<option value="Piso de Madera">Piso de Madera</option>
+									</select>
+								<br>
+								<br>
+								<label class="d-block"for="cantidadLavadoPisos">¿Cuántos m² aproximadamente?</label>
+								<input type="number" name="cantidadLavadoPisos" placeholder="10"> m²
 							</div>
 						</div>
+						<!-- FIN: LAVADO DE PISOS -->
+						<!-- INICIO: PULIDO DE PISOS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="pulidoPisos" id="pulidoPisos" value="Seleccionado" onclick="verPulido()">
 							<label for="Pulido de Pisos">Pulido de Pisos</label>
 							<div style="display: none;" id="especsPulido">
-								<label class="d-block"for="cantidadPulidoPisos">Especifica</label>
-								<input type="text" name="cantidadPulidoPisos" placeholder="¿Cuántos m² aprox. y tipo de piso?">
+								<label for="tipoPulidoPiso">¿Cómo es tu piso?</label>
+									<select name="tipoPulidoPiso" id="tipoPulidoPiso">
+										<option disabled selected>Selecciona un tipo</option>
+										<option value="Piso de mármol">Piso de mármol</option>
+										<option value="Piso de mosaico">Piso de mosaico</option>
+										<option value="Piso de Terrazo">Piso de terrazo</option>
+										<option value="Piso de Granito">Piso de Granito</option>
+									</select>
+								<br>
+								<br>
+								<label class="d-block" for="cantidadPulidoPisos">¿Cuántos m² aproximadamenteo?</label>
+								<input type="number" name="cantidadPulidoPisos" placeholder="10"> m²
 							</div>
 						</div>
+						<!-- FIN: LAVADO DE PISOS -->
+						<!-- INICIO: SANITIZACIÓN -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="sanitizacion" id="sanitizacion" value="Seleccionado" onclick="verSanitizacion()">
 							<label for="Sanitización">Sanitización</label>
 							<div style="display: none;" id="especsSanitizacion">
-								<label class="d-block"for="cantidadSanitizacion">Especifica</label>
-								<input type="text" name="cantidadSanitizacion" placeholder="¿Cuántas habitaciones">
+								<label class="d-block" for="cantidadSanitizacion">Selecciona la cantidad de habitaciones de la casa</label>
+								<input type="number" name="cantidadSanitizacion" placeholder="3"> habitaciones
 							</div>
 						</div>
+						<!-- FIN: SANITIZACIÓN -->
+						<!-- INICIO: LIMPIEZA DE VIDRIOS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="limpiezaVidrios" id="limpiezaVidrios" value="Seleccionado" onclick="verVidrios()">
 							<label for="Limpieza de vidrios">Limpieza de vidrios</label>
 							<div style="display: none;" id="especsVidrios">
-								<label class="d-block"for="cantidadLimpiezaVidrios">Especifica</label>
-								<input type="text" name="cantidadLimpiezaVidrios" placeholder="Metros lineales de ventanas">
+								<label class="d-block"for="cantidadLimpiezaVidrios">¿Cuántos metros lineales de ventana?</label>
+								<input type="number" name="cantidadLimpiezaVidrios" placeholder="5"> mts. de largo
+								<br>
+								<label for="alturaLimpiezaVidrios">Altura de los ventanales</label>
+								<input type="number" name="alturaLimpiezaVidrios" placeholder="3"> mts. de alto
 							</div>
 						</div>
+						<!-- FIN: LIMPIEZA DE VIDRIOS -->
+						<!-- INICIO: LIMPIEZA DE DUCTOS -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="limpiezaDuctos" id="limpiezaDuctos" value="Seleccionado" onclick="verDuctos()">
 							<label for="Limpieza de ductos">Limpieza de ductos</label>
 							<div style="display: none;" id="especsDuctos">
-								<label class="d-block"for="cantidadLimpiezaDuctos">Especifica</label>
-								<input type="text" name="cantidadLimpiezaDuctos" placeholder="¿Cuántos metros aprox.?">
+								<label class="d-block" for="cantidadLimpiezaDuctos">¿Cuántos metros aproximadamente?</label>
+								<input type="number" name="cantidadLimpiezaDuctos" placeholder="5"> mts. de ductos
 							</div>
 						</div>
+						<!-- FIN: Limpieza de Ductos -->
+						<!-- INICIO: Limpieza Profunda -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="limpiezaProfunda" id="limpiezaProfunda" value="Seleccionado" onclick="verProfunda()">
 							<label for="Limpieza profunda">Limpieza profunda</label>
 							<div style="display: none;" id="especsProfunda">
-								<label class="d-block"for="cantidadLimpiezaProfunda">Especifica</label>
+								<label class="d-block"for="cantidadLimpiezaProfunda">¿Qué necesitas que limpiemos?</label>
 								<textarea type="text" name="cantidadLimpiezaProfunda" placeholder="Objetos y tamaño, ejemplo: 3 ventanas, sala, etc."></textarea>
 							</div>
 						</div>
+						<!-- FIN: Limpieza profunda -->
+						<!-- INICIO: LIMPIEZA GENERAL -->
 						<div class="col-lg-4 mb-3 box-servicios">
 							<input type="checkbox" name="limpiezaGeneral" id="limpiezaGeneral" value="Seleccionado" onclick="verGeneral()">
 							<label for="Limpieza general">Limpieza general</label>
 							<div style="display: none;" id="especsGeneral">
-								<label class="d-block"for="cantidadLimpiezaGeneral">Especifica</label>
+								<label class="d-block"for="cantidadLimpiezaGeneral">¿Qué actividades necesitas?</label>
 								<textarea name="cantidadLimpiezaGeneral" placeholder="Actividades a realizar, por ejemplo: barrer, lavar patio, etc."></textarea>
 							</div>
 						</div>
 					</div>
+					<!-- FIN: Limpieza general -->
 					<div class="row my-5">
 						<button type="submit" name="submit" class="btn btn-block btn-success">Enviar</button>
 					</div>

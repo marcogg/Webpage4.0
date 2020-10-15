@@ -27,68 +27,148 @@ $cp = strip_tags(htmlspecialchars($_POST['cotZip']));
 $fecha = strip_tags(htmlspecialchars($_POST['cotDate']));
 $hora = strip_tags(htmlspecialchars($_POST['cotHour']));
 
+// LAVADO DE ALFOMBRAS
 $lavadoAlfombras = strip_tags(htmlspecialchars($_POST['lavadoAlfombras']));
-$cantidadLavadoAlfombras = strip_tags(htmlspecialchars($_POST['cantidadLavadoAlfombras']));
+
+$cantidadLavadoAlfombras1 = strip_tags(htmlspecialchars($_POST['cantidadAlfombra1']));
+$cantidadLavadoAlfombras2 = strip_tags(htmlspecialchars($_POST['cantidadAlfombra2']));
+$cantidadLavadoAlfombras3 = strip_tags(htmlspecialchars($_POST['cantidadAlfombra3']));
+
+$tamanoAlfombra1 = strip_tags(htmlspecialchars($_POST['tamanoAlfombra1']));
+$tamanoAlfombra2 = strip_tags(htmlspecialchars($_POST['tamanoAlfombra2']));
+$tamanoAlfombra3 = strip_tags(htmlspecialchars($_POST['tamanoAlfombra3']));
+
+
+// LAVADO DE SILLONES
 $lavadoSillones = strip_tags(htmlspecialchars($_POST['lavadoSillones']));
 $cantidadLavadoSillones = strip_tags(htmlspecialchars($_POST['cantidadLavadoSillones']));
-$lavadoSillas = strip_tags(htmlspecialchars($_POST['cantidadLavadoSillas']));
+
+// LAVADO DE SILLAS
+$lavadoSillas = strip_tags(htmlspecialchars($_POST['lavadoSillas']));
+$cantidadLavadoSillas = strip_tags(htmlspecialchars($_POST['cantidadLavadoSillas']));
+$tipoSillas = strip_tags(htmlspecialchars($_POST['tipoSillas']));
+
+// LAVADO DE COLCHONES
 $lavadoColchones = strip_tags(htmlspecialchars($_POST['lavadoColchones']));
-$cantidadLavadoColchones = strip_tags(htmlspecialchars($_POST['cantidadLavadoColchones']));
+
+$cantidadColchon1 = strip_tags(htmlspecialchars($_POST['cantidadColchon1']));
+$tamanoColchon1 = strip_tags(htmlspecialchars($_POST['tamanoColchon1']));
+$cantidadColchon2 = strip_tags(htmlspecialchars($_POST['cantidadColchon2']));
+$tamanoColchon2 = strip_tags(htmlspecialchars($_POST['tamanoColchon2']));
+$cantidadColchon3 = strip_tags(htmlspecialchars($_POST['cantidadColchon3']));
+$tamanoColchon3 = strip_tags(htmlspecialchars($_POST['tamanoColchon3']));
+$cantidadColchon4 = strip_tags(htmlspecialchars($_POST['cantidadColchon4']));
+$tamanoColchon4 = strip_tags(htmlspecialchars($_POST['tamanoColchon4']));
+$cantidadColchon5 = strip_tags(htmlspecialchars($_POST['cantidadColchon5']));
+$tamanoColchon5 = strip_tags(htmlspecialchars($_POST['tamanoColchon5']));
+
+
+// LAVADO AUTOS
 $lavadoAutos = strip_tags(htmlspecialchars($_POST['lavadoAutos']));
-$cantidadLavadoAutos = strip_tags(htmlspecialchars($_POST['cantidadLavadoAutos']));
+$modeloLavadoAutos = strip_tags(htmlspecialchars($_POST['modeloLavadoAutos']));
+$cantidadFilas = strip_tags(htmlspecialchars($_POST['cantidadFilas']));
+
+// LAVADO DE PISOS
 $lavadoPisos = strip_tags(htmlspecialchars($_POST['lavadoPisos']));
+$tipoLavadoPiso = strip_tags(htmlspecialchars($_POST['tipoLavadoPiso']));
 $cantidadLavadoPisos = strip_tags(htmlspecialchars($_POST['cantidadLavadoPisos']));
+
+// PULIDO DE PISOS
 $pulidoPisos = strip_tags(htmlspecialchars($_POST['pulidoPisos']));
+$tipoPulidoPisos = strip_tags(htmlspecialchars($_POST['tipoPulidoPisos']));
 $cantidadPulidoPisos = strip_tags(htmlspecialchars($_POST['cantidadPulidoPisos']));
+
+// SANITIZACION
 $sanitizacion = strip_tags(htmlspecialchars($_POST['sanitizacion']));
 $cantidadSanitizacion = strip_tags(htmlspecialchars($_POST['cantidadSanitizacion']));
+
+// LIMPIEZA VIDRIOS
 $limpiezaVidrios = strip_tags(htmlspecialchars($_POST['limpiezaVidrios']));
 $cantidadLimpiezaVidrios = strip_tags(htmlspecialchars($_POST['cantidadLimpiezaVidrios']));
+$alturaLimpiezaVidrios = strip_tags(htmlspecialchars($_POST['alturaLimpiezaVidrios']));
+
+// LIMPIEZA DUCTOS
 $limpiezaDuctos = strip_tags(htmlspecialchars($_POST['limpiezaDuctos']));
 $cantidadLimpiezaDuctos = strip_tags(htmlspecialchars($_POST['cantidadLimpiezaDuctos']));
+
+// LIMPIEZA PROFUNDA
 $limpiezaProfunda = strip_tags(htmlspecialchars($_POST['limpiezaProfunda']));
 $cantidadLimpiezaProfunda = strip_tags(htmlspecialchars($_POST['cantidadLimpiezaProfunda']));
+
+// LIMPIEZA GENERAL
 $limpiezaGeneral = strip_tags(htmlspecialchars($_POST['limpiezaGeneral']));
 $cantidadLimpiezaGeneral = strip_tags(htmlspecialchars($_POST['cantidadLimpiezaGeneral']));
 
 
    
 // Create the email and send the message
-$to = 'marcogarcia.gon@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'figueroasclean@outlook.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Cotizacion de:  $nombre";
 $email_body = "Nueva entrada en el formulario de figueroasclean.com.\n\n"."Detalles\n\n
 Nombre: $nombre\n\n
 Email: $email\n\n
 Tel: $tel\n\n
 Celular: $cel\n\n
-Direccion: $direccion\n\n
+Dirección: $direccion\n\n
 Colonia: $colonia\n\n
-CP: $cp\n\natcasesort(array)
-Fecha: $fecha\n
-Hora: $hora\n
+CP: $cp\n\n
+Fecha: $fecha\n\n
+Hora: $hora\n\n
 Lavado de Alfombras: $lavadoAlfombras\n\n
-Cantidad Lavado de Alfombras: $cantidadLavadoAlfombras\n\n
+Lavado de Alfombras 1- Cantidad: $cantidadLavadoAlfombras1 - Tamaño:$tamanoLavadoAlfombras1\n\n
+Lavado de Alfombras 2- Cantidad: $cantidadLavadoAlfombras2 Tamaño: $tamanoLavadoAlfombras2\n\n
+Lavado de Alfombras 3- Cantidad: $cantidadLavadoAlfombras3 Tamaño: $tamanoLavadoAlfombras3\n\n
+\n\n
+\n\n
 Lavado de Sillones: $lavadoSillones\n\n
-Cantidad de Lavado de Sillones: $cantidadLavadoSillones\n\n
+Cantidad de Asientos para lavado de sillones: $cantidadLavadoSillones\n\n
+\n\n
+\n\n
 Lavado de Sillas: $lavadoSillas\n\n
+Cantidad Lavado de Sillas: $cantidadLavadoSillas - Tipo de Sillas: $tipoSillas\n\n
+\n\n
+\n\n
 Lavado de Colchones: $lavadoColchones\n\n
-Cantidad Lavado de Colchones$cantidadLavadoColchones\n\n
+Cantidad: $cantidadColchon1 - Tamaño: $tamanoColchon1\n\n
+Cantidad: $cantidadColchon2 - Tamaño: $tamanoColchon2\n\n
+Cantidad: $cantidadColchon3 - Tamaño: $tamanoColchon3\n\n
+Cantidad: $cantidadColchon4 - Tamaño: $tamanoColchon4\n\n
+Cantidad: $cantidadColchon5 - Tamaño: $tamanoColchon5\n\n
+\n\n
+\n\n
 Lavado de Autos: $lavadoAutos\n\n
-Cantidad Lavado de Autos: $cantidadLavadoAutos\n\n
+Modelo de auto: $modeloLavadoAutos - Cantidad de Filas: $cantidadFilas\n\n
+\n\n
+\n\n
 Lavado de Pisos: $lavadoPisos\n\n
+Tipo de piso: $tipoLavadoPiso - Área: $cantidadLavadoPisos\n\n
 Cantidad Lavado de Pisos: $cantidadLavadoPisos\n\n
+\n\n
+\n\n
 Pulido de Pisos: $pulidoPisos\n\n
+Tipo de piso: $tipoPulidoPisos - Área: $cantidadPulidoPisos\n\n
 Cantidad Pulido de Pisos: $cantidadPulidoPisos\n\n
+\n\n
+\n\n
 Sanitizacion: $sanitizacion\n\n
-Cantidad Sanitizacion: $cantidadSanitizacion\n\n
+Número de Habitaciones a sanitizar: $cantidadSanitizacion\n\n
+\n\n
+\n\n
 Limpieza de Vidrios: $limpiezaVidrios\n\n
-Cantidad Limpieza de Vidrios: $cantidadLimpiezaVidrios\n\n
+Metros de ventanas: $cantidadLimpiezaVidrios\n\n
+Altura de Ventanal: $alturaLimpiezaVidrios\n\n
+\n\n
+\n\n
 Limpieza de ductos: $limpiezaDuctos\n\n
-Cantidad Limpieza de ductos: $cantidadLimpiezaDuctos\n\n
+Metros de ductos: $cantidadLimpiezaDuctos\n\n
+\n\n
+\n\n
 Limpieza Profunda: $limpiezaProfunda\n\n
-Cantidad limpieza Profunda: $cantidadLimpiezaProfunda\n\n
+Descripción: $cantidadLimpiezaProfunda\n\n
+\n\n
+\n\n
 Limpieza General: $limpiezaGeneral\n\n
-Cantidad Limpieza General: $cantidadLimpiezaGeneral\n";
+Descripción: $cantidadLimpiezaGeneral\n";
 
 $headers = "From: noreply@creaty.com.mx\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email";   

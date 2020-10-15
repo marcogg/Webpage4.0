@@ -78,6 +78,14 @@ input, select, textarea{
 #cotizador input[type=text], textarea{
     width: 100%;
 }
+#cotizador input[type=number]{
+    max-width: 60px;
+}
+
+label{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
 main{
     width: 100%;
@@ -394,7 +402,7 @@ main{
     .box-servicios{
         background-color: #438fff;
         border-radius: 15px;
-        padding: 3%;
+        padding: 2.5%;
         border:#1a64d1 solid 2px;
     }
     input[type=checkbox]{
