@@ -648,7 +648,7 @@ main{
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .initialScreen section img{
-        max-height: 500px; 
+        max-height: 200px; 
         width: auto;
     }
 
