@@ -69,10 +69,10 @@ $cantidadColchon2 = strip_tags(htmlspecialchars($_POST['cantidadColchon2']));
 $tamanoColchon2 = strip_tags(htmlspecialchars($_POST['tamanoColchon2']));
 $cantidadColchon3 = strip_tags(htmlspecialchars($_POST['cantidadColchon3']));
 $tamanoColchon3 = strip_tags(htmlspecialchars($_POST['tamanoColchon3']));
-$cantidadColchon4 = strip_tags(htmlspecialchars($_POST['cantidadColchon4']));
-$tamanoColchon4 = strip_tags(htmlspecialchars($_POST['tamanoColchon4']));
-$cantidadColchon5 = strip_tags(htmlspecialchars($_POST['cantidadColchon5']));
-$tamanoColchon5 = strip_tags(htmlspecialchars($_POST['tamanoColchon5']));
+// $cantidadColchon4 = strip_tags(htmlspecialchars($_POST['cantidadColchon4']));
+// $tamanoColchon4 = strip_tags(htmlspecialchars($_POST['tamanoColchon4']));
+// $cantidadColchon5 = strip_tags(htmlspecialchars($_POST['cantidadColchon5']));
+// $tamanoColchon5 = strip_tags(htmlspecialchars($_POST['tamanoColchon5']));
 
 
 // LAVADO AUTOS
@@ -142,7 +142,7 @@ $lgCasillaDuctos = strip_tags(htmlspecialchars($_POST['limpiezaGeneral-LimpiezaD
 
    
 // Create the email and send the message
-$to = 'marcogarcia.gon@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'figueroasclean@outlook.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Cotizacion de:  $nombre";
 $email_body = "Nueva entrada en el formulario de figueroasclean.com.\n\n"."Detalles\n\n
 Nombre: $nombre\n
@@ -178,8 +178,6 @@ Lavado de Colchones: $lavadoColchones\n
 Cantidad: $cantidadColchon1 - Tamaño: $tamanoColchon1\n
 Cantidad: $cantidadColchon2 - Tamaño: $tamanoColchon2\n
 Cantidad: $cantidadColchon3 - Tamaño: $tamanoColchon3\n
-Cantidad: $cantidadColchon4 - Tamaño: $tamanoColchon4\n
-Cantidad: $cantidadColchon5 - Tamaño: $tamanoColchon5\n
 \n\n
 \n\n
 Lavado de Autos: $lavadoAutos\n

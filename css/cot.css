@@ -417,3 +417,7 @@ main{
         display: none !important;
     }
 }
+
+td{
+    padding: 2%;
+}
